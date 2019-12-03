@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Improving Face Anti-Spoofing by 3D Virtual Synthesis"
+date:   2019-01-01 22:21:59 +00:00
+image: /assets/imgs/virtual_synthesis.jpg
+categories: research
+author: "Jianzhu Guo"
+authors: "<strong>Jianzhu Guo</strong>, Xiangyu Zhu, Jinchuan Xiao, Zhen Lei, Genxun Wan, Stan Z. Li"
+venue: "International Conference On Biometrics (<strong>ICB Oral</strong>)"
+paper: /assets/pdfs/antispoof_icb2019_gjz.pdf
+arxiv: https://arxiv.org/abs/1901.00488
+---
+We present a method to synthesize virtual spoof data in 3D space to improve face anti-spoofing. Specifically, we consider a printed photo as a flat surface and mesh it into a 3D object, which is then randomly bent and rotated in 3D space. Afterward, the transformed 3D photo is rendered through perspective projection as a virtual sample. The synthetic virtual samples can significantly boost the anti-spoofing performance when combined with a proposed data balancing strategy.
