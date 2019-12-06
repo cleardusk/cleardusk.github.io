@@ -153,43 +153,26 @@
           {% for post in site.posts %}
           {% for cat in post.categories %}
           {% if cat == 'comp' %}
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              <em>{{post.categories}}</em>
-              <br>
-              {{ post.date | date: "%Y-%m-%d" }}
-
-              <br>
+          <!-- <tr> -->
+            <!-- <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px"> -->
+              <!-- <img src="/{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" /> -->
+            <!-- </td> -->
+            <td style="padding:0%;width:75%;vertical-align:middle">
+              <!-- <h3>{{post.title}}</h3> -->
+              <!-- <br> -->
+              <!-- <em>{{post.categories}}</em> -->
+              <!-- <br> -->
+              <!-- {{ post.date | date: "%Y-%m-%d" }} -->
               {% if post.website %}
               <a href="{{post.website}}">website</a> /
               {% endif %}
-              {% if post.paper %}
-              <a href="{{post.paper}}">paper</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.video2 %}
-              <a href="{{post.video2}}">video #2</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              <p></p>
+              
               {{ post.excerpt }}
+              <!-- <ul> -->
+                <!-- <li>  {{ post.excerpt }}   </li> -->
+              <!-- </ul> -->
             </td>
-          </tr>
+          <!-- </tr> -->
           {% endif %}
           {% endfor %}
           {% endfor %}
@@ -211,23 +194,23 @@
 
           {% for post in site.posts %}
           {% for cat in post.categories %}
-          {% if cat == '' %}
+          {% if cat == 'project' %}
           <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+            <!-- <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
               <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
+            </td> -->
+            <!-- <td style="padding:2.5%;width:75%;vertical-align:middle"> -->
+              <!-- <h3>{{post.title}}</h3>
               <br>
               <em>{{post.categories}} {{post.course}}</em>
-              <br>
-              {{ post.date | date: "%Y-%m-%d" }}
+              <br> -->
+              <!-- {{ post.date | date: "%Y-%m-%d" }} -->
 
-              <br>
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
-              <p></p>
+              <!-- <br> -->
+              <!-- {% if post.website %} -->
+              <!-- <a href="{{post.website}}">website</a> / -->
+              <!-- {% endif %} -->
+              <!-- <p></p> -->
               {{ post.excerpt }}
             </td>
           </tr>

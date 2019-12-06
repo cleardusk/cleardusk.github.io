@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "HUAWEI Code Craft 2017"
+date:   2017-04-01 22:21:60 +00:00
+# image: /assets/imgs/preprint.jpg
+categories: comp
+# authors: "<strong>Jianzhu Guo</strong>, Xiangyu Zhu, Chenxu Zhao, Dong Cao, Zhen Lei, Stan Z. Li"
+# venue: "Under Review"
+# paper: /assets/pdfs/antispoof_icb2019_gjz.pdf
+# arxiv: https://arxiv.org/abs/1901.00488
+---
+
+<ul>
+    <li> 
+        <strong>1-st Winner</strong> of Joint Challenge on Dominant and Complementary Emotion Recognition Using Micro Emotion Features and Head, in conjunction with FG 2017. [<a href="[url](https://github.com/cleardusk/EmotionChallenge)">Code</a>]
+    </li><br>
+    <li> 
+        HUAWEI Code Craft 2017: <strong>Awarded Silver Medal (rank 5th)</strong> in Beijing Site.
+    </li>
+</ul>
