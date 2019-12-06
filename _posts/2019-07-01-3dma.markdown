@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "3DMA: A Multi-modality 3D Mask Face Anti-spoofing Database"
+date:   2019-07-01 21:21:59 +00:00
+image: /assets/imgs/3DMA.png
+categories: research
+author: "Jianzhu Guo"
+authors: "Jinchuan Xiao, Yinhang Tang, <strong>Jianzhu Guo</strong>, Yang Yang, Xiangyu Zhu, Zhen Lei, Stan Z. Li"
+venue: "16th IEEE International Conference on Advanced Video and Signal Based Surveillance (AVSS)"
+paper: /assets/pdfs/PID6035797.pdf
+# arxiv: https://arxiv.org/abs/1901.00488
+---
+We release a multi-modality 3D mask face anti-spoofing database named 3DMA, which contains 920 videos of 67 genuine subjects wearing 48 kinds of 3D masks, captured in visual (VIS) and near-infrared (NIR) modalities.

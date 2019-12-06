@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Face Synthesis for Eyeglass-Robust Face Recognition"
+date:   2018-06-01 22:21:59 +00:00
+image: /assets/imgs/add_glass_pipeline.jpg
+categories: research
+author: "Jianzhu Guo"
+authors: "<strong>Jianzhu Guo</strong>, Xiangyu Zhu, Zhen Lei, Stan Z. Li"
+venue: "CCF Chinese Conference on Biometric Recognition (CCBR2018), Urumqi, China"
+paper: /assets/pdfs/facesyn_ccbr_gjz.pdf
+arxiv: https://arxiv.org/abs/1806.01196
+code: https://github.com/cleardusk/MeGlass
+---
+In the application of face recognition, eyeglasses could significantly degrade the recognition accuracy. In this paper, we propose to address this problem in a virtual synthesis manner.
+<!-- The high-ﬁdelity face images with eyeglasses are synthesized based on 3D face model and 3D eyeglasses. Models based on deep learning methods are then trained on the synthesized eyeglass face dataset, achieving better performance than previous ones. -->
