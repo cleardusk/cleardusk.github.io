@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "3DMA: A Multi-modality 3D Mask Face Anti-spoofing Database"
-date:   2019-07-01 21:21:59 +00:00
+date:   2016-07-01 21:21:59 +00:00
 image: /assets/imgs/3DMA.png
 categories: research
 author: "Jianzhu Guo"
