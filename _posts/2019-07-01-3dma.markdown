@@ -6,7 +6,7 @@ image: /assets/imgs/3DMA.png
 categories: research
 author: "Jianzhu Guo"
 authors: "Jinchuan Xiao, Yinhang Tang, <strong>Jianzhu Guo</strong>, Yang Yang, Xiangyu Zhu, Zhen Lei, Stan Z. Li"
-venue: "16th IEEE International Conference on Advanced Video and Signal Based Surveillance (AVSS)"
+venue: "16th IEEE International Conference on Advanced Video and Signal Based Surveillance (AVSS), 2019"
 paper: /assets/pdfs/PID6035797.pdf
 # arxiv: https://arxiv.org/abs/1901.00488
 ---

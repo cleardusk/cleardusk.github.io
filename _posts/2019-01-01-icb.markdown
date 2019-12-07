@@ -6,7 +6,7 @@ image: /assets/imgs/virtual_synthesis.jpg
 categories: research
 author: "Jianzhu Guo"
 authors: "<strong>Jianzhu Guo</strong>, Xiangyu Zhu, Jinchuan Xiao, Zhen Lei, Genxun Wan, Stan Z. Li"
-venue: "International Conference On Biometrics (<strong>ICB Oral</strong>)"
+venue: "International Conference On Biometrics (<strong>ICB Oral</strong>), 2019"
 paper: /assets/pdfs/antispoof_icb2019_gjz.pdf
 arxiv: https://arxiv.org/abs/1901.00488
 ---

@@ -6,7 +6,7 @@ image: /assets/imgs/emotion_fg_pipline.png
 categories: research
 author: "Jianzhu Guo"
 authors: "<strong>Jianzhu Guo</strong>, Shuai Zhou, Jinlin Wu, Jun Wan, Xiangyu Zhu, Zhen Lei, Stan Z. Li"
-venue: "FG2017, Washington, DC. May 30 –June 3"
+venue: "FG2017, Washington, DC. May 30 –June 3, 2017"
 paper: /assets/pdfs/emotion_fg_gjz.pdf
 # arxiv: https://arxiv.org/abs/1806.01196
 code: https://github.com/cleardusk/EmotionChallenge
