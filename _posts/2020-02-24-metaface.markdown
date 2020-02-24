@@ -1,11 +1,13 @@
 ---
 layout: post
 title:  "Learning Meta Face Recognition in Unseen Domains"
-date:   2019-12-01 22:21:60 +00:00
+date:   2020-02-23 23:51:60 +00:00
 image: /assets/imgs/preprint.jpg
-categories: review
+categories: research
+author: "Jianzhu Guo"
 authors: "<strong>Jianzhu Guo</strong>, Xiangyu Zhu, Chenxu Zhao, Dong Cao, Zhen Lei, Stan Z. Li"
-venue: "Under Review"
+venue: "CVPR 2020"
 # paper: /assets/pdfs/antispoof_icb2019_gjz.pdf
 # arxiv: https://arxiv.org/abs/1901.00488
 ---
+TBD.
