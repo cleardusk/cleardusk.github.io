@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "Towards Fast, Accurate and Stable 3D Dense Face Alignment"
-date:   2019-12-01 22:21:59 +00:00
+date:   2020-03-06 22:21:59 +00:00
 image: /assets/imgs/preprint.jpg
 categories: review
 authors: "<strong>Jianzhu Guo</strong>, Xiangyu Zhu, Yang Yang, Zhen Lei, Yang Fan, Stan Z. Li"
-venue: "Under Review"
+venue: "Under Review (ECCV-20)"
 # paper: /assets/pdfs/antispoof_icb2019_gjz.pdf
 # arxiv: https://arxiv.org/abs/1901.00488
 ---
