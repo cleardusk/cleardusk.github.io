@@ -7,8 +7,10 @@ categories: research
 # author: "Jianzhu Guo"
 authors: "<strong>Jianzhu Guo</strong>, Xiangyu Zhu, Chenxu Zhao, Dong Cao, Zhen Lei, Stan Z. Li"
 venue: <strong>CVPR 2020 <font color="red">(Oral Presentation)</font> </strong>
+code: https://github.com/cleardusk/MFR
 
 paper: assets/pdfs/05997.pdf
-# arxiv: https://arxiv.org/abs/1901.00488
+arxiv: https://arxiv.org/abs/1901.00488
 ---
-TBD.
+
+We propose a novel face recognition method via meta-learning named Meta Face Recognition (MFR) to learn a generalized model performing well on unseen domains. Besides, we propose two benchmarks for generalized face recognition evaluation. The proposed benchmarks will be available at <a href="https://github.com/cleardusk/MFR">https://github.com/cleardusk/MFR</a>.

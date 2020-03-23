@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "Project"
+date:   2019-12-04 21:10:60 +00:00
+image: /assets/imgs/dg.jpg
+categories: project
+---
+<a href="https://github.com/cleardusk/MFR">Learning Meta Face Recognition in Unseen Domains</a>
+<br>
+<img src="https://img.shields.io/github/stars/cleardusk/MFR.svg" alt="GitHub stars" title="">
