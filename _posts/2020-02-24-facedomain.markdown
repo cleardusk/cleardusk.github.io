@@ -6,7 +6,7 @@ image: /assets/imgs/LT.jpg
 categories: research
 authors: "Dong Cao, Xiangyu Zhu, Xingyu Huang, <strong>Jianzhu Guo</strong>, Zhen Lei"
 venue: "<strong>CVPR 2020</strong>"
-# paper: /assets/pdfs/antispoof_icb2019_gjz.pdf
+paper: /assets/pdfs/04231.pdf
 # arxiv: https://arxiv.org/abs/1901.00488
 ---
 
