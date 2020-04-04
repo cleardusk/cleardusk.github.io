@@ -7,4 +7,4 @@ categories: project
 ---
 <a href="https://github.com/cleardusk/MFR">Learning Meta Face Recognition in Unseen Domains</a>
 <br>
-<img src="https://img.shields.io/github/stars/cleardusk/MFR.svg" alt="GitHub stars" title="">
+<img src="https://img.shields.io/github/stars/cleardusk/MFR.svg" alt="GitHub stars" title=""> <img src="https://img.shields.io/github/forks/cleardusk/MFR.svg" alt="GitHub forks" title="">

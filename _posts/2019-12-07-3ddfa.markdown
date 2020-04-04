@@ -5,6 +5,8 @@ date:   2019-12-06 21:21:60 +00:00
 image: /assets/imgs/obama_three_styles.gif
 categories: project
 ---
-<a href="https://github.com/cleardusk/3DDFA">3DDFA: Real-time 3D face reconstruction</a>
+<a href="https://github.com/cleardusk/3DDFA">3DDFA: Real-time 3D face reconstruction</a> &nbsp; [<a href="https://star-history.t9t.io/#cleardusk/3DDFA">Star history</a>]
 <br>
-<img src="https://img.shields.io/github/stars/cleardusk/3DDFA.svg" alt="GitHub stars" title=""> <img src="https://img.shields.io/github/forks/cleardusk/3DDFA.svg" alt="GitHub forks" title="">
+<img src="https://img.shields.io/github/stars/cleardusk/3DDFA.svg" alt="GitHub stars" title=""> <img src="https://img.shields.io/github/forks/cleardusk/3DDFA.svg" alt="GitHub forks" title=""> <img src="http://hits.dwyl.io/cleardusk/3DDFA.svg" alt="Hits" title=""> <img src="https://img.shields.io/github/issues-closed/cleardusk/3DDFA
+" alt="Closed Issues" title=""> <img src="https://img.shields.io/github/issues/cleardusk/3DDFA
+" alt="Open Issues" title="">

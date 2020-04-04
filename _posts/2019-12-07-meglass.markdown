@@ -7,4 +7,4 @@ categories: project
 ---
 <a href="https://github.com/cleardusk/MeGlass">MeGlass: An eyeglass face dataset collected and cleaned for face recognition evaluation</a>
 <br>
-<img src="https://img.shields.io/github/stars/cleardusk/MeGlass.svg" alt="GitHub stars" title="">
+<img src="https://img.shields.io/github/stars/cleardusk/MeGlass.svg" alt="GitHub stars" title=""> <img src="https://img.shields.io/github/forks/cleardusk/MeGlass.svg" alt="GitHub forks" title="">
