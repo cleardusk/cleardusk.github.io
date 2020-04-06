@@ -5,7 +5,7 @@ date:   2018-06-01 22:21:59 +00:00
 image: /assets/imgs/add_glass_pipeline.jpg
 categories: research
 author: "Jianzhu Guo"
-authors: "<strong>Jianzhu Guo</strong>, Xiangyu Zhu, Zhen Lei, Stan Z. Li"
+authors: <a href="https://scholar.google.com/citations?user=W8_JzNcAAAAJ"><strong>Jianzhu Guo</strong></a>, <a href="https://scholar.google.com/citations?user=1rbNk5oAAAAJ">Xiangyu Zhu</a>, <a href="https://scholar.google.com/citations?user=cuJ3QG8AAAAJ">Zhen Lei</a>, <a href="https://scholar.google.com/citations?user=Y-nyLGIAAAAJ">Stan Z. Li</a>
 venue: "CCF Chinese Conference on Biometric Recognition (CCBR2018), Urumqi, China, Aug. 11-12, 2018"
 paper: /assets/pdfs/facesyn_ccbr_gjz.pdf
 arxiv: https://arxiv.org/abs/1806.01196
