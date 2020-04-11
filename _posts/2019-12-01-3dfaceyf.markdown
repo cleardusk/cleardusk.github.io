@@ -5,7 +5,7 @@ date:   2020-03-06 20:21:60 +00:00
 image: /assets/imgs/preprint.jpg
 categories: review
 # authors: "Yang Fan, Xiangyu Zhu, Guohao Li, <strong>Jianzhu Guo</strong>, Di Huang, Zhen Lei, Stan Z. Li"
-authors: Xiangyu Zhu, Fan Yang, Di Huang, Chang Yu, Hao Wang, <strong>Jianzhu Guo</strong>, Zhen Lei, Stan Z. Li
+authors: Xiangyu Zhu, Fan Yang, Di Huang, Chang Yu, Hao Wang, <a href="https://scholar.google.com/citations?user=W8_JzNcAAAAJ"><strong><u>Jianzhu Guo</u></strong></a>, Zhen Lei, Stan Z. Li
 venue: "Under Review (ECCV-20)"
 # paper: /assets/pdfs/antispoof_icb2019_gjz.pdf
 # arxiv: https://arxiv.org/abs/1901.00488

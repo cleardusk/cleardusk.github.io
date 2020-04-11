@@ -6,7 +6,7 @@ image: /assets/imgs/virtual_synthesis.jpg
 categories: research
 author: "Jianzhu Guo"
 # authors: "<strong>Jianzhu Guo</strong>, Xiangyu Zhu, Jinchuan Xiao, Zhen Lei, Genxun Wan, Stan Z. Li"
-authors: <a href="https://scholar.google.com/citations?user=W8_JzNcAAAAJ"><strong>Jianzhu Guo</strong></a>, <a href="https://scholar.google.com/citations?user=1rbNk5oAAAAJ">Xiangyu Zhu</a>, Jinchuan Xiao, <a href="https://scholar.google.com/citations?user=cuJ3QG8AAAAJ">Zhen Lei</a>, Genxun Wan, <a href="https://scholar.google.com/citations?user=Y-nyLGIAAAAJ">Stan Z. Li</a>
+authors: <a href="https://scholar.google.com/citations?user=W8_JzNcAAAAJ"><strong><u>Jianzhu Guo</u></strong></a>, <a href="https://scholar.google.com/citations?user=1rbNk5oAAAAJ">Xiangyu Zhu</a>, Jinchuan Xiao, <a href="https://scholar.google.com/citations?user=cuJ3QG8AAAAJ">Zhen Lei</a>, Genxun Wan, <a href="https://scholar.google.com/citations?user=Y-nyLGIAAAAJ">Stan Z. Li</a>
 venue: "International Conference On Biometrics, <strong>ICB 2019</strong> (<strong>Oral Presentation</strong>, acceptance rate 11.2%)"
 paper: /assets/pdfs/antispoof_icb2019_gjz.pdf
 arxiv: https://arxiv.org/abs/1901.00488
