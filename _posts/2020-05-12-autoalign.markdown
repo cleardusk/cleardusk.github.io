@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Face Auto-alignment：Searching Alignment for Face Recognition
+title:  Searching for Alignment in Face Recognition
 date: 2020-05-12 23:51:60 +00:00
 image: /assets/imgs/preprint.jpg
 categories: review
