@@ -1,11 +1,12 @@
 ---
 layout: post
 title:  "Towards Fast, Accurate and Stable 3D Dense Face Alignment"
-date:   2020-03-06 22:21:59 +00:00
-image: /assets/imgs/preprint.jpg
-categories: review
-authors: <a href="https://scholar.google.com/citations?user=W8_JzNcAAAAJ"><strong><u>Jianzhu Guo</u></strong></a>, Xiangyu Zhu, Yang Yang, Zhen Lei, Yang Fan, Stan Z. Li
-venue: "Under Review (ECCV-20)"
+date:   2020-07-02 07:37:59 +00:00
+image: /assets/imgs/3dface_eccv20.jpg
+categories: research
+authors: <a href="https://scholar.google.com/citations?user=W8_JzNcAAAAJ"><strong><u>Jianzhu Guo</u></strong></a>, <a href="https://scholar.google.com/citations?user=1rbNk5oAAAAJ">Xiangyu Zhu</a>, Yang Yang, <a href="https://scholar.google.com/citations?user=cuJ3QG8AAAAJ">Zhen Lei</a>, Yang Fan, <a href="https://scholar.google.com/citations?user=Y-nyLGIAAAAJ">Stan Z. Li</a>
+venue: "<strong>ECCV 2020</strong>"
 # paper: /assets/pdfs/antispoof_icb2019_gjz.pdf
 # arxiv: https://arxiv.org/abs/1901.00488
 ---
+Our proposed methods are (i) fast: It takes about 7.2ms with an single image as input and runs at over 50fps (19.2ms) on a single CPU core or over 130fps (7.2ms) on multiple CPU cores (i5-8259U processor), (ii) accurate: By dynamically optimizing 3DMM parameters through a novel meta-optimization strategy combining the fast WPDC and VDC, we surpass the state-of-the-art results, and (iii) stable: In a mini-batch, one still image is transformed slightly and smoothly into a short synthetic video, which provides temporal information of adjacent frames for training.
