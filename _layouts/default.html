@@ -93,8 +93,14 @@
               {% if post.paper %}
               <a href="{{post.paper}}">paper</a> /
               {% endif %}
+              {% if post.supp %}
+              <a href="{{post.supp}}">supp</a> /
+              {% endif %}
+              {% if post.video %}
+              <a href="{{post.video}}">video</a> /
+              {% endif %}
               {% if post.code %}
-              <a href="{{post.code}}">code</a>
+              <a href="{{post.code}}">code</a> /
               {% endif %}
               <p></p>
               {{ post.excerpt }}
