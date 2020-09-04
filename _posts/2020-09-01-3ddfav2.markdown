@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "Project"
+date:   2020-09-01 21:21:60 +00:00
+image: /assets/imgs/out.gif
+categories: project
+---
+<a href="https://github.com/cleardusk/3DDFA_V2">3DDFA_V2: Fast, accurate and stable 3D dense face alignment</a> &nbsp; [<a href="https://star-history.t9t.io/#cleardusk/3DDFA_V2">Star history</a>]
+<br>
+<img src="https://img.shields.io/github/stars/cleardusk/3DDFA_V2.svg" alt="GitHub stars" title=""> <img src="https://img.shields.io/github/forks/cleardusk/3DDFA_V2.svg" alt="GitHub forks" title="">
