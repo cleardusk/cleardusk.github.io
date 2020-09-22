@@ -1,0 +1,19 @@
+---
+layout: post
+# title:  "HUAWEI Code Craft 2017"
+date:   2020-09-21 22:21:60 +00:00
+# image: /assets/imgs/preprint.jpg
+categories: service
+---
+
+<ul>
+    <li> 
+        Program Committee Member of AAAI 2021.
+    </li><br>
+    <li>
+        Program Committee Member of ACM MM 2020.
+    </li><br>
+    <li>
+        Reviewer for Transactions on Cybernetics, Neural Computing, IEEE Access, CVPR, ICCV, ECCV, IJCAI, IJCB, BMVC, FG etc.
+    </li><br>
+</ul>
