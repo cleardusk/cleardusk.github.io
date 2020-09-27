@@ -14,6 +14,6 @@ categories: service
         Program Committee Member of ACM MM 2020.
     </li><br>
     <li>
-        Reviewer for Transactions on Cybernetics, Neural Computing, IEEE Access, CVPR, ICCV, ECCV, IJCAI, IJCB, BMVC, FG etc.
+        Reviewer for CVPR, ICCV, ECCV, AAAI, MM, IJCAI, IJCB, BMVC, FG, Transactions on Cybernetics, Neural Computing, etc.
     </li><br>
 </ul>

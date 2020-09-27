@@ -7,4 +7,4 @@ categories: project
 ---
 <a href="https://github.com/cleardusk/3DDFA_V2">3DDFA_V2: Fast, accurate and stable 3D dense face alignment</a> &nbsp; [<a href="https://star-history.t9t.io/#cleardusk/3DDFA_V2">Star history</a>]
 <br>
-<img src="https://img.shields.io/github/stars/cleardusk/3DDFA_V2.svg" alt="GitHub stars" title=""> <img src="https://img.shields.io/github/forks/cleardusk/3DDFA_V2.svg" alt="GitHub forks" title="">
+<img src="https://img.shields.io/github/stars/cleardusk/3DDFA_V2.svg" alt="GitHub stars" title="">  <img src="https://img.shields.io/github/forks/cleardusk/3DDFA_V2.svg" alt="GitHub forks" title=""> <img src="https://img.shields.io/github/issues-closed/cleardusk/3DDFA_V2" alt="Closed Issues" title=""> <img src="https://img.shields.io/github/issues/cleardusk/3DDFA_V2" alt="Open Issues" title="">
