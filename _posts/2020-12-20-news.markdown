@@ -7,7 +7,7 @@ categories: news
 
 <ul>
     <li>
-        1 paper has been accepted by <strong>AAAI 2021</strong>, congrats to Xiaqing.
+        1 paper has been accepted by <strong>AAAI 2021</strong>, congrats to Xiaqing Xu.
     </li>
     <li>
         Code release for <strong><a href="https://github.com/cleardusk/3DDFA_V2">3DDFA_V2</a></strong> <img src="https://img.shields.io/github/stars/cleardusk/3DDFA_V2.svg" alt="GitHub stars" title=""> (<a href="https://arxiv.org/abs/2009.09960">ECCV2020</a>).
@@ -25,7 +25,7 @@ categories: news
         Code release for <strong><a href="https://github.com/cleardusk/3DDFA">3DDFA</a></strong> <img src="https://img.shields.io/github/stars/cleardusk/3DDFA.svg" alt="GitHub stars" title=""> (<a href="https://arxiv.org/abs/1804.01005">TPAMI2017</a>).
     </li>
     <li>
-        1 paper has been accepted by <strong>AVSS 2019</strong>, congrats to Jinchuan.
+        1 paper has been accepted by <strong>AVSS 2019</strong>, congrats to Jinchuan Xiao.
     </li>
     <li>
         1 paper has been accepted by <strong>CCBR 2018</strong>, with the <strong><a href="https://github.com/cleardusk/MeGlass">MeGlass</a></strong> dataset released.
@@ -35,6 +35,9 @@ categories: news
     </li>
     <li>
         The <strong>winner</strong> of FG2017 facial micro-expression recognition competition, acknowledgement to my collaborator <a href="https://shuaizhou.me/">Shuai Zhou</a>.
+    </li>
+    <li>
+        The <strong>silver medal (rank5)</strong> of HUAWEI Code Craft 2017 in Beijing site, acknowledgement to my partners Yudong Wu and Xingyuan Gao.
     </li>
 </ul>
 
