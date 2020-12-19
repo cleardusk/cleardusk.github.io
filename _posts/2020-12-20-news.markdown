@@ -7,7 +7,7 @@ categories: news
 
 <ul>
     <li>
-        1 paper on <i>face recognition</i> has been accepted by <strong>AAAI 2021</strong>, congrats to Xiaqing Xu.
+        1 paper on <i>face recognition</i> has been accepted by <strong>AAAI 2021</strong>, congrats to <a href="https://www.linkedin.com/in/xu-xiaqing-73804778/">Xiaqing Xu</a>.
     </li>
     <li>
         Code release for <strong><a href="https://github.com/cleardusk/3DDFA_V2">3DDFA_V2</a></strong> <img src="https://img.shields.io/github/stars/cleardusk/3DDFA_V2.svg" alt="GitHub stars" title=""> (<a href="https://arxiv.org/abs/2009.09960">ECCV2020</a>).
