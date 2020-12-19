@@ -1,0 +1,46 @@
+---
+layout: post
+title:  "HUAWEI Code Craft 2017"
+date:   2020-12-19 01:21:60 +00:00
+categories: news
+---
+
+<ul>
+    <li>
+        1 paper has been accepted by <strong>AAAI 2021</strong>, congrats to Xiaqing.
+    </li>
+    <li>
+        Code release for <strong><a href="https://github.com/cleardusk/3DDFA_V2">3DDFA_V2</a></strong> <img src="https://img.shields.io/github/stars/cleardusk/3DDFA_V2.svg" alt="GitHub stars" title=""> (<a href="https://arxiv.org/abs/2009.09960">ECCV2020</a>).
+    </li>
+    <li>
+        2 papers have been accepted by <strong>ECCV 2020</strong>.
+    </li>
+    <li>
+        2 papers (1 oral) have been accepted by <strong>CVPR 2020</strong>.
+    </li>
+    <li>
+        1 paper (oral) has been accepted by <strong>ICB 2019</strong>.
+    </li>
+    <li>
+        Code release for <strong><a href="https://github.com/cleardusk/3DDFA">3DDFA</a></strong> <img src="https://img.shields.io/github/stars/cleardusk/3DDFA.svg" alt="GitHub stars" title=""> (<a href="https://arxiv.org/abs/1804.01005">TPAMI2017</a>).
+    </li>
+    <li>
+        1 paper has been accepted by <strong>AVSS 2019</strong>, congrats to Jinchuan.
+    </li>
+    <li>
+        1 paper has been accepted by <strong>CCBR 2018</strong>, with the <strong><a href="https://github.com/cleardusk/MeGlass">MeGlass</a></strong> dataset released.
+    </li>
+    <li>
+        2 papers on micro-emotion recognition have been accepted by <strong>Access 2018</strong> and <strong>FG 2017</strong>.
+    </li>
+    <li>
+        The <strong>winner</strong> of FG2017 facial micro-expression recognition competition, acknowledgement to my collaborator <a href="https://shuaizhou.me/">Shuai Zhou</a>.
+    </li>
+</ul>
+
+<!-- <li> 
+    <strong>1-st Winner</strong> of Joint Challenge on Dominant and Complementary Emotion Recognition Using Micro Emotion Features and Head, in conjunction with FG 2017, <strong>First author.</strong> [<a href="[url](https://github.com/cleardusk/EmotionChallenge)">Code</a>]
+</li><br>
+<li> 
+    HUAWEI Code Craft 2017: <strong>Awarded Silver Medal (rank 5th)</strong> in Beijing Site. <strong>Team with three members, equal contribution.</strong>
+</li> -->
