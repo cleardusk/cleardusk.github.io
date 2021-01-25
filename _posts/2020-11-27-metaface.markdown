@@ -5,7 +5,7 @@ date: 2020-11-25 23:51:60 +00:00
 image: /assets/imgs/preprint.jpg
 categories: review
 authors: <a href="https://scholar.google.com/citations?user=W8_JzNcAAAAJ"><strong><u>Jianzhu Guo</u></strong></a>, <a href="https://scholar.google.com/citations?user=1rbNk5oAAAAJ">Xiangyu Zhu</a>, <a href="https://scholar.google.com/citations?user=cuJ3QG8AAAAJ">Zhen Lei</a>, <a href="https://scholar.google.com/citations?user=Y-nyLGIAAAAJ">Stan Z. Li</a>
-venue: "Under Review (TIFS)"
+venue: "<strong>TIFS</strong> (Major Revision, 2 AQ & 1 RQ)"
 
 # paper: assets/pdfs/05997.pdf
 # arxiv: https://arxiv.org/abs/1901.00488
