@@ -7,6 +7,7 @@ categories: research
 authors: Xiaqing Xu, Qiang Meng, <a href="https://scholar.google.com/citations?user=EMEy3gwAAAAJ">Yunxiao Qin</a>, <a href="https://scholar.google.com/citations?user=W8_JzNcAAAAJ"><strong><u>Jianzhu Guo</u></strong></a>, <a href="https://scholar.google.com/citations?hl=en&user=q07NiEAAAAAJ">Chenxu Zhao</a>, <a href="https://scholar.google.com/citations?user=zHpew00AAAAJ">Feng Zhou</a>, <a href="https://scholar.google.com/citations?user=cuJ3QG8AAAAJ">Zhen Lei</a>
 venue: "<strong>AAAI 2021</strong>"
 paper: /assets/pdfs/AAAI2021_Searching_for_Alignment_in_Face_Recognition.pdf
+poster: /assets/pdfs/AAAI2021_Searching_for_Alignment_in_Face_Recognition_poster.pdf
 # paper: assets/pdfs/05997.pdf
 # arxiv: https://arxiv.org/abs/1901.00488
 ---
