@@ -6,6 +6,7 @@ image: /assets/imgs/3dface_eccv20.jpg
 categories: research
 authors: <a href="https://scholar.google.com/citations?user=W8_JzNcAAAAJ"><strong><u>Jianzhu Guo</u></strong></a>, <a href="https://scholar.google.com/citations?user=1rbNk5oAAAAJ">Xiangyu Zhu</a>, <a href="https://scholar.google.com/citations?hl=zh-TW&user=YU-yRMsAAAAJ">Yang Yang</a>, <a href="https://scholar.google.com/citations?user=cuJ3QG8AAAAJ">Zhen Lei</a>, Yang Fan, <a href="https://scholar.google.com/citations?user=Y-nyLGIAAAAJ">Stan Z. Li</a>
 venue: "<strong>ECCV 2020</strong>"
+arxiv: https://arxiv.org/abs/2009.09960
 paper: ../assets/pdfs/3162.pdf
 supp: ../assets/pdfs/3162-supp.pdf
 video1: ../assets/videos/3162-supp.mp4
