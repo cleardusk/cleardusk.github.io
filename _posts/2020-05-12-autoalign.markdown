@@ -9,7 +9,7 @@ venue: "<strong>AAAI 2021</strong>"
 paper: /assets/pdfs/AAAI2021_Searching_for_Alignment_in_Face_Recognition.pdf
 poster: /assets/pdfs/AAAI2021_Searching_for_Alignment_in_Face_Recognition_poster.pdf
 # paper: assets/pdfs/05997.pdf
-# arxiv: https://arxiv.org/abs/1901.00488
+arxiv: https://arxiv.org/abs/2102.05447
 ---
 The alignment step in face recognition has attracted little attention. We firstly explore and highlight the effects of different alignment templates on face recognition. Then, for the first time, we try to search for the optimal template automatically. We construct a well-defined searching space by decomposing the template searching into the _crop size_ and _vertical shift_, and propose an efficient method **F**ace **A**lignment **P**olicy **S**earch (**FAPS**).
 Besides, a well-designed benchmark is proposed to evaluate the searched policy and experiments on our proposed benchmark validate the effectiveness of our method to improve face recognition performance.
