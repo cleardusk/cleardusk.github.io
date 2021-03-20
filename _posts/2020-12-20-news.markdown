@@ -7,6 +7,9 @@ categories: news
 
 <ul>
     <li>
+        Three papers submitted to <strong>KDD</strong>, <strong>ICML</strong>, <strong>ICCV</strong> 2021, respectively. Good luck to authors in CAIRI lab of WestLake University.
+    </li>
+    <li>
         1 paper on <i>face recognition</i> has been accepted by <strong>AAAI 2021</strong>, congrats to <a href="https://www.linkedin.com/in/xu-xiaqing-73804778/">Xiaqing Xu</a>.
     </li>
     <li>

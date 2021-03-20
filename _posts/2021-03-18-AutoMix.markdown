@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "AutoMix: Unveiling the Power of Mixup"
+date: 2021-03-18 23:51:60 +00:00
+image: /assets/imgs/preprint.jpg
+categories: review
+authors: Zicheng Liu, Siyuan Li, Di Wu, Zhiyuan Chen, Lirong Wu, <a href="https://scholar.google.com/citations?user=W8_JzNcAAAAJ"><strong><u>Jianzhu Guo</u></strong></a>, <a href="https://scholar.google.com/citations?user=Y-nyLGIAAAAJ">Stan Z. Li</a>
+venue: "Under Review (<strong>ICCV</strong> 2021)"
+
+# paper: assets/pdfs/05997.pdf
+# arxiv: https://arxiv.org/abs/1901.00488
+---
