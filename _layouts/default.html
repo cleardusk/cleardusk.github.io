@@ -244,6 +244,27 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h3><b>Video demos</b></h3>
+            </td>
+          </tr>
+          <tr><td style="text-align:center;font-size:middle;">
+            Hathaway
+          </td></tr>
+          <tr>
+            <td >
+              <p style="text-align:center;font-size:middle;">
+                <video width="540" controls>
+                  <source src="assets/videos/hathaway_3ddfa_v2.mp4" type="video/mp4">
+                  <!-- <source src="https://guojianzhu.com/assets/videos/hathaway_3ddfa_v2.mp4" type="video/mp4"> -->
+                </video>
+              </p>
+            </td>
+          </tr>
+        </table>
+        <br/>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2><b>Service</b></h2>
               <!-- <p>
                 Besides my work on the RealSense depth sensors and the publications above, a sampling of my publicly disclosed work
@@ -252,7 +273,6 @@
           </tr>
         </table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-
           {% for post in site.posts %}
           {% for cat in post.categories %}
           {% if cat == 'service' %}
@@ -260,22 +280,12 @@
               {% if post.website %}
               <a href="{{post.website}}">website</a> /
               {% endif %}
-              
               {{ post.excerpt }}
-              <!-- <ul> -->
-                <!-- <li>  {{ post.excerpt }}   </li> -->
-              <!-- </ul> -->
             </td>
-          <!-- </tr> -->
           {% endif %}
           {% endfor %}
           {% endfor %}
         </table>
-        <br>
-        <br>
-        <br>
-        <!-- <hr/> -->
-        <br/><br/><br/>
         <!-- 联系方式 -->
         <table style="width:60%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
@@ -288,10 +298,10 @@
               </td>
           </tr>
         </table>
-        
         <br/>
         <hr/>
         <!-- 访问数据统计 -->
+        <hr/>
         <table style="width:40%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
               <td style="padding:0px">

@@ -10,7 +10,7 @@ arxiv: https://arxiv.org/abs/2009.09960
 paper: ../assets/pdfs/3162.pdf
 supp: ../assets/pdfs/3162-supp.pdf
 video1: ../assets/videos/3162-supp.mp4
-video2: ../assets/videos/hatheway_3ddfa_v2.mp4
+video2: ../assets/videos/hathaway_3ddfa_v2.mp4
 code: https://github.com/cleardusk/3DDFA_V2
 # arxiv: https://arxiv.org/abs/1901.00488
 ---
