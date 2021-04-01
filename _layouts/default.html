@@ -13,6 +13,14 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
+  <style>
+    .videoDiv {
+      border: 0px solid rgb(42, 46, 50);   
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+
 </head>
 
 
@@ -244,20 +252,20 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h3><b>Video demos</b></h3>
+              <h2><b>Video demos</b></h2>
             </td>
           </tr>
           <tr><td style="text-align:center;font-size:middle;">
-            Hathaway
+            <b>Hathaway</b>
           </td></tr>
           <tr>
             <td >
-              <p style="text-align:center;font-size:middle;">
+                <div class="videoDiv">
                 <video width="600" controls>
-                  <source src="assets/videos/hathaway_3ddfa_v2.mp4" type="video/mp4">
-                  <!-- <source src="https://guojianzhu.com/assets/videos/hathaway_3ddfa_v2.mp4" type="video/mp4"> -->
+                  <!-- <source src="assets/videos/hathaway_3ddfa_v2.mp4" type="video/mp4"> -->
+                  <source src="https://guojianzhu.com/assets/videos/hathaway_3ddfa_v2.mp4" type="video/mp4">
                 </video>
-              </p>
+                </div>
             </td>
           </tr>
         </table>
