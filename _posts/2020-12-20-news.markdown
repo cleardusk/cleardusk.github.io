@@ -37,10 +37,10 @@ categories: news
         04 / 2018: &ensp; One paper on <i>3D face</i> & <i>face recognition</i> has been accepted by <strong>CCBR 2018</strong>, with the <strong><a href="https://github.com/cleardusk/MeGlass">MeGlass</a></strong> dataset released.
     </li>
     <li>
-        04 / 2018: &ensp; One paper on <i>micro-emotion recognition</i> have been accepted by <strong>IEEE Access</strong>.
+        04 / 2018: &ensp; One paper on <i>micro-emotion recognition</i> has been accepted by <strong>IEEE Access</strong>.
     </li>
     <li>
-        03 / 2017: &ensp; One paper on <i>micro-emotion recognition</i> have been accepted by <strong>FG 2017</strong>.
+        03 / 2017: &ensp; One paper on <i>micro-emotion recognition</i> has been accepted by <strong>FG 2017</strong>.
     </li>
     <li>
         03 / 2017: &ensp; The <strong>winner</strong> of FG2017 facial micro-expression recognition competition, acknowledgement to my collaborator <a href="https://shuaizhou.me/">Shuai Zhou</a>. Code released at <a href="https://github.com/cleardusk/EmotionChallenge">EmotionChallenge</a>.
