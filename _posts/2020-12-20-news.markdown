@@ -7,43 +7,46 @@ categories: news
 
 <ul>
     <li>
-        One paper on <i>face recognition</i> has been accepted by <strong>TIFS</strong>! &emsp;[April 2021]
+        04 / 2021: &ensp; One paper on <i>face recognition</i> has been accepted by <strong>TIFS</strong> journal!
     </li>
     <li>
-        Three papers submitted to <strong>KDD</strong>, <strong>ICML</strong>, <strong>ICCV</strong> 2021, respectively. Good luck to authors in CAIRI lab of WestLake University! &emsp;[January-March 2021]
+        03 / 2021: &ensp; Three papers submitted to <strong>KDD</strong>, <strong>ICML</strong>, <strong>ICCV</strong> 2021, respectively. Good luck to authors in CAIRI lab of WestLake University!
     </li>
     <li>
-        One paper on <i>face recognition</i> has been accepted by <strong>AAAI 2021</strong>, congrats to <a href="https://www.linkedin.com/in/xu-xiaqing-73804778/">Xiaqing Xu</a>. &emsp;[December 2020]
+        12 / 2020: &ensp; One paper on <i>face recognition</i> has been accepted by <strong>AAAI 2021</strong>, congrats to <a href="https://www.linkedin.com/in/xu-xiaqing-73804778/">Xiaqing Xu</a>.
     </li>
     <li>
-        Code release for <strong><a href="https://github.com/cleardusk/3DDFA_V2">3DDFA_V2</a></strong> <img src="https://img.shields.io/github/stars/cleardusk/3DDFA_V2.svg" alt="GitHub stars" title=""> (<a href="https://arxiv.org/abs/2009.09960">ECCV2020</a>). &emsp;[September 2020]
+        09 / 2020: &ensp; Code release for <strong><a href="https://github.com/cleardusk/3DDFA_V2">3DDFA_V2</a></strong> <img src="https://img.shields.io/github/stars/cleardusk/3DDFA_V2.svg" alt="GitHub stars" title=""> (<a href="https://arxiv.org/abs/2009.09960">ECCV2020</a>).
     </li>
     <li>
-        Two papers on <i>3D face</i> have been accepted by <strong>ECCV 2020</strong>. &emsp;[July 2020]
+        07 / 2020: &ensp; Two papers on <i>3D face</i> have been accepted by <strong>ECCV 2020</strong>.
     </li>
     <li>
-        Two papers (one oral) on <i>face recognition</i> have been accepted by <strong>CVPR 2020</strong>. &emsp;[March 2020]
+        03 / 2020: &ensp; Two papers (one oral) on <i>face recognition</i> have been accepted by <strong>CVPR 2020</strong>.
     </li>
     <li>
-        One paper on <i>face anti-spoofing</i> has been accepted by <strong>AVSS 2019</strong>, congrats to Jinchuan Xiao. &emsp;[July 2019]
+        07 / 2019: &ensp; One paper on <i>face anti-spoofing</i> has been accepted by <strong>AVSS 2019</strong>, congrats to Jinchuan Xiao.
     </li>
     <li>
-        One paper (oral) on <i>face anti-spoofing</i> has been accepted by <strong>ICB 2019</strong>. &emsp;[March 2019]
+        03 / 2019: &ensp; One paper (oral) on <i>face anti-spoofing</i> has been accepted by <strong>ICB 2019</strong>.
     </li>
     <li>
-        Code release for <strong><a href="https://github.com/cleardusk/3DDFA">3DDFA</a></strong> <img src="https://img.shields.io/github/stars/cleardusk/3DDFA.svg" alt="GitHub stars" title=""> (<a href="https://arxiv.org/abs/1804.01005">TPAMI2017</a>). &emsp;[June 2018]
+        06 / 2018: &ensp; Code release for <strong><a href="https://github.com/cleardusk/3DDFA">3DDFA</a></strong> <img src="https://img.shields.io/github/stars/cleardusk/3DDFA.svg" alt="GitHub stars" title=""> (<a href="https://arxiv.org/abs/1804.01005">TPAMI2017</a>).
     </li>
     <li>
-        One paper on <i>3D face</i> & <i>face recognition</i> has been accepted by <strong>CCBR 2018</strong>, with the <strong><a href="https://github.com/cleardusk/MeGlass">MeGlass</a></strong> dataset released. &emsp;[April 2018]
+        04 / 2018: &ensp; One paper on <i>3D face</i> & <i>face recognition</i> has been accepted by <strong>CCBR 2018</strong>, with the <strong><a href="https://github.com/cleardusk/MeGlass">MeGlass</a></strong> dataset released.
     </li>
     <li>
-        Two papers on <i>micro-emotion recognition</i> have been accepted by <strong>Access 2018</strong> and <strong>FG 2017</strong>. &emsp;[2017-2018]
+        04 / 2018: &ensp; One paper on <i>micro-emotion recognition</i> have been accepted by <strong>IEEE Access</strong>.
     </li>
     <li>
-        The <strong>winner</strong> of FG2017 facial micro-expression recognition competition, acknowledgement to my collaborator <a href="https://shuaizhou.me/">Shuai Zhou</a>. Code released at <a href="https://github.com/cleardusk/EmotionChallenge">EmotionChallenge</a>. &emsp;[March 2017]
+        03 / 2017: &ensp; One paper on <i>micro-emotion recognition</i> have been accepted by <strong>FG 2017</strong>.
     </li>
     <li>
-        The <strong>silver medal (rank5)</strong> of HUAWEI Code Craft 2017 in Beijing site, acknowledgement to my partners <a href="https://scholar.google.com/citations?user=dlsUakAAAAAJ">Yudong Wu</a> and Xingyuan Gao. &emsp;[March 2017]
+        03 / 2017: &ensp; The <strong>winner</strong> of FG2017 facial micro-expression recognition competition, acknowledgement to my collaborator <a href="https://shuaizhou.me/">Shuai Zhou</a>. Code released at <a href="https://github.com/cleardusk/EmotionChallenge">EmotionChallenge</a>.
+    </li>
+    <li>
+        03 / 2017: &ensp; The <strong>silver medal (rank5)</strong> of HUAWEI Code Craft 2017 in Beijing site, acknowledgement to my partners <a href="https://scholar.google.com/citations?user=dlsUakAAAAAJ">Yudong Wu</a> and Xingyuan Gao.
     </li>
 </ul>
 
