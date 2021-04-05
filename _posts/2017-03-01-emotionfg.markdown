@@ -6,7 +6,7 @@ image: /assets/imgs/emotion_fg_pipline.png
 categories: research
 author: "Jianzhu Guo"
 authors: <a href="https://scholar.google.com/citations?user=W8_JzNcAAAAJ"><strong><u>Jianzhu Guo</u></strong></a>, <a href="https://scholar.google.com/citations?user=0JfjhOcAAAAJ">Shuai Zhou</a>, Jinlin Wu, <a href="https://scholar.google.com/citations?user=bSbc7FQAAAAJ">Jun Wan</a>, <a href="https://scholar.google.com/citations?user=1rbNk5oAAAAJ">Xiangyu Zhu</a>, <a href="https://scholar.google.com/citations?user=cuJ3QG8AAAAJ">Zhen Lei</a>, <a href="https://scholar.google.com/citations?user=Y-nyLGIAAAAJ">Stan Z. Li</a>
-venue: "FG2017, Washington, DC. May 30 –June 3, 2017"
+venue: "<b>FG</b>, Washington, DC. May 30 –June 3, 2017"
 paper: /assets/pdfs/emotion_fg_gjz.pdf
 # arxiv: https://arxiv.org/abs/1806.01196
 code: https://github.com/cleardusk/EmotionChallenge

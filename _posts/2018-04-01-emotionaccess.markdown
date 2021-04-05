@@ -6,7 +6,7 @@ image: /assets/imgs/emotion_fg_pipline.png
 categories: research
 author: "Jianzhu Guo"
 authors: <a href="https://scholar.google.com/citations?user=W8_JzNcAAAAJ"><strong><u>Jianzhu Guo</u></strong></a>, <a href="https://scholar.google.com/citations?user=cuJ3QG8AAAAJ">Zhen Lei</a>, <a href="https://scholar.google.com/citations?user=bSbc7FQAAAAJ">Jun Wan</a>, et al.
-venue: "IEEE Access, 6(1), 26391-26403, 2018"
+venue: "<b>IEEE Access</b>, 6(1), 26391-26403, 2018"
 paper: /assets/pdfs/emotion_access_gjz.pdf
 # arxiv: https://arxiv.org/abs/1806.01196
 code: https://github.com/cleardusk/EmotionChallenge

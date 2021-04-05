@@ -6,7 +6,7 @@ image: /assets/imgs/3DMA.png
 categories: research
 author: "Jianzhu Guo"
 authors: Jinchuan Xiao, Yinhang Tang, <a href="https://scholar.google.com/citations?user=W8_JzNcAAAAJ"><strong><u>Jianzhu Guo</u></strong></a>, <a href="https://scholar.google.com/citations?user=YU-yRMsAAAAJ">Yang Yang</a>, <a href="https://scholar.google.com/citations?user=1rbNk5oAAAAJ">Xiangyu Zhu</a>, <a href="https://scholar.google.com/citations?user=cuJ3QG8AAAAJ">Zhen Lei</a>, <a href="https://scholar.google.com/citations?user=Y-nyLGIAAAAJ">Stan Z. Li</a>
-venue: "16th IEEE International Conference on Advanced Video and Signal Based Surveillance (AVSS), 2019"
+venue: "16th IEEE International Conference on Advanced Video and Signal Based Surveillance (<b>AVSS</b>), 2019"
 paper: /assets/pdfs/PID6035797.pdf
 # arxiv: https://arxiv.org/abs/1901.00488
 ---

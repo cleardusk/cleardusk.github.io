@@ -6,7 +6,7 @@ image: /assets/imgs/add_glass_pipeline.jpg
 categories: research
 author: "Jianzhu Guo"
 authors: <a href="https://scholar.google.com/citations?user=W8_JzNcAAAAJ"><strong><u>Jianzhu Guo</u></strong></a>, <a href="https://scholar.google.com/citations?user=1rbNk5oAAAAJ">Xiangyu Zhu</a>, <a href="https://scholar.google.com/citations?user=cuJ3QG8AAAAJ">Zhen Lei</a>, <a href="https://scholar.google.com/citations?user=Y-nyLGIAAAAJ">Stan Z. Li</a>
-venue: "CCF Chinese Conference on Biometric Recognition (CCBR2018), Urumqi, China, Aug. 11-12, 2018"
+venue: "CCF Chinese Conference on Biometric Recognition (<b>CCBR</b>), Urumqi, China, Aug. 11-12, 2018"
 paper: /assets/pdfs/facesyn_ccbr_gjz.pdf
 arxiv: https://arxiv.org/abs/1806.01196
 code: https://github.com/cleardusk/MeGlass
