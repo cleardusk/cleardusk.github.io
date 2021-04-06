@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "AutoMix: Unveiling the Power of Mixup"
+title:  <a href="/assets/pdfs/AutoMix_Unveiling_the_Power_of_Mixup.pdf">AutoMix&#58 Unveiling the Power of Mixup</a>
 date: 2021-03-18 23:51:60 +00:00
 image: /assets/imgs/preprint.jpg
 categories: review

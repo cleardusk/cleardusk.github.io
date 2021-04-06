@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Face Synthesis for Eyeglass-Robust Face Recognition"
+title:  <a href="/assets/pdfs/facesyn_ccbr_gjz.pdf">Face Synthesis for Eyeglass-Robust Face Recognition</a>
 date:   2018-06-01 22:21:59 +00:00
 image: /assets/imgs/add_glass_pipeline.jpg
 categories: research

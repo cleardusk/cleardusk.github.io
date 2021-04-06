@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Domain Balancing: Face Recognition on Long-Tailed Domains"
+title:  <a href="/assets/pdfs/04231.pdf">Domain Balancing&#58 Face Recognition on Long-Tailed Domains</a>
 date:   2020-02-23 22:20:60 +00:00
 image: /assets/imgs/LT.jpg
 categories: research

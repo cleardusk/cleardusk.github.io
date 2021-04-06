@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Searching for Alignment in Face Recognition"
+title:  <a href="/assets/pdfs/AAAI2021_Searching_for_Alignment_in_Face_Recognition.pdf">Searching for Alignment in Face Recognition</a>
 date: 2020-12-12 10:24:60 +00:00
 image: /assets/imgs/aaai2021_main_method.jpg
 categories: research

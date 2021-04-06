@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Decomposed Meta Batch Normalization for Fast Domain Adaptation in Face Recognition
+title: <a href="assets/pdfs/tifs20_MetaFace_preview.pdf">Decomposed Meta Batch Normalization for Fast Domain Adaptation in Face Recognition</a>
 date: 2021-04-04 23:51:60 +00:00
 image: /assets/imgs/DMBN.jpg
 categories: research

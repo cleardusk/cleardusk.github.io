@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Dominant and Complementary Emotion Recognition From Still Images of Faces"
+title:  <a href="/assets/pdfs/emotion_access_gjz.pdf">Dominant and Complementary Emotion Recognition From Still Images of Faces</a>
 date:   2018-04-01 22:21:59 +00:00
 image: /assets/imgs/emotion_fg_pipline.png
 categories: research

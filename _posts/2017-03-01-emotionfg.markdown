@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Multi-modality Network with Visual and Geometrical Information for Micro Emotion Recognition"
+title:  <a href="/assets/pdfs/emotion_fg_gjz.pdf">Multi-modality Network with Visual and Geometrical Information for Micro Emotion Recognition</a>
 date:   2017-03-01 22:21:59 +00:00
 image: /assets/imgs/emotion_fg_pipline.png
 categories: research
