@@ -12,4 +12,4 @@ supp: /assets/pdfs/0581-supp.pdf
 code: https://github.com/XiangyuZhu-open/Beyond3DMM
 # arxiv: https://arxiv.org/abs/1901.00488
 ---
-We propose a solution to construct large-scale fine-grained 3D data from RGB-D images, and construct a new dataset Fine-Grained 3D face (FG3D) with 200k samples for training. We also propose a Fine-Grained reconstruction Network (FGNet) concentrating on shape modication by warping the network input and output to the UV space. The proposed method and code will be available at <a>https://github.com/XiangyuZhu-open/Beyond3DMM</a>.
+This paper constructs a new dataset Fine-Grained 3D face (FG3D) with 200k samples for training, and proposes a Fine-Grained reconstruction Network (FGNet) concentrating on shape modication by warping the network input and output to the UV space.  FG3D is available at <a>https://github.com/XiangyuZhu-open/Beyond3DMM</a>.
