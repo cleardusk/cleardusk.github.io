@@ -58,15 +58,21 @@ ul.news {
   font-display: auto;
   list-style-type: none;
   // list-style-type: circle;
-  border-left: 8px solid rgb(220, 60, 60);
+  border-left: 10px solid rgb(220, 60, 60);
   background-color: #f1f1f1;
-  padding: 15px 25px;
+  padding: 10px 20px;
   margin-left: 2.5%;
   margin-right: 2.5%;
 }
 
-li{
+li.indent{
   margin: 0.6% 0;
+  margin-left: 5.4em;
+  text-indent: -5.4em;
+}
+
+li.margin{
+  margin: 2% 0;
 }
 
 

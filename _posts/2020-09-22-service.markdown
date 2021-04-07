@@ -7,13 +7,13 @@ categories: service
 ---
 
 <ul>
-    <li> 
+    <li class="margin"> 
         Program Committee Member of AAAI 2021.
-    </li><br>
-    <li>
+    </li>
+    <li class="margin"> 
         Program Committee Member of ACM MM 2020, 2021.
-    </li><br>
-    <li>
+    </li>
+    <li class="margin"> 
         Reviewer for CVPR, ICCV, ECCV, AAAI, MM, IJCAI, IJCB, BMVC, FG, Transactions on Pattern Analysis and Machine Intelligence, Cybernetics, Knowledge-Based Systems, Neurocomputing, etc.
-    </li><br>
+    </li>
 </ul>
