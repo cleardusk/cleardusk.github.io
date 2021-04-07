@@ -12,10 +12,18 @@
 /**************/
 /* BASE RULES */
 /**************/
+
+.roundBorder {
+  border: 1.2px solid rgb(70, 70, 70);
+  padding: 3px;
+  border-radius: 12px;
+  box-shadow: 1.2px 1.2px #bbbbbb;
+}
+
 .videoDiv {
   height: 340px;
   width: 600px;
-  border: 0px solid rgb(42, 46, 50);   
+  border: 2px solid rgb(80, 80, 80);   
   display: block;
   margin: 0 auto;
 }
