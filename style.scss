@@ -13,10 +13,21 @@
 /* BASE RULES */
 /**************/
 
+.shadowImage {
+  -webkit-filter: drop-shadow(2px 8px 6px #ccc);
+  filter: drop-shadow(2px 8px 6px #ccc);
+}
+
+.shadowRoundImage {
+  -webkit-filter: drop-shadow(2px 8px 6px #ccc);
+  filter: drop-shadow(2px 8px 6px #ccc);
+  border-radius: 14px;
+}
+
 .roundBorder {
   border: 1.2px solid rgb(70, 70, 70);
   padding: 5px;
-  border-radius: 12px;
+  border-radius: 14px;
   box-shadow: 1.2px 1.2px #bbbbbb;
 }
 
