@@ -6,7 +6,7 @@ image: /assets/imgs/dg.jpg
 categories: research
 # author: "Jianzhu Guo"
 authors: <a href="https://scholar.google.com/citations?user=W8_JzNcAAAAJ"><strong><u>Jianzhu Guo</u></strong></a>, <a href="https://scholar.google.com/citations?user=1rbNk5oAAAAJ">Xiangyu Zhu</a>, <a href="https://www.linkedin.com/in/chenxu-zhao-b66844107/">Chenxu Zhao</a>, Dong Cao, <a href="https://scholar.google.com/citations?user=cuJ3QG8AAAAJ">Zhen Lei</a>, <a href="https://scholar.google.com/citations?user=Y-nyLGIAAAAJ">Stan Z. Li</a>
-venue: <strong>CVPR 2020 (<font color="red">Oral Presentation</font></strong>, acceptance rate 5%)
+venue: <strong>CVPR 2020</strong> (<strong><font color="red">Oral Presentation</font></strong>, acceptance rate 5%)
 code: https://github.com/cleardusk/MFR
 paper: assets/pdfs/05997.pdf
 arxiv: https://arxiv.org/abs/1901.00488
