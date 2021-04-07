@@ -5,7 +5,7 @@ date:   2020-12-19 01:21:60 +00:00
 categories: news
 ---
 
-<ul class="a">
+<ul class="news">
     <li>
         04 / 2021: &ensp; One paper on <i>face recognition</i> has been accepted by <strong>TIFS</strong> journal!
     </li>
@@ -25,7 +25,7 @@ categories: news
         03 / 2020: &ensp; Two papers (one oral) on <i>face recognition</i> have been accepted by <strong>CVPR 2020</strong>.
     </li>
     <li>
-        07 / 2019: &ensp; One paper on <i>face anti-spoofing</i> has been accepted by <strong>AVSS 2019</strong>, congrats to Jinchuan Xiao.
+        07 / 2019: &ensp; One paper on <i>face anti-spoofing</i> has been accepted by <strong>AVSS 2019</strong>.
     </li>
     <li>
         03 / 2019: &ensp; One paper (oral) on <i>face anti-spoofing</i> has been accepted by <strong>ICB 2019</strong>.
@@ -34,7 +34,7 @@ categories: news
         06 / 2018: &ensp; Code release for <strong><a href="https://github.com/cleardusk/3DDFA">3DDFA</a></strong> <img src="https://img.shields.io/github/stars/cleardusk/3DDFA.svg" alt="GitHub stars" title=""> (<a href="https://arxiv.org/abs/1804.01005">TPAMI2017</a>).
     </li>
     <li>
-        04 / 2018: &ensp; One paper on <i>3D face</i> & <i>face recognition</i> has been accepted by <strong>CCBR 2018</strong>, with the <strong><a href="https://github.com/cleardusk/MeGlass">MeGlass</a></strong> dataset released.
+        04 / 2018: &ensp; One paper on <i>3D face</i> & <i>face recognition</i> has been accepted by <strong>CCBR 2018</strong>, with a dataset <strong><a href="https://github.com/cleardusk/MeGlass">MeGlass</a></strong> released.
     </li>
     <li>
         04 / 2018: &ensp; One paper on <i>micro-emotion recognition</i> has been accepted by <strong>IEEE Access</strong>.

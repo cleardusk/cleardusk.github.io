@@ -12,25 +12,6 @@
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-  <style>
-    .videoDiv {
-      height: 340px;
-      width: 600px;
-      border: 0px solid rgb(42, 46, 50);   
-      display: block;
-      margin: 0 auto;
-    }
-  </style>
-
-  <!-- <style>
-    a {
-      text-decoration: none; 
-      color: black; 
-    } 
-  </style> -->
-  
-
 </head>
 
 
@@ -42,7 +23,7 @@
           <tr style="padding:0px">
             <td style="padding:2.5%;width:66.6%;vertical-align:middle">
               <h1>Jianzhu Guo（郭建珠）</h1>
-              <p style="font-size:16px">
+              <p>
                   I graduated from <a href="http://www.seu.edu.cn/">Southeast University</a> with B.S. in GIS (Geographical Information System).
                   Now, I am a Ph.D. student at <a href="http://www.nlpr.ia.ac.cn/nlpren/EN/volumn/home.shtml">National Laboratory of Pattern Recognition</a>, <a href="http://english.cas.cn/">Chinese Academy of Sciences</a>, supervised by Prof. <a href="https://scholar.google.com/citations?user=Y-nyLGIAAAAJ"><b>Stan Z. Li</b></a> and Prof. <a href="https://scholar.google.com/citations?user=cuJ3QG8AAAAJ">Zhen Lei</a>, work closely with Associate Prof. <a href="https://scholar.google.com/citations?user=1rbNk5oAAAAJ">Xiangyu Zhu</a>, where I mainly research on face & vision, including <strong>face recognition</strong>, <strong>3D face</strong>, <strong>face anti-spoofing</strong>, <strong>face analysis</strong> and <strong>meta learning</strong>, <strong>deep learning</strong>.
                   <br>
@@ -50,7 +31,7 @@
               <p style="text-align:center">
                 Email: &nbsp; <a target="_blank" href="mailto:guojianzhu1994@foxmail.com">guojianzhu1994@foxmail.com</a>&nbsp; | &nbsp; <a target="_blank" href="mailto:guojianzhu1994@gmail.com">guojianzhu1994@gmail.com</a>
               </p>
-              <p style="text-align:center;font-size:16px">
+              <p style="text-align:center">
                 <a href="https://github.com/cleardusk">GitHub</a> &nbsp;/&nbsp;
                 <a href="assets/pdfs/CV.pdf">CV</a> &nbsp;/&nbsp;
                 <a href="assets/pdfs/CV_EN.pdf">CV_EN</a> &nbsp;/&nbsp;
@@ -59,10 +40,9 @@
                 <a href="https://www.linkedin.com/in/guojianzhu"> LinkedIn </a> &nbsp;/&nbsp;
                 <a href="http://vlog.guojianzhu.com/"> Blog </a>
               </p>
-              <!-- <p><strong><I>Looking for a full-time job.</I></strong></p> -->
-              <p style="text-align:center"><I><b style="font-size:16px">Welcome for contacting me on things about tech & research.</b></I></p>
+              <p style="text-align:center"><I><b>Welcome for contacting me on things about tech & research.</b></I></p>
             </td>
-            <td style="padding:2.5%;width:32%;max-width:32%">
+            <td style="padding:2%;width:32%;max-width:32%">
               <img style="width:100%;max-width:100%" alt="profile photo" src="assets/me_v22.png">
             </td>
           </tr>
@@ -90,8 +70,6 @@
           {% endfor %}
           {% endfor %}
         </table>
-
-        <!-- <hr/> -->
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
@@ -162,10 +140,10 @@
           {% for cat in post.categories %}
           {% if cat == 'review' %}
           <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+            <td style="padding:2%;width:27.5%;vertical-align:middle;min-width:120px">
               <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
+            <td style="padding:2%;width:72.5%;vertical-align:middle">
               <h3>{{post.title}}</h3>
               <br>
               {{post.authors}}
@@ -195,7 +173,7 @@
         <br>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
+            <td style="padding:2%;width:100%;vertical-align:middle">
               <h2><b>Competitions</b></h2>
             </td>
           </tr>
@@ -235,10 +213,10 @@
           {% for cat in post.categories %}
           {% if cat == 'project' %}
           <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+            <td style="padding:2%;width:27.5%;vertical-align:middle;min-width:120px">
               <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
+            <td style="padding:2%;width:72.5%;vertical-align:middle">
               {{ post.excerpt }}
             </td>
           </tr>

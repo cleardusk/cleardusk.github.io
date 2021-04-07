@@ -11,4 +11,4 @@ poster: /assets/pdfs/AAAI2021_Searching_for_Alignment_in_Face_Recognition_poster
 # paper: assets/pdfs/05997.pdf
 arxiv: https://arxiv.org/abs/2102.05447
 ---
-This paper proposed an efficient method **F**ace **A**lignment **P**olicy **S**earch (**FAPS**) to search the optimal alignment template in face recognition. A well-designed benchmark is also proposed to evaluate the searched policy.
+This paper proposes an efficient method **F**ace **A**lignment **P**olicy **S**earch (**FAPS**) to search the optimal alignment template in face recognition. A well-designed benchmark is also proposed to evaluate the searched policy.

@@ -12,9 +12,16 @@
 /**************/
 /* BASE RULES */
 /**************/
+.videoDiv {
+  height: 340px;
+  width: 600px;
+  border: 0px solid rgb(42, 46, 50);   
+  display: block;
+  margin: 0 auto;
+}
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   font-display: auto;
   color: #1772d0;
   text-decoration: none;
@@ -26,15 +33,17 @@ a:hover {
   text-decoration: none;
 }
 
-ul.a {
+ul.news {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 16px;
   font-display: auto;
-  list-style-type: circle;
-  border-left: 6px solid rgb(220, 60, 60);
+  // list-style-type: circle;
+  border-left: 8px solid rgb(220, 60, 60);
   background-color: #f1f1f1;
   list-style-type: none;
   padding: 15px 25px;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
 }
 
 li{
@@ -50,19 +59,19 @@ p,
 a
 {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   font-display: auto;
 }
 
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   font-display: auto;
 }
 
 h2 {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 24px;
   font-display: auto;
   font-weight: normal;
   padding: 0px;
