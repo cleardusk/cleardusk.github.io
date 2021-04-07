@@ -13,6 +13,9 @@
 /* BASE RULES */
 /**************/
 a {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 15px;
+  font-display: auto;
   color: #1772d0;
   text-decoration: none;
 }
@@ -23,12 +26,29 @@ a:hover {
   text-decoration: none;
 }
 
+ul.a {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 16px;
+  font-display: auto;
+  list-style-type: circle;
+  border-left: 6px solid rgb(220, 60, 60);
+  background-color: #f1f1f1;
+  list-style-type: none;
+  padding: 15px 25px;
+}
+
+li{
+  margin: 3.14px 0;
+}
+
+
 body,
 td,
 th,
 tr,
 p,
-a {
+a
+{
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 15px;
   font-display: auto;

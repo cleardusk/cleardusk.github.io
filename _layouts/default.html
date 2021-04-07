@@ -40,21 +40,17 @@
       <td style="padding:0px">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr style="padding:0px">
-            <td style="padding:2.5%;width:60%;vertical-align:middle">
-              <h1>
-                Jianzhu Guo（郭建珠）
-              </h1>
-              <p>
+            <td style="padding:2.5%;width:66.6%;vertical-align:middle">
+              <h1>Jianzhu Guo（郭建珠）</h1>
+              <p style="font-size:16px">
                   I graduated from <a href="http://www.seu.edu.cn/">Southeast University</a> with B.S. in GIS (Geographical Information System).
                   Now, I am a Ph.D. student at <a href="http://www.nlpr.ia.ac.cn/nlpren/EN/volumn/home.shtml">National Laboratory of Pattern Recognition</a>, <a href="http://english.cas.cn/">Chinese Academy of Sciences</a>, supervised by Prof. <a href="https://scholar.google.com/citations?user=Y-nyLGIAAAAJ"><b>Stan Z. Li</b></a> and Prof. <a href="https://scholar.google.com/citations?user=cuJ3QG8AAAAJ">Zhen Lei</a>, work closely with Associate Prof. <a href="https://scholar.google.com/citations?user=1rbNk5oAAAAJ">Xiangyu Zhu</a>, where I mainly research on face & vision, including <strong>face recognition</strong>, <strong>3D face</strong>, <strong>face anti-spoofing</strong>, <strong>face analysis</strong> and <strong>meta learning</strong>, <strong>deep learning</strong>.
                   <br>
               </p>
               <p style="text-align:center">
-                <!-- Email: <i><u>jianzhu.guo@nlpr.ia.ac.cn</u></i> &nbsp; or &nbsp; <u><i>guojianzhu1994@foxmail.com</u></i> -->
                 Email: &nbsp; <a target="_blank" href="mailto:guojianzhu1994@foxmail.com">guojianzhu1994@foxmail.com</a>&nbsp; | &nbsp; <a target="_blank" href="mailto:guojianzhu1994@gmail.com">guojianzhu1994@gmail.com</a>
               </p>
-              <p style="text-align:center">
-                <!-- <a target="_blank" href="mailto:jianzhu.guo@nlpr.ia.ac.cn"> Email</a> &nbsp;/&nbsp; -->
+              <p style="text-align:center;font-size:16px">
                 <a href="https://github.com/cleardusk">GitHub</a> &nbsp;/&nbsp;
                 <a href="assets/pdfs/CV.pdf">CV</a> &nbsp;/&nbsp;
                 <a href="assets/pdfs/CV_EN.pdf">CV_EN</a> &nbsp;/&nbsp;
@@ -62,10 +58,9 @@
                 <a href="assets/imgs/qrcode_me_2.png"> WeChat </a> &nbsp;/&nbsp;
                 <a href="https://www.linkedin.com/in/guojianzhu"> LinkedIn </a> &nbsp;/&nbsp;
                 <a href="http://vlog.guojianzhu.com/"> Blog </a>
-
               </p>
               <!-- <p><strong><I>Looking for a full-time job.</I></strong></p> -->
-              <p><strong><I>Welcome for contacting me on things about tech & research.</I></strong></p>
+              <p style="text-align:center"><I><b style="font-size:16px">Welcome for contacting me on things about tech & research.</b></I></p>
             </td>
             <td style="padding:2.5%;width:32%;max-width:32%">
               <img style="width:100%;max-width:100%" alt="profile photo" src="assets/me_v22.png">
@@ -81,7 +76,6 @@
           </tr>
         </table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-
           {% for post in site.posts %}
           {% for cat in post.categories %}
           {% if cat == 'news' %}
@@ -97,16 +91,12 @@
           {% endfor %}
         </table>
 
-        <hr/>
+        <!-- <hr/> -->
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2><b>Publications</b></h2>
-              <!-- <h2><a id="user-content-introduction" class="anchor" aria-hidden="true" href="#introduction"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><b>Publications</b></h2> -->
-              <!-- <p>
-                My research mainly concentrated on face related fields.
-              </p> -->
             </td>
           </tr>
         </table>
@@ -116,10 +106,10 @@
           {% for cat in post.categories %}
           {% if cat == 'research' %}
           <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+            <td style="padding:2%;width:27.5%;vertical-align:middle;min-width:120px">
               <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
+            <td style="padding:2%;width:72.5%;vertical-align:middle">
               <h3>{{post.title}}</h3>
               <br>
               {{post.authors}}
@@ -163,9 +153,6 @@
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2><b>Under Review</b></h2>
-              <!-- <p>
-                Besides my work on the RealSense depth sensors and the publications above, a sampling of my publicly disclosed work
-              </p> -->
             </td>
           </tr>
         </table>
@@ -334,15 +321,15 @@
 
         <!-- 来源 -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:right;font-size:small;">
-                  <a style="font-size:small;" href="https://jonbarron.info">Wow, this guy's website is awesome</a>
-                </p>
-              </td>
-            </tr>
-          </table>
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:right;font-size:small;">
+                <a style="font-size:small;" href="https://jonbarron.info">Wow, this guy's website is awesome</a>
+              </p>
+            </td>
+          </tr>
+        </table>
 
       </td>
     </tr>
@@ -350,4 +337,3 @@
 </body>
 
 </html>
-

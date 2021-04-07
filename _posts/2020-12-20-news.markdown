@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "HUAWEI Code Craft 2017"
+title:  "News"
 date:   2020-12-19 01:21:60 +00:00
 categories: news
 ---
 
-<ul>
+<ul class="a">
     <li>
         04 / 2021: &ensp; One paper on <i>face recognition</i> has been accepted by <strong>TIFS</strong> journal!
     </li>
@@ -49,10 +49,3 @@ categories: news
         03 / 2017: &ensp; The <strong>silver medal (rank5)</strong> of HUAWEI Code Craft 2017 in Beijing site, acknowledgement to my partners <a href="https://scholar.google.com/citations?user=dlsUakAAAAAJ">Yudong Wu</a> and Xingyuan Gao.
     </li>
 </ul>
-
-<!-- <li> 
-    <strong>1-st Winner</strong> of Joint Challenge on Dominant and Complementary Emotion Recognition Using Micro Emotion Features and Head, in conjunction with FG 2017, <strong>First author.</strong> [<a href="[url](https://github.com/cleardusk/EmotionChallenge)">Code</a>]
-</li><br>
-<li> 
-    HUAWEI Code Craft 2017: <strong>Awarded Silver Medal (rank 5th)</strong> in Beijing Site. <strong>Team with three members, equal contribution.</strong>
-</li> -->
