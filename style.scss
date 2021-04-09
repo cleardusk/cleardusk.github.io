@@ -17,8 +17,17 @@ hr {
   display: block;
   margin: 1em 0;
   border: 0;
-  border-top: 1.2px solid #f2f3f3;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  width: 99%;
 }
+
+// hr {
+//   display: block;
+//   margin: 1em 0;
+//   border: 0;
+//   border-top: 1.2px solid #f2f3f3;
+// }
 
 .shadowImage {
   -webkit-filter: drop-shadow(2px 8px 6px #ccc);
