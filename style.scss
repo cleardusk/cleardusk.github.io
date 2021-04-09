@@ -13,6 +13,13 @@
 /* BASE RULES */
 /**************/
 
+hr {
+  display: block;
+  margin: 1em 0;
+  border: 0;
+  border-top: 1.2px solid #f2f3f3;
+}
+
 .shadowImage {
   -webkit-filter: drop-shadow(2px 8px 6px #ccc);
   filter: drop-shadow(2px 8px 6px #ccc);
@@ -60,7 +67,7 @@ ul.news {
   // list-style-type: circle;
   border-left: 10px solid rgb(220, 60, 60);
   background-color: #f1f1f1;
-  padding: 10px 20px;
+  padding: 15px 20px;
   margin-left: 2.5%;
   margin-right: 2.5%;
 }
@@ -96,12 +103,12 @@ strong {
 
 h2 {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 1.5em;
+  font-size: 1.6em;
   font-display: auto;
   font-weight: normal;
   padding: 0px;
   margin: 0px;
-  display:inline; 
+  display:inline;
 }
 
 h3 {
