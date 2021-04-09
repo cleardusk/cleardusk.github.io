@@ -12,7 +12,7 @@ categories: comp
 
 <ul>
     <li> 
-        <strong>1-st Winner</strong> of Joint Challenge on Dominant and Complementary Emotion Recognition Using Micro Emotion Features and Head, in conjunction with FG 2017, <strong>First author.</strong> [<a href="[url](https://github.com/cleardusk/EmotionChallenge)">Code</a>]
+        <strong>1-st Winner</strong> of Joint Challenge on Dominant and Complementary Emotion Recognition Using Micro Emotion Features and Head, in conjunction with FG 2017, <strong>First author.</strong> [<a href="https://github.com/cleardusk/EmotionChallenge">Code</a>]
     </li><br>
     <li> 
         HUAWEI Code Craft 2017: <strong>Awarded Silver Medal (rank 5th)</strong> in Beijing Site. <strong>Team with three members, equal contribution.</strong>
