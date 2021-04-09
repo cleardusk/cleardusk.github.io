@@ -13,7 +13,8 @@
 /* BASE RULES */
 /**************/
 
-hr {
+
+hr.style-two {
   // display: block;
   // margin: 1em 0;
   border: 0;
@@ -77,15 +78,24 @@ ul.news {
   font-display: auto;
   list-style-type: none;
   // list-style-type: circle;
-  border-left: 10px solid rgb(220, 60, 60);
+  border-left: 16px solid rgb(220, 60, 60);
+  border-top: 2px solid rgb(220, 60, 60);
+  border-bottom: 2px solid rgb(220, 60, 60);
+  border-right: 2px solid rgb(220, 60, 60);
+
+
   background-color: #f1f1f1;
-  padding: 15px 20px;
+  padding: 10px 20px;
   margin-left: 2.5%;
   margin-right: 2.5%;
+
+  -webkit-filter: drop-shadow(2px 8px 6px #ccc);
+  filter: drop-shadow(2px 8px 6px #ccc);
+  border-radius: 12px;
 }
 
 li.indent{
-  margin: 0.6% 0;
+  margin: 0.8% 0;
   margin-left: 5.4em;
   text-indent: -5.4em;
 }
@@ -176,3 +186,22 @@ span.highlight {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 //@import "highlights";
 //@import "svg-icons";
+
+hr.style-seven {
+  overflow: visible; /* For IE */
+  height: 30px;
+  border-style: solid;
+  border-color: rgba(0.8, 0.8, 0.8, 0.6);
+  border-width: 1px 0 0 0;
+  border-radius: 30px;
+}
+hr.style-seven:before { /* Not really supposed to work, but does */
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: rgba(0.8, 0.8, 0.8, 0.6);
+  border-width: 0 0 1px 0;
+  border-radius: 30px;
+}
