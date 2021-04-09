@@ -48,11 +48,14 @@ hr {
 }
 
 .videoDiv {
-  height: 340px;
+  // height: 340px;
   width: 600px;
-  border: 2px solid rgb(80, 80, 80);   
+  border: 0px solid rgb(80, 80, 80);   
   display: block;
   margin: 0 auto;
+  -webkit-filter: drop-shadow(2px 8px 6px #ccc);
+  filter: drop-shadow(2px 8px 6px #ccc);
+  border-radius: 14px;
 }
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
