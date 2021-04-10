@@ -49,6 +49,8 @@ hr.style-two {
 }
 
 .videoDiv {
+  border-radius: 16px 16px 24px 24px; 
+  overflow: hidden; 
   // height: 340px;
   width: 600px;
   border: 0px solid rgb(80, 80, 80);   
@@ -56,7 +58,6 @@ hr.style-two {
   margin: 0 auto;
   -webkit-filter: drop-shadow(2px 8px 6px #ccc);
   filter: drop-shadow(2px 8px 6px #ccc);
-  // border-radius: 14px;
 }
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
