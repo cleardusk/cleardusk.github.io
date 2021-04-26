@@ -7,9 +7,9 @@ categories: research
 # authors: "Yang Fan, Xiangyu Zhu, Guohao Li, <strong>Jianzhu Guo</strong>, Di Huang, Zhen Lei, Stan Z. Li"
 authors: <a href="https://scholar.google.com/citations?user=1rbNk5oAAAAJ">Xiangyu Zhu</a>, Fan Yang, Di Huang, Chang Yu, Hao Wang, <a href="https://scholar.google.com/citations?user=W8_JzNcAAAAJ"><strong><u>Jianzhu Guo</u></strong></a>, <a href="https://scholar.google.com/citations?user=cuJ3QG8AAAAJ">Zhen Lei</a>, <a href="https://scholar.google.com/citations?user=Y-nyLGIAAAAJ">Stan Z. Li</a>
 venue: "<strong>ECCV 2020</strong>"
-#paper: /assets/pdfs/0581.pdf
-supp: /assets/pdfs/0581-supp.pdf
+paper: /assets/pdfs/0581.pdf
+# supp: /assets/pdfs/0581-supp.pdf
 code: https://github.com/XiangyuZhu-open/Beyond3DMM
 # arxiv: https://arxiv.org/abs/1901.00488
 ---
-This paper constructs a new dataset Fine-Grained 3D face (FG3D) with 200k samples for training, and proposes a Fine-Grained reconstruction Network (FGNet) concentrating on shape modication by warping the network input and output to the UV space.  FG3D is available at <a>https://github.com/XiangyuZhu-open/Beyond3DMM</a>.
+This paper constructs a new dataset Fine-Grained 3D face (FG3D) with 200k samples for training, and proposes a Fine-Grained reconstruction Network (FGNet) concentrating on shape modication by warping the network input and output to the UV space. FG3D is available at <a>https://github.com/XiangyuZhu-open/Beyond3DMM</a>.
