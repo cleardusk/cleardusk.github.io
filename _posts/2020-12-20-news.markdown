@@ -7,10 +7,13 @@ categories: news
 
 <ul class="news">
     <li class="indent">
+        06 / 2021: &ensp; Two papers submitted to <strong>WACV</strong> and two papers submitted to <strong>NeurIPS</strong> 2021.
+    </li>
+    <li class="indent">
         04 / 2021: &ensp; One paper on <i>face recognition</i> has been accepted by <strong>TIFS</strong> journal!
     </li>
     <li class="indent">
-        03 / 2021: &ensp; Three papers submitted to <strong>KDD</strong>, <strong>ICML</strong>, <strong>ICCV</strong> 2021, respectively. Good luck to authors in CAIRI lab of WestLake University!
+        03 / 2021: &ensp; One paper submitted to <strong>ICCV</strong> 2021.
     </li>
     <li class="indent">
         12 / 2020: &ensp; One paper on <i>face recognition</i> has been accepted by <strong>AAAI 2021</strong>, congrats to <a href="https://www.linkedin.com/in/xu-xiaqing-73804778/">Xiaqing Xu</a>.
