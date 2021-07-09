@@ -5,7 +5,11 @@ date:   2020-12-19 01:21:60 +00:00
 categories: news
 ---
 
+
 <ul class="news">
+    <li class="indent">
+        06 / 2021: &ensp; <strong>Got my Ph.D. degree!</strong>
+    </li>
     <li class="indent">
         06 / 2021: &ensp; Two papers submitted to <strong>WACV</strong> and two papers submitted to <strong>NeurIPS</strong> 2021.
     </li>
