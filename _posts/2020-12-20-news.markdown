@@ -8,7 +8,7 @@ categories: news
 
 <ul class="news">
     <li class="indent">
-        07 / 2021: &ensp; <strong>Join Y-tech, Kwai Inc. (Kuaishou), based in Beijing.</strong>
+        07 / 2021: &ensp; <strong>Joined Y-tech, Kwai Inc. (Kuaishou), based in Beijing.</strong>
     </li>
     <li class="indent">
         06 / 2021: &ensp; <strong>Got my Ph.D. degree!</strong>

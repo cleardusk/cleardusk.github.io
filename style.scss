@@ -30,6 +30,11 @@ hr.style-two {
 //   border-top: 1.2px solid #f2f3f3;
 // }
 
+.roundedGif {
+  border-radius: 50%;
+  overflow: hidden;  /* 保证内部的内容也是圆形 */
+}
+
 .shadowImage {
   -webkit-filter: drop-shadow(2px 8px 6px #ccc);
   filter: drop-shadow(2px 8px 6px #ccc);
