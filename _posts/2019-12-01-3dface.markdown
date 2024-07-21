@@ -15,6 +15,4 @@ code: https://github.com/cleardusk/3DDFA_V2
 # arxiv: https://arxiv.org/abs/1901.00488
 ---
 We propose a novel regression framework, named <b>3DDFA_V2</b>, to make a balance among speed, accuracy and stability.
-Our model runs at over 50fps on a single CPU core (>200fps with ONNX acceleration) and outperforms other state-of-the-art heavy models simultaneously. Code and models are available at <a>https://github.com/cleardusk/3DDFA_V2</a>.
-<!-- Firstly, on the basis of a lightweight backbone, we propose a meta-joint optimization strategy -->
-<!-- to dynamically regress a small set of 3DMM parameters, which greatly enhances speed and accuracy simultaneously. To further improve the stability on videos, we present a virtual synthesis method to transform one still image to a short-video incorporating in-plane and out-of-plane face moving.  -->
+Our model runs at over 50fps on a single CPU core (>200fps with ONNX acceleration) and outperforms other state-of-the-art heavy models simultaneously. Code and models are available at <a href="https://github.com/cleardusk/3DDFA_V2" target="_blank"><strong>https://github.com/cleardusk/3DDFA_V2</strong></a>.
