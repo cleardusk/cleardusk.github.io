@@ -1,6 +1,6 @@
 ---
 layout: post
-title: <a href="assets/pdfs/LivePortrait.pdf">"LivePortrait: Efficient Portrait Animation with Stitching and Retargeting Control"</a>
+title: "<a href='assets/pdfs/LivePortrait.pdf'>LivePortrait: Efficient Portrait Animation with Stitching and Retargeting Control</a>"
 date: 2024-07-03 23:51:60 +00:00
 image: /assets/imgs/LivePortrait-fig1.jpg
 categories: research
