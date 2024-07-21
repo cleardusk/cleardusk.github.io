@@ -10,5 +10,6 @@ arxiv: https://arxiv.org/abs/2407.03168
 paper: assets/pdfs/LivePortrait.pdf
 code: https://github.com/KwaiVGI/LivePortrait
 demo: https://huggingface.co/spaces/KwaiVGI/LivePortrait
+homepage: https://liveportrait.github.io/
 ---
 We propose a video-driven portrait animation framework named <strong>LivePortrait</strong> with a focus on better generalization, controllability, and efficiency for practical usage. The generation speed remarkably reaches <strong>12.8ms</strong> on an RTX 4090 GPU with PyTorch. The inference code and models are available at <a href="https://github.com/KwaiVGI/LivePortrait" target="_blank"><strong>https://github.com/KwaiVGI/LivePortrait</strong></a>.
