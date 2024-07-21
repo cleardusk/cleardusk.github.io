@@ -11,10 +11,10 @@ categories: news
         07 / 2024: &ensp; 🔥 Code release for <strong><a href="https://github.com/KwaiVGI/LivePortrait">LivePortrait</a></strong> <img style="border: 0px; padding: 1px; border-radius: 5px; vertical-align: middle;" src="https://img.shields.io/github/stars/KwaiVGI/LivePortrait.svg" alt="GitHub stars" title="">, please visit our <a href="https://liveportrait.github.io/"><strong>homepage</strong></a> and <a href="https://arxiv.org/pdf/2407.03168"><strong>paper</strong></a> for more details!
     </li>
     <li class="indent">
-        07 / 2021: &ensp; <strong>Joined <a href="https://github.com/KwaiVGI/">KwaiVGI</a>, Kuaishou Technology, based in Beijing.</strong>
+        07 / 2021: &ensp; 👨‍💻 <strong>Joined <a href="https://github.com/KwaiVGI/">KwaiVGI</a>, Kuaishou Technology, based in Beijing.</strong>
     </li>
     <li class="indent">
-        06 / 2021: &ensp; <strong>Got my Ph.D. degree!</strong>
+        06 / 2021: &ensp; 🎓 <strong>Got my Ph.D. degree!</strong>
     </li>
     <!-- <li class="indent">
         06 / 2021: &ensp; Two papers submitted to <strong>WACV</strong> and two papers submitted to <strong>NeurIPS</strong> 2021.
@@ -29,7 +29,7 @@ categories: news
         12 / 2020: &ensp; One paper on <i>face recognition</i> has been accepted by <strong>AAAI 2021</strong>, congrats to <a href="https://www.linkedin.com/in/xu-xiaqing-73804778/">Xiaqing Xu</a>.
     </li>
     <li class="indent">
-        09 / 2020: &ensp; Code release for <strong><a href="https://github.com/cleardusk/3DDFA_V2">3DDFA_V2</a></strong> <img style="border: 0px;padding: 0px;border-radius: 5px;vertical-align: middle;" src="https://img.shields.io/github/stars/cleardusk/3DDFA_V2.svg" alt="GitHub stars" title=""> (<a href="https://arxiv.org/abs/2009.09960">ECCV2020</a>).
+        09 / 2020: &ensp; 🔥 Code release for <strong><a href="https://github.com/cleardusk/3DDFA_V2">3DDFA_V2</a></strong> <img style="border: 0px;padding: 0px;border-radius: 5px;vertical-align: middle;" src="https://img.shields.io/github/stars/cleardusk/3DDFA_V2.svg" alt="GitHub stars" title=""> (<a href="https://arxiv.org/abs/2009.09960">ECCV2020</a>).
     </li>
     <li class="indent">
         07 / 2020: &ensp; Two papers on <i>3D face</i> have been accepted by <strong>ECCV 2020</strong>.
@@ -44,7 +44,7 @@ categories: news
         03 / 2019: &ensp; One paper (oral) on <i>face anti-spoofing</i> has been accepted by <strong>ICB 2019</strong>.
     </li>
     <li class="indent">
-        06 / 2018: &ensp; Code release for <strong><a href="https://github.com/cleardusk/3DDFA">3DDFA</a></strong> <img style="border: 0px;padding: 0px;border-radius: 5px; vertical-align: middle;" src="https://img.shields.io/github/stars/cleardusk/3DDFA.svg" alt="GitHub stars" title=""> (<a href="https://arxiv.org/abs/1804.01005">TPAMI2017</a>).
+        06 / 2018: &ensp; 🔥 Code release for <strong><a href="https://github.com/cleardusk/3DDFA">3DDFA</a></strong> <img style="border: 0px;padding: 0px;border-radius: 5px; vertical-align: middle;" src="https://img.shields.io/github/stars/cleardusk/3DDFA.svg" alt="GitHub stars" title=""> (<a href="https://arxiv.org/abs/1804.01005">TPAMI2017</a>).
     </li>
     <li class="indent">
         04 / 2018: &ensp; One paper on <i>3D face</i> & <i>face recognition</i> has been accepted by <strong>CCBR 2018</strong>, with a dataset <strong><a href="https://github.com/cleardusk/MeGlass">MeGlass</a></strong> released.
@@ -56,9 +56,9 @@ categories: news
         03 / 2017: &ensp; One paper on <i>micro-emotion recognition</i> has been accepted by <strong>FG 2017</strong>.
     </li>
     <li class="indent">
-        03 / 2017: &ensp; The <strong>winner</strong> of FG2017 facial micro-expression recognition competition, acknowledgement to my collaborator <a href="https://shuaizhou.me/">Shuai Zhou</a>. Code released at <a href="https://github.com/cleardusk/EmotionChallenge">EmotionChallenge</a>.
+        03 / 2017: &ensp; 🥇 The <strong>winner</strong> of FG2017 facial micro-expression recognition competition, acknowledgement to my collaborator <a href="https://shuaizhou.me/">Shuai Zhou</a>. Code released at <a href="https://github.com/cleardusk/EmotionChallenge">EmotionChallenge</a>.
     </li>
     <li class="indent">
-        03 / 2017: &ensp; The <strong>silver medal (rank5)</strong> of HUAWEI Code Craft 2017 in Beijing site, acknowledgement to my partners <a href="https://scholar.google.com/citations?user=dlsUakAAAAAJ">Yudong Wu</a> and Xingyuan Gao.
+        03 / 2017: &ensp; 🥈 The <strong>silver medal (rank5)</strong> of HUAWEI Code Craft 2017 in Beijing site, acknowledgement to my partners <a href="https://scholar.google.com/citations?user=dlsUakAAAAAJ">Yudong Wu</a> and Xingyuan Gao.
     </li>
 </ul>
