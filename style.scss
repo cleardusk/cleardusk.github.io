@@ -14,13 +14,12 @@
 /**************/
 
 hr.style-two {
-  // display: block;
-  // margin: 1em 0;
   border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  height: 0.666px;
+  background-image: linear-gradient(to right, rgba(70, 130, 180, 0), rgba(70, 130, 180, 0.5), rgba(70, 130, 180, 0));
   width: 100%;
 }
+
 
 // hr {
 //   display: block;
@@ -82,27 +81,27 @@ ul.news {
   font-size: normal;
   font-display: auto;
   list-style-type: none;
-  // list-style-type: circle;
-  border-left: 16px solid rgb(220, 60, 60);
-  border-top: 2px solid rgb(220, 60, 60);
-  border-bottom: 2px solid rgb(220, 60, 60);
-  border-right: 2px solid rgb(220, 60, 60);
+  
+  border-left: 16px solid rgb(32, 178, 170); /* 蓝绿色主题 */
+  border-top: 2px solid rgb(32, 178, 170);
+  border-bottom: 2px solid rgb(32, 178, 170);
+  border-right: 2px solid rgb(32, 178, 170);
 
-
-  background-color: #f1f1f1;
+  background-color: #f0fdfa; /* 浅蓝绿色背景 */
   padding: 8px 16px;
   margin-left: 2.5%;
   margin-right: 2.5%;
 
-  -webkit-filter: drop-shadow(2px 8px 6px #ccc);
-  filter: drop-shadow(2px 8px 6px #ccc);
+  -webkit-filter: drop-shadow(2px 8px 6px #aaa); /* 柔和阴影 */
+  filter: drop-shadow(2px 8px 6px #aaa);
   border-radius: 12px;
 }
 
 li.indent{
-  margin: 0.6% 0;
-  margin-left: 5.4em;
-  text-indent: -5.4em;
+  margin: 0.666% 0;
+  margin-left: 6em;
+  text-indent: -6em;
+  // line-height: 1.6; /* 提高行高 */
 }
 
 li.margin{

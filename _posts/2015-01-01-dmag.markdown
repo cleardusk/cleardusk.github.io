@@ -1,0 +1,13 @@
+---
+layout: post
+title:  Deep Manifold Attributed Graph Embedding with Graph Geodesic Similarity
+date:   2015-01-01 21:21:59 +00:00
+image: /assets/imgs/DMAGE.jpg
+categories: research
+author: "Jianzhu Guo"
+authors: Zelin Zang, Siyuan Li, Di Wu, <a href="https://scholar.google.com/citations?user=W8_JzNcAAAAJ"><strong><u>Jianzhu Guo</u></strong></a>, Yongjie Xu, <a href="https://scholar.google.com/citations?user=Y-nyLGIAAAAJ">Stan Z. Li</a>
+venue: <strong>Neurocomputing</strong>
+paper: /assets/pdfs/DMAGE.pdf
+# arxiv: https://arxiv.org/abs/1901.00488
+---
+We present a novel graph embedding framework named DMAGE (Deep Manifold Attributed Graph Embedding).
