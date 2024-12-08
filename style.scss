@@ -52,11 +52,11 @@ hr.style-two {
 }
 
 .videoDiv {
-  border-radius: 16px 16px 24px 24px; 
-  overflow: hidden; 
+  border-radius: 16px 16px 24px 24px;
+  overflow: hidden;
   // height: 340px;
   width: 600px;
-  border: 0px solid rgb(80, 80, 80);   
+  border: 0px solid rgb(80, 80, 80);
   display: block;
   margin: 0 auto;
   -webkit-filter: drop-shadow(2px 8px 6px #ccc);
@@ -81,7 +81,7 @@ ul.news {
   font-size: normal;
   font-display: auto;
   list-style-type: none;
-  
+
   border-left: 16px solid rgb(32, 178, 170); /* 蓝绿色主题 */
   border-top: 2px solid rgb(32, 178, 170);
   border-bottom: 2px solid rgb(32, 178, 170);
@@ -144,7 +144,7 @@ h3 {
   font-display: auto;
   padding: 0%;
   margin: 0%;
-  display: inline; 
+  display: inline;
 }
 
 h1 {
@@ -210,41 +210,96 @@ hr.style-seven:before { /* Not really supposed to work, but does */
   border-radius: 30px;
 }
 
-// 眨眼wink效果
-@keyframes wink {
-  0%, 60%, 100% {
-      transform: scaleY(1);
-  }
-  40% {
-      transform: scaleY(0.15);
-  }
-}
+// // 眨眼wink效果
+// @keyframes wink {
+//   0%, 60%, 100% {
+//       transform: scaleY(1);
+//   }
+//   40% {
+//       transform: scaleY(0.15);
+//   }
+// }
 
-@keyframes winkRight {
-  0%, 60%, 100% {
-      transform: scaleY(1);
-  }
-  40% {
-      transform: scaleY(0.9);
-  }
-}
+// @keyframes winkRight {
+//   0%, 60%, 100% {
+//       transform: scaleY(1);
+//   }
+//   40% {
+//       transform: scaleY(0.9);
+//   }
+// }
 
+
+// .face {
+//   display: inline-block;
+//   position: relative;
+//   vertical-align: middle;
+//   margin-left: 20px;
+//   margin-top: -26px;  /* 这行是新添加的，调整该值可以控制上移的距离 */
+// }
+
+// .eye-dot {
+//   display: inline-block;
+//   background-color: #3498db; /* 明亮的蓝色 */
+//   border-radius: 50%;
+//   width: 12px;
+//   height: 10px;
+//   position: absolute;
+//   top: 50%;
+//   transform-origin: center;
+// }
+
+// .eye-dot.left {
+//   left: -15px;
+//   animation: wink 1.1s infinite;  /* 将动画从通用的.eye-dot移动到这里，所以只有左眼会眨 */
+// }
+
+// .eye-dot.right {
+//   right: -15px;
+//   animation: winkRight 1.1s infinite;  /* 使用新的动画 */
+// }
+
+// .face-smile {
+//   display: block;
+//   font-weight: bold; /* 增加字体粗细 */
+//   font-size: 15px;
+//   position: absolute;
+//   bottom: -10px;
+//   left: 50%;
+//   transform: translateX(-50%) translateY(110%) rotate(-98deg);
+//   color: #e74c3c; /* 明亮的红色，与眼睛的蓝色形成对比 */
+//   // color: #2ecc71; /* 鲜艳的草绿色 */
+//   transform-origin: center;
+// }
 
 .face {
   display: inline-block;
   position: relative;
   vertical-align: middle;
   margin-left: 20px;
-  margin-top: -26px;  /* 这行是新添加的，调整该值可以控制上移的距离 */
+  margin-top: -26px;
+  /* 让面部上下轻微浮动 */
+  animation: faceFloat 3s ease-in-out infinite;
+}
+
+/* 渐变文字类 */
+.gradient-text {
+  background: linear-gradient(90deg, #FFD700, #FFA500);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradientMove 3s linear infinite;
+}
+
+.gradient-text-blue {
+  background: linear-gradient(90deg, #87CEEB, #4682B4);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradientMoveBlue 3s linear infinite alternate;
 }
 
 .eye-dot {
   display: inline-block;
-  background-color: #3498db; /* 明亮的蓝色 */
-  // background: #f8a9b6; /* 使用柔和的玫瑰金色 */
-  // background: linear-gradient(45deg, #FFC0CB, #9370DB); /* 从玫瑰金色渐变到柔和的紫色 */
-  // background: linear-gradient(45deg, #FFD700, #3498db); /* 从亮黄色渐变到鲜艳的蓝色 */
-  // background: linear-gradient(45deg, #1E90FF, #3CB371); /* 从深海蓝渐变到宝石绿 */
+  background-color: #3498db;
   border-radius: 50%;
   width: 12px;
   height: 10px;
@@ -255,23 +310,112 @@ hr.style-seven:before { /* Not really supposed to work, but does */
 
 .eye-dot.left {
   left: -15px;
-  animation: wink 1.1s infinite;  /* 将动画从通用的.eye-dot移动到这里，所以只有左眼会眨 */
+  /* 保持原先的wink时间戳及频率 */
+  animation: wink 1.1s infinite;
 }
 
 .eye-dot.right {
   right: -15px;
-  animation: winkRight 1.1s infinite;  /* 使用新的动画 */
+  /* 保持原先的winkRight时间戳及频率 */
+  animation: winkRight 1.1s infinite;
 }
 
 .face-smile {
   display: block;
-  font-weight: bold; /* 增加字体粗细 */
+  font-weight: bold;
   font-size: 15px;
   position: absolute;
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%) translateY(110%) rotate(-98deg);
-  color: #e74c3c; /* 明亮的红色，与眼睛的蓝色形成对比 */
-  // color: #2ecc71; /* 鲜艳的草绿色 */
+  color: #e74c3c;
   transform-origin: center;
+  /* 增加轻微的摇摆动画 */
+  animation: smileSwing 2s ease-in-out infinite;
+}
+
+/* ===== 动画定义 ===== */
+
+/* 光泽渐变滚动 */
+@keyframes gradientMove {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+
+/* 蓝色渐变左右移动 */
+@keyframes gradientMoveBlue {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+
+/* 面部上下轻微浮动 */
+@keyframes faceFloat {
+  0%, 100% {
+    transform: translateY(-6px);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+}
+
+/* 保留原先的wink动画时间和节奏，但让眨眼动画看起来更平滑 */
+@keyframes wink {
+  0% {
+    transform: translateY(-50%) scaleY(1);
+  }
+  40% {
+    transform: translateY(-50%) scaleY(0.1);
+  }
+  60% {
+    transform: translateY(-50%) scaleY(1);
+  }
+  100% {
+    transform: translateY(-50%) scaleY(1);
+  }
+}
+
+@keyframes winkRight {
+  0% {
+    transform: translateY(-50%) scaleY(1);
+  }
+  40% {
+    transform: translateY(-50%) scaleY(0.9);
+  }
+  60% {
+    transform: translateY(-50%) scaleY(1);
+  }
+  100% {
+    transform: translateY(-50%) scaleY(1);
+  }
+}
+
+/* 笑脸微幅摇摆 */
+@keyframes smileSwing {
+  0% {
+    transform: translateX(-50%) translateY(110%) rotate(-98deg);
+  }
+  50% {
+    transform: translateX(-50%) translateY(105%) rotate(-90deg);
+  }
+  100% {
+    transform: translateX(-50%) translateY(110%) rotate(-98deg);
+  }
+}
+
+.floatGif {
+  animation: faceFloat 3s ease-in-out infinite;
+  display: inline-block; /* 确保元素可动画 */
+}
+
+.floatText {
+  display: inline-block; /* 确保元素可动画 */
+  animation: faceFloat 3s ease-in-out infinite;
 }
