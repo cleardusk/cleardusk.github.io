@@ -78,34 +78,67 @@ a:hover {
 
 ul.news {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: normal;
+  font-size: 16px; /* 建议明确指定字号，而不是normal */
   font-display: auto;
   list-style-type: none;
 
-  border-left: 16px solid rgb(32, 178, 170); /* 蓝绿色主题 */
-  border-top: 2px solid rgb(32, 178, 170);
-  border-bottom: 2px solid rgb(32, 178, 170);
-  border-right: 2px solid rgb(32, 178, 170);
-
-  background-color: #f0fdfa; /* 浅蓝绿色背景 */
+  /* 将颜色相关的代码移除，只保留通用样式 */
   padding: 8px 16px;
   margin-left: 2.5%;
   margin-right: 2.5%;
 
-  -webkit-filter: drop-shadow(2px 8px 6px #aaa); /* 柔和阴影 */
+  -webkit-filter: drop-shadow(2px 8px 6px #aaa);
   filter: drop-shadow(2px 8px 6px #aaa);
   border-radius: 12px;
 }
 
-li.indent{
+/* 基础列表项格式 */
+li.indent {
   margin: 0.666% 0;
   margin-left: 6em;
   text-indent: -6em;
-  // line-height: 1.6; /* 提高行高 */
 }
 
-li.margin{
+/* 如有需要可设置更大的margin间隔 */
+li.margin {
   margin: 2% 0;
+}
+
+/* 定义多个主题类。这里举例4个主题 */
+/* 主题1：蓝绿色(原始的) */
+.theme-green {
+  border-left: 16px solid rgb(32, 178, 170);
+  border-top: 2px solid rgb(32, 178, 170);
+  border-bottom: 2px solid rgb(32, 178, 170);
+  border-right: 2px solid rgb(32, 178, 170);
+  background-color: #f0fdfa;
+}
+
+/* 主题2：蓝色调 */
+.theme-blue {
+  border-left: 16px solid #3b82f6;
+  border-top: 2px solid #3b82f6;
+  border-bottom: 2px solid #3b82f6;
+  border-right: 2px solid #3b82f6;
+  background-color: #eff6ff;
+}
+
+/* 主题3：粉紫色 */
+.theme-pastel {
+  border-left: 16px solid #d48ae0;
+  border-top: 2px solid #d48ae0;
+  border-bottom: 2px solid #d48ae0;
+  border-right: 2px solid #d48ae0;
+  background-color: #fceeff;
+}
+
+/* 主题4：暖色系 */
+.theme-warm {
+  border-left: 16px solid #f0a500;
+  border-top: 2px solid #f0a500;
+  border-bottom: 2px solid #f0a500;
+  border-right: 2px solid #f0a500;
+  background-color: #fff4e0;
 }
 
 

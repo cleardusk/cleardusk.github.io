@@ -62,3 +62,4 @@ categories: news
         03 / 2017: &ensp; 🥈 The <strong>silver medal (rank5)</strong> of HUAWEI Code Craft 2017 in Beijing site, acknowledgement to my partners <a href="https://scholar.google.com/citations?user=dlsUakAAAAAJ">Yudong Wu</a> and Xingyuan Gao.
     </li>
 </ul>
+
