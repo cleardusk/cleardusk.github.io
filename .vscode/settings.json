@@ -15,5 +15,15 @@
         "**/Thumbs.db": true,
         "**/*.crswap": true,
         "**/__pycache__": true
-    }
+    },
+    "workbench.colorCustomizations": {
+        "editor.lineHighlightBackground": "#1073cf2d",
+        "editor.lineHighlightBorder": "#9fced11f",
+        "activityBar.background": "#063334",
+        "titleBar.activeBackground": "#094849",
+        "titleBar.activeForeground": "#EFFDFD"
+    },
+    "editor.wordWrap": "on",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.guides.bracketPairs": "active",
 }
