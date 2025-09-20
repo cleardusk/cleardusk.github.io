@@ -22,7 +22,7 @@
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
   <meta name="author" content="{{ site.name }}" />
   <meta name="viewport" content="width=device-width">
-  <link rel="preload" href="assets/gifs/bio_JianzhuGuo400x400.gif" as="image">
+  <!-- <link rel="preload" href="assets/gifs/avatars/bio_JianzhuGuo400x400.gif" as="image"> -->
   <!-- 在这里加载你的主CSS -->
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
@@ -80,8 +80,8 @@
             </td>
 
             <td style="padding:2%;width:32%;max-width:32%">
-              <!-- <img class="shadowImage roundedGif floatGif" style="width:100%;max-width:100%" alt="profile photo" src="assets/gifs/bio_JianzhuGuo400x400.gif"> -->
-              <img class="shadowImage roundedGif floatGif" style="width:100%;max-width:100%" alt="profile photo" src="assets/gifs/me_2025_512x512.jpg">
+              <!-- <img class="shadowImage roundedGif floatGif" style="width:100%;max-width:100%" alt="profile photo" src="assets/gifs/avatars/bio_JianzhuGuo400x400.gif"> -->
+              <img id="profile-photo" class="shadowImage roundedGif floatGif" style="width:100%;max-width:100%" alt="profile photo" src="assets/gifs/avatars/me_2025_512x512.jpg">
 
               <p style="text-align:center;">
                 <!-- <span class="floatText">
@@ -98,6 +98,30 @@
                   <span class="eye-dot right"></span>
                 </span>
               </p>
+              <script>
+                // Build a list of all files under /assets/gifs at build time, then pick one on load
+                window.profileImages = [
+                {% assign imgs = site.static_files | where_exp: "f", "f.path contains '/assets/gifs/avatars/'" %}
+                {% for f in imgs %}
+                  "{{ f.path | relative_url }}"{% unless forloop.last %},{% endunless %}
+                {% endfor %}
+                ];
+                (function() {
+                  try {
+                    var list = (window.profileImages || []).filter(function(p){
+                      // simple guard to include common image extensions
+                      return /\.gif$|\.jpg$|\.jpeg$|\.png$|\.webp$/i.test(p);
+                    });
+                    if (list.length) {
+                      var chosen = list[Math.floor(Math.random() * list.length)];
+                      var img = document.getElementById('profile-photo');
+                      if (img) img.src = chosen;
+                    }
+                  } catch(e) {
+                    // no-op: keep fallback src on error
+                  }
+                })();
+              </script>
             </td>
           </tr>
         </table>
