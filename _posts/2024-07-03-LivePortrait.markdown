@@ -7,8 +7,8 @@ categories: research
 authors: <a href="https://scholar.google.com/citations?user=W8_JzNcAAAAJ"><strong><u>Jianzhu Guo</u></strong></a><sup>†</sup>, Dingyun Zhang, Xiaoqiang Liu, Zhizhou Zhong, <a href="https://scholar.google.com.hk/citations?user=_8k1ubAAAAAJ">Yuan Zhang</a>, <a href="https://scholar.google.com/citations?hl=en&user=P6MraaYAAAAJ">Pengfei Wan</a>, Di Zhang
 arxiv: https://arxiv.org/abs/2407.03168
 paper: assets/pdfs/LivePortrait.pdf
-code: https://github.com/KwaiVGI/LivePortrait
-demo: https://huggingface.co/spaces/KwaiVGI/LivePortrait
+code: https://github.com/KlingTeam/LivePortrait
+demo: https://huggingface.co/spaces/KlingTeam/LivePortrait
 homepage: https://liveportrait.github.io/
 ---
-We propose a video-driven portrait animation framework named <strong>LivePortrait</strong> with a focus on better generalization, controllability, and efficiency for practical usage. The generation speed remarkably reaches <strong>12.8ms</strong> on an RTX 4090 GPU with PyTorch. The inference code and models are available at <a href="https://github.com/KwaiVGI/LivePortrait" target="_blank"><strong>https://github.com/KwaiVGI/LivePortrait</strong></a>.
+We propose a video-driven portrait animation framework named <strong>LivePortrait</strong> with a focus on better generalization, controllability, and efficiency for practical usage. The generation speed remarkably reaches <strong>12.8ms</strong> on an RTX 4090 GPU with PyTorch. The inference code and models are available at <a href="https://github.com/KlingTeam/LivePortrait" target="_blank"><strong>https://github.com/KlingTeam/LivePortrait</strong></a>.
