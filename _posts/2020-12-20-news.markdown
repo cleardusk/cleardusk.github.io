@@ -8,6 +8,9 @@ categories: news
 
 <ul class="news">
     <li class="indent">
+        05 / 2026: &ensp; 🚀 <strong><a href="https://github.com/bytedance/Lance">Lance</a></strong> is released with code <img style="border: 0px; padding: 1px; border-radius: 5px; vertical-align: middle;" src="https://img.shields.io/github/stars/bytedance/Lance.svg" alt="GitHub stars" title=""> and model weights! Please visit our <a href="https://lance-project.github.io/"><strong>homepage</strong></a>, <a href="https://arxiv.org/pdf/2605.18678"><strong>paper</strong></a>, and <a href="https://huggingface.co/bytedance-research/Lance"><strong>Hugging Face</strong></a> <img style="border: 0px; padding: 1px; border-radius: 5px; vertical-align: middle;" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fhuggingface.co%2Fapi%2Fmodels%2Fbytedance-research%2FLance&query=likes&label=HF%20likes&logo=huggingface&color=ffcc4d" alt="Hugging Face likes" title=""> for more details.
+    </li>
+    <li class="indent">
         07 / 2024: &ensp; 🔥 Code release for <strong><a href="https://github.com/KlingAIResearch/LivePortrait">LivePortrait</a></strong> <img style="border: 0px; padding: 1px; border-radius: 5px; vertical-align: middle;" src="https://img.shields.io/github/stars/KlingAIResearch/LivePortrait.svg" alt="GitHub stars" title="">, please visit our <a href="https://liveportrait.github.io/"><strong>homepage</strong></a> and <a href="https://arxiv.org/pdf/2407.03168"><strong>paper</strong></a> for more details!
     </li>
     <li class="indent">
