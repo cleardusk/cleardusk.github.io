@@ -1,0 +1,15 @@
+---
+layout: post
+title: <a href="https://arxiv.org/pdf/2605.18678">Lance&#58 Unified Multimodal Modeling by Multi-Task Synergy</a>
+date: 2026-05-18 17:18:24 +00:00
+image: /assets/gifs/lance-bear-skateboard.gif
+categories: research
+authors: Fengyi Fu<sup>*</sup>, Mengqi Huang<sup>*†</sup>, Shaojin Wu<sup>*</sup>, Yunsheng Jiang<sup>*</sup>, Yufei Huo, Hao Li, Yinghang Song, Fei Ding, <a href="https://guojianzhu.com/"><strong><u>Jianzhu Guo</u></strong></a><sup>†§</sup>, Qian He, Zheren Fu, Zhendong Mao, Yongdong Zhang<br><small><sup>*</sup> <strong>Equal contribution</strong>, <sup>†</sup> <strong>Corresponding authors</strong>, <sup>§</sup> <strong>Project lead</strong></small>
+venue:
+arxiv: https://arxiv.org/abs/2605.18678
+paper: https://arxiv.org/pdf/2605.18678
+code: https://github.com/bytedance/Lance
+huggingface: https://huggingface.co/bytedance-research/Lance
+homepage: https://lance-project.github.io/
+---
+We present <strong>Lance</strong>, a 3B native unified multimodal model for image and video understanding, generation, and editing. Lance is trained from scratch with a staged multi-task recipe, combining unified context modeling and decoupled capability pathways. The code and model weights are available at <a href="https://github.com/bytedance/Lance" target="_blank"><strong>https://github.com/bytedance/Lance</strong></a> and <a href="https://huggingface.co/bytedance-research/Lance" target="_blank"><strong>Hugging Face</strong></a>.
