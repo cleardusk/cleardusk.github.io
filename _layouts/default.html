@@ -197,6 +197,11 @@
               {% if post.homepage %}<a href="{{post.homepage}}">homepage</a> /{% endif %}
               {% if post.poster %}<a href="{{post.poster}}">poster</a> /{% endif %}
               {% if post.code %}<a href="{{post.code}}">code</a> /{% endif %}
+              {% if post.github_repo or post.github_stars_badge or post.huggingface_likes_badge %}
+              <br>
+              {% if post.github_stars_badge %}<img style="border: 0px; padding: 1px; border-radius: 5px; vertical-align: middle;" src="{{post.github_stars_badge | xml_escape}}" alt="GitHub stars" title="">{% elsif post.github_repo %}<img style="border: 0px; padding: 1px; border-radius: 5px; vertical-align: middle;" src="https://img.shields.io/github/stars/{{post.github_repo}}.svg?style=social" alt="GitHub stars" title="">{% endif %}
+              {% if post.huggingface_likes_badge %}<img style="border: 0px; padding: 1px; border-radius: 5px; vertical-align: middle;" src="{{post.huggingface_likes_badge | xml_escape}}" alt="{{post.huggingface_likes_alt | default: 'Hugging Face likes'}}" title="">{% endif %}
+              {% endif %}
               <p></p>
               {{ post.excerpt }}
             </td>

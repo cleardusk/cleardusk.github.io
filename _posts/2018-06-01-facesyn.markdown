@@ -10,6 +10,7 @@ venue: "CCF Chinese Conference on Biometric Recognition (<b>CCBR</b>), Urumqi, C
 paper: /assets/pdfs/facesyn_ccbr_gjz.pdf
 arxiv: https://arxiv.org/abs/1806.01196
 code: https://github.com/cleardusk/MeGlass
+github_repo: cleardusk/MeGlass
 ---
 In the application of face recognition, eyeglasses could significantly degrade the recognition accuracy. In this paper, we propose to address this problem in a virtual synthesis manner.
 <!-- The high-ﬁdelity face images with eyeglasses are synthesized based on 3D face model and 3D eyeglasses. Models based on deep learning methods are then trained on the synthesized eyeglass face dataset, achieving better performance than previous ones. -->

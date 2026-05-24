@@ -12,6 +12,7 @@ supp: /assets/pdfs/3162-supp.pdf
 video1: /assets/videos/3162-supp.mp4
 video2: /assets/videos/hathaway_3ddfa_v2.mp4
 code: https://github.com/cleardusk/3DDFA_V2
+github_repo: cleardusk/3DDFA_V2
 # arxiv: https://arxiv.org/abs/1901.00488
 ---
 We propose a novel regression framework, named <b>3DDFA_V2</b>, to make a balance among speed, accuracy and stability.
