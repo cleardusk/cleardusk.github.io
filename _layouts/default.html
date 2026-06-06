@@ -72,7 +72,7 @@
                 </p>
                 <p style="font-size:0.95em; margin: 5px 0;">
                   💌 <a href="mailto:guojianzhu1994@gmail.com" style="text-decoration: none; color: #0f96cf;"><b>Email</b></a> or
-                  <a href="/assets/imgs/qrcode_me_v2024_beauty.png" target="_blank" style="text-decoration: none; color: #0f96cf;"><b>WeChat</b></a>
+                  <a href="/assets/imgs/qrcode_me_v2024_beauty.png" target="_blank" style="text-decoration: none; color: #07C160;"><b>WeChat</b></a>
                   (with a friendly note)! 😉
                 </p>
               </div>
@@ -127,7 +127,7 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
-            <td style="padding:1%;width:100%;vertical-align:middle">
+            <td class="section-title-cell" style="width:100%;vertical-align:middle">
               <h2><b>Highlights</b></h2>
             </td>
           </tr>
@@ -166,7 +166,7 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
-            <td style="padding:1%;width:100%;vertical-align:middle">
+            <td class="section-title-cell" style="width:100%;vertical-align:middle">
               <h2><b>Publications</b></h2>
             </td>
           </tr>
@@ -176,7 +176,7 @@
           {% for post in site.posts %}
           {% for cat in post.categories %}
           {% if cat == 'research' %}
-          <tr class="publication-row">
+          <tr class="publication-row{% if post.featured %} featured-work{% endif %}">
             <td class="publication-thumb" style="padding:2%;width:27.5%;vertical-align:middle;min-width:120px">
               <img class="roundBorder" src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
@@ -215,7 +215,7 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
-            <td style="padding:1%;width:100%;vertical-align:middle">
+            <td class="section-title-cell" style="width:100%;vertical-align:middle">
               <h2><b>Competitions</b></h2>
             </td>
           </tr>
@@ -242,7 +242,7 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
-            <td style="padding:1%;width:100%;vertical-align:middle">
+            <td class="section-title-cell" style="width:100%;vertical-align:middle">
               <h2><b>Projects (Public)</b></h2>
             </td>
           </tr>
@@ -252,38 +252,11 @@
           {% for post in site.posts %}
           {% for cat in post.categories %}
           {% if cat == 'project' %}
-          <tr class="project-row">
+          <tr class="project-row{% if post.featured %} featured-work{% endif %}">
             <td class="project-thumb" style="padding:2%;width:27.5%;vertical-align:middle;min-width:120px">
               <img class="shadowRoundImage" src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
             <td class="project-body" style="padding:2%;width:72.5%;vertical-align:middle">
-              {{ post.excerpt }}
-            </td>
-          </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>
-
-        <br/><br/><hr class="style-two"><br/>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:1%;width:100%;vertical-align:middle">
-              <h2><b>Service</b></h2>
-            </td>
-          </tr>
-        </table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat == 'service' %}
-          <tr>
-            <td style="padding:0%;width:75%;vertical-align:middle">
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
               {{ post.excerpt }}
             </td>
           </tr>
@@ -297,7 +270,11 @@
         <!-- 联系方式 -->
         <table style="width:60%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
-            <h2 style="padding:1%;width:100%;vertical-align:middle"><b>Contact (WeChat QR Code)</b></h2>
+            <td class="section-title-cell section-title-center" style="width:100%;vertical-align:middle">
+              <h2><b>Contact (WeChat QR Code)</b></h2>
+            </td>
+          </tr>
+          <tr>
             <td style="padding:0px">
               <p style="text-align:center;font-size:middle;">
                 <img style="width:60%;max-width:60%" alt="profile photo" src="/assets/imgs/qrcode_me_v2024_beauty.png">

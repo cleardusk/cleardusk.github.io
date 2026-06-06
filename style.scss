@@ -219,6 +219,33 @@ h2 {
   display: inline;
 }
 
+.section-title-cell {
+  padding: 6px 8px 10px;
+}
+
+.section-title-cell h2 {
+  font-size: 1.5em;
+  line-height: 1.2;
+}
+
+.section-title-center {
+  text-align: center;
+}
+
+.featured-work,
+.featured-work > td {
+  background-color: #ffffd0;
+}
+
+.project-row.featured-work,
+.project-row.featured-work > td {
+  background-color: #dff4ff;
+}
+
+.featured-work + .featured-work > td {
+  border-top: 8px solid #fff;
+}
+
 h3 {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 1em;
@@ -455,6 +482,14 @@ hr.style-seven:before {
   }
 
   h2 {
+    font-size: 1.35em;
+  }
+
+  .section-title-cell {
+    padding: 7px 14px 9px;
+  }
+
+  .section-title-cell h2 {
     font-size: 1.35em;
   }
 

@@ -4,6 +4,7 @@ title:  "Project"
 date:   2019-12-06 21:21:60 +00:00
 image: /assets/imgs/obama_three_styles.gif
 categories: project
+featured: true
 ---
 <a href="https://github.com/cleardusk/3DDFA">3DDFA: Real-time 3D face reconstruction</a> &nbsp; [<a href="https://star-history.t9t.io/#cleardusk/3DDFA">Star history</a>]
 <br>

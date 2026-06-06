@@ -4,6 +4,7 @@ title: <a href="https://arxiv.org/pdf/2605.18678">Lance&#58 Unified Multimodal M
 date: 2026-05-18 17:18:24 +00:00
 image: /assets/gifs/lance-bear-skateboard.gif
 categories: research
+featured: true
 authors: Fengyi Fu<sup>*</sup>, Mengqi Huang<sup>*†</sup>, Shaojin Wu<sup>*</sup>, Yunsheng Jiang<sup>*</sup>, Yufei Huo, Hao Li, Yinghang Song, Fei Ding, <a href="https://guojianzhu.com/"><strong><u>Jianzhu Guo</u></strong></a><sup>†§</sup>, Qian He, Zheren Fu, Zhendong Mao, Yongdong Zhang<br><small><sup>*</sup> <strong>Equal contribution</strong>, <sup>†</sup> <strong>Corresponding authors</strong>, <sup>§</sup> <strong>Project lead</strong></small>
 venue:
 arxiv: https://arxiv.org/abs/2605.18678
