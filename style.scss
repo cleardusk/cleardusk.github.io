@@ -268,6 +268,67 @@ h1 {
   margin-right: 0%;
 }
 
+.profile-name-wrap {
+  margin-top: 0.75em;
+  margin-bottom: 0.65em;
+  text-align: center;
+}
+
+.profile-name {
+  display: inline-block;
+  line-height: 1.18;
+  margin: 0;
+}
+
+.intro-bio {
+  margin-top: 0;
+}
+
+.profile-name-trigger {
+  appearance: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0.02em 0.08em;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+  cursor: pointer;
+}
+
+.profile-name-trigger:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(23, 114, 208, 0.16);
+}
+
+.profile-name-trigger[data-animation-state="running"] {
+  cursor: default;
+}
+
+.name-i-animation {
+  position: relative;
+  display: inline-block;
+  white-space: pre;
+}
+
+.hero-letter {
+  display: inline-block;
+}
+
+.hero-letter-jumper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  pointer-events: none;
+  backface-visibility: hidden;
+  will-change: transform;
+  transform-origin: center bottom;
+  color: #1772d0;
+}
+
 .one {
   width: 160px;
   height: 160px;
@@ -478,6 +539,10 @@ hr.style-seven:before {
 
   h1 {
     font-size: 1.65em;
+  }
+
+  .profile-name-trigger {
+    padding: 0;
   }
 
   h2 {
