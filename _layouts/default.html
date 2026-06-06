@@ -6,8 +6,22 @@
   <script>
     (function() {
       const themes = ["theme-green", "theme-blue", "theme-pastel", "theme-warm", "theme-cool", "theme-forest", "theme-berry", "theme-lavender", "theme-olive", "theme-gray"];
+      const themeAccentColors = {
+        "theme-green": "#20b2aa",
+        "theme-blue": "#3b82f6",
+        "theme-pastel": "#d48ae0",
+        "theme-warm": "#f0a500",
+        "theme-cool": "#00bcd4",
+        "theme-forest": "#2e7d32",
+        "theme-berry": "#e91e63",
+        "theme-lavender": "#9c27b0",
+        "theme-olive": "#827717",
+        "theme-gray": "#607d8b"
+      };
       const randomTheme = themes[Math.floor(Math.random() * themes.length)];
       window.selectedTheme = randomTheme;
+      window.selectedThemeColor = themeAccentColors[randomTheme];
+      document.documentElement.style.setProperty("--theme-accent-color", window.selectedThemeColor);
     })();
   </script>
 
@@ -66,13 +80,13 @@
               </p>
 
               <div style="text-align:center; font-family: 'Arial', sans-serif; line-height: 1.2; margin: 0;">
-                <p style="font-size:1em; color:#dc8d04; margin: 5px 0;">🚀 Let's connect! 🚀</p>
+                <p class="connect-title" style="font-size:1em; margin: 5px 0;">🚀 Let's connect! 🚀</p>
                 <p style="font-style:italic; font-weight:bold; font-size:0.95em; color:#333; margin: 5px 0;">
                   Open to chats on <span style="color:#FF5733;">career</span>, <span style="color:#3498DB;">tech</span>, or <span style="color:#9B59B6;">research</span>.
                 </p>
                 <p style="font-size:0.95em; margin: 5px 0;">
                   💌 <a href="mailto:guojianzhu1994@gmail.com" style="text-decoration: none; color: #0f96cf;"><b>Email</b></a> or
-                  <a href="/assets/imgs/qrcode_me_v2024_beauty.png" target="_blank" style="text-decoration: none; color: #07C160;"><b>WeChat</b></a>
+                  <a href="/assets/imgs/qrcode_me_v2024_beauty.png" target="_blank" style="text-decoration: none; color: rgb(4, 208, 103);"><b>WeChat</b></a>
                   (with a friendly note)! 😉
                 </p>
               </div>

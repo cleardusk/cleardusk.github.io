@@ -17,7 +17,7 @@ categories: news
         07 / 2024: &ensp; 🔥 Code release for <strong><a href="https://github.com/KlingAIResearch/LivePortrait">LivePortrait</a></strong> <img style="border: 0px; padding: 1px; border-radius: 5px; vertical-align: middle;" src="https://img.shields.io/badge/Stars-18.4K-lightgrey?logo=github&style=social" alt="GitHub stars" title=""> <img style="border: 0px; padding: 1px; border-radius: 5px; vertical-align: middle;" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fhuggingface.co%2Fapi%2Fspaces%2FKlingTeam%2FLivePortrait&query=likes&label=HF%20Space%20likes&logo=huggingface&color=ffcc4d" alt="Hugging Face Space likes" title="">, please visit our <a href="https://liveportrait.github.io/"><strong>homepage</strong></a> and <a href="https://arxiv.org/pdf/2407.03168"><strong>paper</strong></a> for more details!
     </li>
     <li class="indent">
-        07 / 2021: &ensp; 👨‍💻 <strong>Joined <a href="https://github.com/KlingAIResearch/">KwaiVGI</a>, Kuaishou Technology, based in Beijing.</strong>
+        07 / 2021: &ensp; 👨‍💻 <strong>Joined <a href="https://github.com/KlingAIResearch/">Kling</a>, Kuaishou Technology, based in Beijing.</strong>
     </li>
     <li class="indent">
         06 / 2021: &ensp; 🎓 <strong>Got my Ph.D. degree!</strong>

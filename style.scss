@@ -99,6 +99,10 @@ li.margin {
   margin: 2% 0;
 }
 
+.connect-title {
+  color: var(--theme-accent-color, #dc8d04);
+}
+
 /* 多个主题类定义 */
 
 /* 主题1：蓝绿色 */
@@ -235,11 +239,6 @@ h2 {
 .featured-work,
 .featured-work > td {
   background-color: #ffffd0;
-}
-
-.project-row.featured-work,
-.project-row.featured-work > td {
-  background-color: #dff4ff;
 }
 
 .featured-work + .featured-work > td {
