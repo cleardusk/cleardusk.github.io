@@ -354,6 +354,292 @@ span.highlight {
   background-color: #ffffd0;
 }
 
+.bottom-horse-runner {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 150px;
+  margin: 8px auto 0;
+  overflow: hidden;
+  opacity: 0.82;
+  pointer-events: none;
+}
+
+.bottom-horse-runner__svg {
+  width: min(100%, 516px);
+  height: 100%;
+}
+
+@keyframes bottomHorseGallopBody {
+  0% {
+    transform: translateY(0) rotate(-3deg);
+  }
+  25% {
+    transform: translateY(-18px) rotate(4deg);
+  }
+  50% {
+    transform: translateY(5px) rotate(6deg);
+  }
+  75% {
+    transform: translateY(-5px) rotate(-4deg);
+  }
+  100% {
+    transform: translateY(0) rotate(-3deg);
+  }
+}
+
+@keyframes bottomHorseGallopNeck {
+  0% {
+    transform: rotate(8deg);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(8deg);
+  }
+}
+
+@keyframes bottomHorseFrontUpper {
+  0% {
+    transform: rotate(-55deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  75% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(-55deg);
+  }
+}
+
+@keyframes bottomHorseFrontLower {
+  0%,
+  25%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  75% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes bottomHorseBackUpper {
+  0%,
+  100% {
+    transform: rotate(45deg);
+  }
+  25% {
+    transform: rotate(60deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  75% {
+    transform: rotate(-40deg);
+  }
+}
+
+@keyframes bottomHorseBackLower {
+  0%,
+  100% {
+    transform: rotate(10deg);
+  }
+  25% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(-50deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+}
+
+@keyframes bottomHorseTailFly {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes bottomHorseSpeedLines {
+  0% {
+    transform: translateX(410px);
+    opacity: 0;
+  }
+  12% {
+    opacity: 0.9;
+  }
+  86% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateX(-410px);
+    opacity: 0;
+  }
+}
+
+@keyframes bottomHorseCargoBounce {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-5deg);
+  }
+  50% {
+    transform: translateY(-4px) rotate(-8deg);
+  }
+}
+
+.bottom-horse-runner__horse {
+  animation: bottomHorseGallopBody 0.45s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  filter: drop-shadow(0 9px 14px rgba(180, 118, 48, 0.22));
+  transform-origin: 200px 140px;
+  will-change: transform;
+}
+
+.bottom-horse-runner__neck-head {
+  animation: bottomHorseGallopNeck 0.45s infinite ease-in-out;
+  transform-origin: 240px 120px;
+  will-change: transform;
+}
+
+.bottom-horse-runner__tail {
+  animation: bottomHorseTailFly 0.45s infinite ease-in-out;
+  transform-origin: 110px 120px;
+  will-change: transform;
+}
+
+.bottom-horse-runner__front-right-upper,
+.bottom-horse-runner__front-left-upper {
+  animation: bottomHorseFrontUpper 0.45s infinite linear;
+  transform-origin: 240px 140px;
+  will-change: transform;
+}
+
+.bottom-horse-runner__front-right-lower,
+.bottom-horse-runner__front-left-lower {
+  animation: bottomHorseFrontLower 0.45s infinite linear;
+  transform-origin: 240px 190px;
+  will-change: transform;
+}
+
+.bottom-horse-runner__back-right-upper,
+.bottom-horse-runner__back-left-upper {
+  animation: bottomHorseBackUpper 0.45s infinite linear;
+  transform-origin: 130px 130px;
+  will-change: transform;
+}
+
+.bottom-horse-runner__back-right-lower,
+.bottom-horse-runner__back-left-lower {
+  animation: bottomHorseBackLower 0.45s infinite linear;
+  transform-origin: 125px 190px;
+  will-change: transform;
+}
+
+.bottom-horse-runner__front-left-upper,
+.bottom-horse-runner__front-left-lower,
+.bottom-horse-runner__back-left-upper,
+.bottom-horse-runner__back-left-lower {
+  animation-delay: -0.1s;
+}
+
+.bottom-horse-runner__line {
+  animation: bottomHorseSpeedLines 0.3s infinite linear;
+  will-change: transform, opacity;
+}
+
+.bottom-horse-runner__line--2 {
+  animation-duration: 0.2s;
+  animation-delay: 0.1s;
+}
+
+.bottom-horse-runner__line--3 {
+  animation-duration: 0.4s;
+  animation-delay: 0.2s;
+}
+
+.bottom-horse-runner__line--4 {
+  animation-duration: 0.25s;
+  animation-delay: 0.15s;
+}
+
+.bottom-horse-runner__dust {
+  animation: bottomHorseSpeedLines 0.4s infinite linear;
+  fill: #daa520;
+  will-change: transform, opacity;
+}
+
+.bottom-horse-runner__dust--1 {
+  animation-delay: 0.1s;
+  animation-duration: 0.3s;
+}
+
+.bottom-horse-runner__dust--2 {
+  animation-delay: 0.2s;
+  animation-duration: 0.25s;
+}
+
+.bottom-horse-runner__dust--3 {
+  animation-delay: 0.05s;
+  animation-duration: 0.35s;
+}
+
+.bottom-horse-runner__year {
+  animation: bottomHorseCargoBounce 0.45s infinite ease-in-out;
+  fill: #ffe6a0;
+  filter:
+    drop-shadow(2px 3px 3px rgba(0, 0, 0, 0.75))
+    drop-shadow(1px 1px 0 rgba(255, 223, 0, 0.32));
+  font-family: "Arial Black", Impact, sans-serif;
+  font-size: 26px;
+  font-style: italic;
+  transform-origin: 180px 108px;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bottom-horse-runner__horse,
+  .bottom-horse-runner__neck-head,
+  .bottom-horse-runner__tail,
+  .bottom-horse-runner__front-right-upper,
+  .bottom-horse-runner__front-right-lower,
+  .bottom-horse-runner__back-right-upper,
+  .bottom-horse-runner__back-right-lower,
+  .bottom-horse-runner__front-left-upper,
+  .bottom-horse-runner__front-left-lower,
+  .bottom-horse-runner__back-left-upper,
+  .bottom-horse-runner__back-left-lower,
+  .bottom-horse-runner__line,
+  .bottom-horse-runner__dust,
+  .bottom-horse-runner__year {
+    animation: none !important;
+  }
+}
+
 //@import "highlights";
 //@import "svg-icons";
 
@@ -543,6 +829,15 @@ hr.style-seven:before {
 
   .profile-name-trigger {
     padding: 0;
+  }
+
+  .bottom-horse-runner {
+    height: 110px;
+    margin-top: 0;
+  }
+
+  .bottom-horse-runner__svg {
+    width: min(100%, 396px);
   }
 
   h2 {
