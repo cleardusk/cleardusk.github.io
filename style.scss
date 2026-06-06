@@ -99,6 +99,10 @@ li.margin {
   margin: 2% 0;
 }
 
+.connect-title {
+  color: var(--theme-accent-color, #dc8d04);
+}
+
 /* 多个主题类定义 */
 
 /* 主题1：蓝绿色 */
@@ -217,6 +221,28 @@ h2 {
   padding: 0px;
   margin: 0px;
   display: inline;
+}
+
+.section-title-cell {
+  padding: 6px 8px 10px;
+}
+
+.section-title-cell h2 {
+  font-size: 1.5em;
+  line-height: 1.2;
+}
+
+.section-title-center {
+  text-align: center;
+}
+
+.featured-work,
+.featured-work > td {
+  background-color: #ffffd0;
+}
+
+.featured-work + .featured-work > td {
+  border-top: 8px solid #fff;
 }
 
 h3 {
@@ -434,4 +460,95 @@ hr.style-seven:before {
 .floatText {
   display: inline-block;
   animation: faceFloat 3s ease-in-out infinite;
+}
+
+@media (max-width: 640px) {
+  body {
+    margin: 0;
+  }
+
+  body,
+  td,
+  th,
+  tr,
+  p,
+  a {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 1.65em;
+  }
+
+  h2 {
+    font-size: 1.35em;
+  }
+
+  .section-title-cell {
+    padding: 7px 14px 9px;
+  }
+
+  .section-title-cell h2 {
+    font-size: 1.35em;
+  }
+
+  .intro-row,
+  .publication-row,
+  .project-row {
+    display: block;
+  }
+
+  .intro-copy,
+  .intro-photo,
+  .publication-thumb,
+  .publication-body,
+  .project-thumb,
+  .project-body {
+    display: block;
+    width: auto !important;
+    max-width: none !important;
+  }
+
+  .intro-copy {
+    padding: 5% 4% 2% !important;
+  }
+
+  .intro-photo {
+    padding: 0 4% 6% !important;
+    text-align: center;
+  }
+
+  #profile-photo {
+    width: min(52vw, 180px) !important;
+    max-width: 180px !important;
+  }
+
+  ul.news {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 8px 12px;
+  }
+
+  li.indent {
+    margin-left: 0;
+    text-indent: 0;
+  }
+
+  .publication-thumb,
+  .project-thumb {
+    padding: 5% 4% 1% !important;
+    text-align: center;
+  }
+
+  .publication-body,
+  .project-body {
+    padding: 2% 4% 5% !important;
+  }
+
+  .publication-thumb img,
+  .project-thumb img {
+    width: min(70vw, 240px) !important;
+    max-width: 240px !important;
+    height: auto !important;
+  }
 }

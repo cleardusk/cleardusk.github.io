@@ -4,6 +4,7 @@ title:  "Project"
 date:   2026-05-18 21:21:60 +00:00
 image: /assets/gifs/lance-bear-skateboard.gif
 categories: project
+featured: true
 ---
 <a href="https://github.com/bytedance/Lance">Lance: Unified Multimodal Modeling by Multi-Task Synergy</a> &nbsp; [<a href="https://star-history.com/#bytedance/Lance&Timeline">Star history</a>] [<a href="https://huggingface.co/spaces/timqian/like-history#bytedance-research/Lance">Like history</a>]
 <br>
