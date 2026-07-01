@@ -32,6 +32,24 @@ hr.style-two {
   overflow: hidden; /* 保证内部内容为圆形 */
 }
 
+img {
+  height: auto;
+}
+
+#profile-photo {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.contact-qr-code {
+  display: block;
+  width: min(60%, 500px);
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
 .shadowImage {
   -webkit-filter: drop-shadow(2px 8px 6px #ccc);
   filter: drop-shadow(2px 8px 6px #ccc);
