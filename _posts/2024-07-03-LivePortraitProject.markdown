@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Project"
-date:   2024-07-03 21:21:60 +00:00
+date:   2024-07-03 21:21:59 +00:00
 image: /assets/gifs/liveportrait.gif
+image_width: 512
+image_height: 256
 categories: project
 featured: true
 ---

@@ -1,3 +1,60 @@
 ---
-layout: default
 ---
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <title>{{ page.title | strip_html }} - {{ site.name }}</title>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <meta name="author" content="{{ site.name }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="{{ '/style.css' | relative_url }}" />
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tr style="padding:0px">
+      <td style="padding:2.5%">
+        <p><a href="{{ '/' | relative_url }}">Home</a></p>
+        <h1>{{ page.title }}</h1>
+
+        {% if page.image %}
+        <p style="text-align:center">
+          <img class="roundBorder" src="{{ page.image | relative_url }}" alt="{{ page.title | strip_html }}" {% if page.image_width and page.image_height %}width="{{ page.image_width }}" height="{{ page.image_height }}"{% endif %} loading="lazy" decoding="async" style="width:auto; height:auto; max-width:100%;" />
+        </p>
+        {% endif %}
+
+        {% if page.authors %}<p>{{ page.authors }}</p>{% endif %}
+        {% if page.venue %}<p><em>{{ page.venue }}</em></p>{% endif %}
+
+        {% if page.arxiv or page.paper or page.supp or page.video1 or page.video2 or page.demo or page.huggingface or page.homepage or page.poster or page.code %}
+        <p>
+          {% if page.arxiv %}<a href="{{ page.arxiv }}">arxiv</a> /{% endif %}
+          {% if page.paper %}<a href="{{ page.paper }}">paper</a> /{% endif %}
+          {% if page.supp %}<a href="{{ page.supp }}">supp</a> /{% endif %}
+          {% if page.video1 %}<a href="{{ page.video1 }}">video1</a> /{% endif %}
+          {% if page.video2 %}<a href="{{ page.video2 }}">video2</a> /{% endif %}
+          {% if page.demo %}<a href="{{ page.demo }}">online demo</a> /{% endif %}
+          {% if page.huggingface %}<a href="{{ page.huggingface }}">huggingface</a> /{% endif %}
+          {% if page.homepage %}<a href="{{ page.homepage }}">homepage</a> /{% endif %}
+          {% if page.poster %}<a href="{{ page.poster }}">poster</a> /{% endif %}
+          {% if page.code %}<a href="{{ page.code }}">code</a> /{% endif %}
+        </p>
+        {% endif %}
+
+        {% if page.github_repo or page.github_stars_badge or page.huggingface_likes_badge %}
+        <p>
+          {% if page.github_stars_badge %}<img style="border: 0px; padding: 1px; border-radius: 5px; vertical-align: middle;" src="{{ page.github_stars_badge | xml_escape }}" alt="GitHub stars" title="">{% elsif page.github_repo %}<img style="border: 0px; padding: 1px; border-radius: 5px; vertical-align: middle;" src="https://img.shields.io/github/stars/{{ page.github_repo }}.svg?style=social" alt="GitHub stars" title="">{% endif %}
+          {% if page.huggingface_likes_badge %}<img style="border: 0px; padding: 1px; border-radius: 5px; vertical-align: middle;" src="{{ page.huggingface_likes_badge | xml_escape }}" alt="{{ page.huggingface_likes_alt | default: 'Hugging Face likes' }}" title="">{% endif %}
+        </p>
+        {% endif %}
+
+        {{ content }}
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>

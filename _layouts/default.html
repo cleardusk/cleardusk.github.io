@@ -38,8 +38,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="preload" href="assets/gifs/avatars/bio_JianzhuGuo400x400.gif" as="image"> -->
   <!-- 在这里加载你的主CSS -->
-  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="stylesheet" type="text/css" href="{{ '/style.css' | relative_url }}" />
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 </head>
 
@@ -70,8 +70,8 @@
               </div>
               <script src="{{ site.baseurl }}/assets/js/name-i-animation.js"></script>
               <p class="intro-bio" style="line-height: 1.3; margin-bottom: 1.3em;">
-                I graduated from <a href="http://www.seu.edu.cn/">Southeast University</a> with B.S. in GIS.
-                I got my Ph.D. degree from <a href="https://mais.ia.ac.cn/">National Laboratory of Pattern Recognition</a>, <a href="http://english.cas.cn/">Chinese Academy of Sciences</a>, supervised by Prof. <a href="https://scholar.google.com/citations?user=Y-nyLGIAAAAJ"><b>Stan Z. Li</b></a> and Prof. <a href="https://scholar.google.com/citations?user=cuJ3QG8AAAAJ">Zhen Lei</a>, work closely with Associate Prof. <a href="https://scholar.google.com/citations?user=1rbNk5oAAAAJ">Xiangyu Zhu</a>, where I mainly research on <strong>face&vision</strong>, (e.g., <a href="https://github.com/cleardusk/3DDFA">3DDFA</a>, <a href="https://github.com/cleardusk/3DDFA_V2">3DDFA_V2</a>).
+                I graduated from <a href="https://www.seu.edu.cn/">Southeast University</a> with B.S. in GIS.
+                I got my Ph.D. degree from <a href="https://mais.ia.ac.cn/">National Laboratory of Pattern Recognition</a>, <a href="https://english.cas.cn/">Chinese Academy of Sciences</a>, supervised by Prof. <a href="https://scholar.google.com/citations?user=Y-nyLGIAAAAJ"><b>Stan Z. Li</b></a> and Prof. <a href="https://scholar.google.com/citations?user=cuJ3QG8AAAAJ">Zhen Lei</a>, work closely with Associate Prof. <a href="https://scholar.google.com/citations?user=1rbNk5oAAAAJ">Xiangyu Zhu</a>, where I mainly research on <strong>face&vision</strong>, (e.g., <a href="https://github.com/cleardusk/3DDFA">3DDFA</a>, <a href="https://github.com/cleardusk/3DDFA_V2">3DDFA_V2</a>).
                 From July 2021 to March 2025, I worked on <strong>GenAI</strong> (e.g., <a href="https://github.com/KlingAIResearch/LivePortrait">LivePortrait</a>) in <a href="https://github.com/KlingAIResearch">KlingTeam</a>, <a href="https://www.kwai.com/">Kwai Technology</a>.
                 I am currently with <a href="https://www.bytedance.com/">ByteDance</a>, focusing on <strong>multimodal GenAI</strong> (e.g., <a href="https://lance-project.github.io/">Lance</a>).
                 <br>
@@ -93,7 +93,7 @@
                 </p>
                 <p style="font-size:0.95em; margin: 5px 0;">
                   💌 <a href="mailto:guojianzhu1994@gmail.com" style="text-decoration: none; color: #0f96cf;"><b>Email</b></a> or
-                  <a href="/assets/imgs/qrcode_me_v2024_beauty.png" target="_blank" style="text-decoration: none; color: rgb(4, 208, 103);"><b>WeChat</b></a>
+                  <a href="/assets/imgs/qrcode_me_v2024_beauty.png" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: rgb(4, 208, 103);"><b>WeChat</b></a>
                   (with a friendly note)! 😉
                 </p>
               </div>
@@ -101,7 +101,7 @@
 
             <td class="intro-photo" style="padding:2%;width:32%;max-width:32%">
               <!-- <img class="shadowImage roundedGif floatGif" style="width:100%;max-width:100%" alt="profile photo" src="assets/gifs/avatars/bio_JianzhuGuo400x400.gif"> -->
-              <img id="profile-photo" class="shadowImage roundedGif floatGif" style="width:100%;max-width:100%" alt="profile photo" src="/assets/gifs/avatars/me_2025_512x512.jpg">
+              <img id="profile-photo" class="shadowImage roundedGif floatGif" style="width:100%;max-width:100%" alt="profile photo" src="/assets/gifs/avatars/me_2025_512x512.jpg" width="512" height="512" fetchpriority="high" decoding="async">
 
               <p style="text-align:center;">
                 <!-- <span class="floatText">
@@ -199,7 +199,7 @@
           {% if cat == 'research' %}
           <tr class="publication-row{% if post.featured %} featured-work{% endif %}">
             <td class="publication-thumb" style="padding:2%;width:27.5%;vertical-align:middle;min-width:120px">
-              <img class="roundBorder" src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+              <img class="roundBorder" src="{{ post.image | relative_url }}" alt="{{ post.title | strip_html }}" {% if post.image_width and post.image_height %}width="{{ post.image_width }}" height="{{ post.image_height }}"{% endif %} loading="lazy" decoding="async" style="width:auto; height:auto; max-width:100%;" />
             </td>
             <td class="publication-body" style="padding:2%;width:72.5%;vertical-align:middle">
               <h3>{{post.title}}</h3>
@@ -275,7 +275,7 @@
           {% if cat == 'project' %}
           <tr class="project-row{% if post.featured %} featured-work{% endif %}">
             <td class="project-thumb" style="padding:2%;width:27.5%;vertical-align:middle;min-width:120px">
-              <img class="shadowRoundImage" src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+              <img class="shadowRoundImage" src="{{ post.image | relative_url }}" alt="{{ post.title | strip_html }}" {% if post.image_width and post.image_height %}width="{{ post.image_width }}" height="{{ post.image_height }}"{% endif %} loading="lazy" decoding="async" style="width:auto; height:auto; max-width:100%;" />
             </td>
             <td class="project-body" style="padding:2%;width:72.5%;vertical-align:middle">
               {{ post.excerpt }}
@@ -298,7 +298,7 @@
           <tr>
             <td style="padding:0px">
               <p style="text-align:center;font-size:middle;">
-                <img style="width:60%;max-width:60%" alt="profile photo" src="/assets/imgs/qrcode_me_v2024_beauty.png">
+                <img style="width:60%;max-width:60%" alt="WeChat QR code" src="/assets/imgs/qrcode_me_v2024_beauty.png" width="500" height="500" loading="lazy" decoding="async">
               </p>
             </td>
           </tr>
