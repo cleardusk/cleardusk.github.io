@@ -12,7 +12,6 @@ code: https://github.com/KlingAIResearch/LivePortrait
 demo: https://huggingface.co/spaces/KlingTeam/LivePortrait
 homepage: https://liveportrait.github.io/
 github_repo: KlingAIResearch/LivePortrait
-github_stars_badge: https://img.shields.io/badge/Stars-18.4K-lightgrey?logo=github&style=social
 huggingface_likes_badge: https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fhuggingface.co%2Fapi%2Fspaces%2FKlingTeam%2FLivePortrait&query=likes&label=HF%20Space%20likes&logo=huggingface&color=ffcc4d
 huggingface_likes_alt: Hugging Face Space likes
 ---
