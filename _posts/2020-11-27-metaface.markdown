@@ -1,13 +1,15 @@
 ---
 layout: post
 title: <a href="/assets/pdfs/tifs20_MetaFace_preview.pdf">Decomposed Meta Batch Normalization for Fast Domain Adaptation in Face Recognition</a>
-date: 2021-04-04 23:51:60 +00:00
+date: 2021-04-04 23:51:59 +00:00
 image: /assets/imgs/DMBN.jpg
+image_width: 1435
+image_height: 1185
 categories: research
 authors: <a href="https://scholar.google.com/citations?user=W8_JzNcAAAAJ"><strong><u>Jianzhu Guo</u></strong></a>, <a href="https://scholar.google.com/citations?user=1rbNk5oAAAAJ">Xiangyu Zhu</a>, <a href="https://scholar.google.com/citations?user=cuJ3QG8AAAAJ">Zhen Lei</a>, <a href="https://scholar.google.com/citations?user=Y-nyLGIAAAAJ">Stan Z. Li</a>
 venue: <strong>TIFS</strong> (<i>IEEE <b>T</b>ransactions on <b>I</b>nformation <b>F</b>orensics and <b>S</b>ecurity</i>) (<strong>Accepted</strong>)
 
-paper: assets/pdfs/tifs20_MetaFace_preview.pdf
+paper: /assets/pdfs/tifs20_MetaFace_preview.pdf
 # arxiv: https://arxiv.org/abs/1901.00488
 ---
 This paper proposes a novel training remedy by decomposing the model into the weight parameters and the BN statistics in the training phase. Based on decomposing, we design a novel framework via meta-learning, called <i>Decomposed Meta Batch Normalization</i> (DMBN) for fast domain adaptation in face recognition.

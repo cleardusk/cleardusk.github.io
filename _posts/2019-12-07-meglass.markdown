@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Project"
-date:   2019-12-05 20:22:60 +00:00
+date:   2019-12-05 20:22:59 +00:00
 image: /assets/imgs/meglass.jpg
+image_width: 3657
+image_height: 1840
 categories: project
 ---
 <a href="https://github.com/cleardusk/MeGlass">MeGlass: An eyeglass face dataset collected and cleaned for face recognition evaluation</a>

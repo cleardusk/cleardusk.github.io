@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Project"
-date:   2019-12-06 21:21:60 +00:00
+date:   2019-12-06 21:21:59 +00:00
 image: /assets/imgs/obama_three_styles.gif
+image_width: 512
+image_height: 288
 categories: project
 featured: true
 ---

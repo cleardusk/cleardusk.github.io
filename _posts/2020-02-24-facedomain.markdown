@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  <a href="/assets/pdfs/04231.pdf">Domain Balancing&#58 Face Recognition on Long-Tailed Domains</a>
-date:   2020-02-23 22:20:60 +00:00
+date:   2020-02-23 22:20:59 +00:00
 image: /assets/imgs/LT.jpg
+image_width: 1148
+image_height: 1148
 categories: research
 authors: Dong Cao, <a href="https://scholar.google.com/citations?user=1rbNk5oAAAAJ">Xiangyu Zhu</a>, Xingyu Huang, <a href="https://scholar.google.com/citations?user=W8_JzNcAAAAJ"><strong><u>Jianzhu Guo</u></strong></a>, <a href="https://scholar.google.com/citations?user=cuJ3QG8AAAAJ">Zhen Lei</a>
 venue: "<strong>CVPR 2020</strong>"

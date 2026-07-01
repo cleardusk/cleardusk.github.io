@@ -3,6 +3,8 @@ layout: post
 title:  <a href="/assets/pdfs/antispoof_icb2019_gjz.pdf">Improving Face Anti-Spoofing by 3D Virtual Synthesis</a>
 date:   2019-01-01 22:21:59 +00:00
 image: /assets/imgs/virtual_synthesis.jpg
+image_width: 1591
+image_height: 1439
 categories: research
 author: "Jianzhu Guo"
 # authors: "<strong>Jianzhu Guo</strong>, Xiangyu Zhu, Jinchuan Xiao, Zhen Lei, Genxun Wan, Stan Z. Li"

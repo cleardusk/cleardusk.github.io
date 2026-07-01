@@ -3,6 +3,8 @@ layout: post
 title:  <a href="/assets/pdfs/PID6035797.pdf">3DMA&#58 A Multi-modality 3D Mask Face Anti-spoofing Database</a>
 date:   2016-07-01 21:21:59 +00:00
 image: /assets/imgs/3DMA.png
+image_width: 625
+image_height: 566
 categories: research
 author: "Jianzhu Guo"
 authors: Jinchuan Xiao, Yinhang Tang, <a href="https://scholar.google.com/citations?user=W8_JzNcAAAAJ"><strong><u>Jianzhu Guo</u></strong></a>, <a href="https://scholar.google.com/citations?user=YU-yRMsAAAAJ">Yang Yang</a>, <a href="https://scholar.google.com/citations?user=1rbNk5oAAAAJ">Xiangyu Zhu</a>, <a href="https://scholar.google.com/citations?user=cuJ3QG8AAAAJ">Zhen Lei</a>, <a href="https://scholar.google.com/citations?user=Y-nyLGIAAAAJ">Stan Z. Li</a>

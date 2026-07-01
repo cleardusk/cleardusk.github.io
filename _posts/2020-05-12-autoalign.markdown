@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  <a href="/assets/pdfs/AAAI2021_Searching_for_Alignment_in_Face_Recognition.pdf">Searching for Alignment in Face Recognition</a>
-date: 2020-12-12 10:24:60 +00:00
+date: 2020-12-12 10:24:59 +00:00
 image: /assets/imgs/aaai2021_main_method.jpg
+image_width: 1234
+image_height: 484
 categories: research
 authors: Xiaqing Xu, Qiang Meng, <a href="https://scholar.google.com/citations?user=EMEy3gwAAAAJ">Yunxiao Qin</a>, <a href="https://scholar.google.com/citations?user=W8_JzNcAAAAJ"><strong><u>Jianzhu Guo</u></strong></a>, <a href="https://scholar.google.com/citations?hl=en&user=q07NiEAAAAAJ">Chenxu Zhao</a>, <a href="https://scholar.google.com/citations?user=zHpew00AAAAJ">Feng Zhou</a>, <a href="https://scholar.google.com/citations?user=cuJ3QG8AAAAJ">Zhen Lei</a>
 venue: "<strong>AAAI 2021</strong>"

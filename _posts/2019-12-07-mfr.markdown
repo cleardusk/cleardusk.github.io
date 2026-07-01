@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Project"
-date:   2019-12-04 21:10:60 +00:00
+date:   2019-12-04 21:10:59 +00:00
 image: /assets/imgs/dg.jpg
+image_width: 2386
+image_height: 1185
 categories: project
 ---
 <a href="https://github.com/cleardusk/MFR">Learning Meta Face Recognition in Unseen Domains</a>

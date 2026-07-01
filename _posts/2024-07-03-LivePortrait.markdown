@@ -1,13 +1,15 @@
 ---
 layout: post
 title: <a href="/assets/pdfs/LivePortrait.pdf">LivePortrait&#58 Efficient Portrait Animation with Stitching and Retargeting Control</a>
-date: 2024-07-03 23:51:60 +00:00
+date: 2024-07-03 23:51:59 +00:00
 image: /assets/imgs/LivePortrait-fig1.jpg
+image_width: 1435
+image_height: 960
 categories: research
 featured: true
 authors: <a href="https://scholar.google.com/citations?user=W8_JzNcAAAAJ"><strong><u>Jianzhu Guo</u></strong></a><sup>†</sup>, Dingyun Zhang, Xiaoqiang Liu, Zhizhou Zhong, <a href="https://scholar.google.com.hk/citations?user=_8k1ubAAAAAJ">Yuan Zhang</a>, <a href="https://scholar.google.com/citations?hl=en&user=P6MraaYAAAAJ">Pengfei Wan</a>, Di Zhang
 arxiv: https://arxiv.org/abs/2407.03168
-paper: assets/pdfs/LivePortrait.pdf
+paper: /assets/pdfs/LivePortrait.pdf
 code: https://github.com/KlingAIResearch/LivePortrait
 demo: https://huggingface.co/spaces/KlingTeam/LivePortrait
 homepage: https://liveportrait.github.io/
@@ -15,4 +17,4 @@ github_repo: KlingAIResearch/LivePortrait
 huggingface_likes_badge: https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fhuggingface.co%2Fapi%2Fspaces%2FKlingTeam%2FLivePortrait&query=likes&label=HF%20Space%20likes&logo=huggingface&color=ffcc4d
 huggingface_likes_alt: Hugging Face Space likes
 ---
-We propose a video-driven portrait animation framework named <strong>LivePortrait</strong> with a focus on better generalization, controllability, and efficiency for practical usage. The generation speed remarkably reaches <strong>12.8ms</strong> on an RTX 4090 GPU with PyTorch. The inference code and models are available at <a href="https://github.com/KlingAIResearch/LivePortrait" target="_blank"><strong>https://github.com/KlingAIResearch/LivePortrait</strong></a>.
+We propose a video-driven portrait animation framework named <strong>LivePortrait</strong> with a focus on better generalization, controllability, and efficiency for practical usage. The generation speed remarkably reaches <strong>12.8ms</strong> on an RTX 4090 GPU with PyTorch. The inference code and models are available at <a href="https://github.com/KlingAIResearch/LivePortrait" target="_blank" rel="noopener noreferrer"><strong>https://github.com/KlingAIResearch/LivePortrait</strong></a>.

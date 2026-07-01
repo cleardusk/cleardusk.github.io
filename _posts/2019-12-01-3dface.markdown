@@ -3,6 +3,8 @@ layout: post
 title: <a href="/assets/pdfs/3162.pdf">Towards Fast, Accurate and Stable 3D Dense Face Alignment</a>
 date:  2020-07-02 07:37:59 +00:00
 image: /assets/imgs/3dface_eccv20.jpg
+image_width: 2348
+image_height: 1024
 categories: research
 featured: true
 authors: <a href="https://scholar.google.com/citations?user=W8_JzNcAAAAJ"><strong><u>Jianzhu Guo</u></strong></a>, <a href="https://scholar.google.com/citations?user=1rbNk5oAAAAJ">Xiangyu Zhu</a>, <a href="https://scholar.google.com/citations?hl=zh-TW&user=YU-yRMsAAAAJ">Yang Yang</a>, <a href="https://scholar.google.com/citations?user=cuJ3QG8AAAAJ">Zhen Lei</a>, Yang Fan, <a href="https://scholar.google.com/citations?user=Y-nyLGIAAAAJ">Stan Z. Li</a>
@@ -17,4 +19,4 @@ github_repo: cleardusk/3DDFA_V2
 # arxiv: https://arxiv.org/abs/1901.00488
 ---
 We propose a novel regression framework, named <b>3DDFA_V2</b>, to make a balance among speed, accuracy and stability.
-Our model runs at over 50fps on a single CPU core (>200fps with ONNX acceleration) and outperforms other state-of-the-art heavy models simultaneously. Code and models are available at <a href="https://github.com/cleardusk/3DDFA_V2" target="_blank"><strong>https://github.com/cleardusk/3DDFA_V2</strong></a>.
+Our model runs at over 50fps on a single CPU core (>200fps with ONNX acceleration) and outperforms other state-of-the-art heavy models simultaneously. Code and models are available at <a href="https://github.com/cleardusk/3DDFA_V2" target="_blank" rel="noopener noreferrer"><strong>https://github.com/cleardusk/3DDFA_V2</strong></a>.

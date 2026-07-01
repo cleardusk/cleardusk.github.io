@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Project"
-date:   2026-05-18 21:21:60 +00:00
+date:   2026-05-18 21:21:59 +00:00
 image: /assets/gifs/lance-bear-skateboard.gif
+image_width: 288
+image_height: 155
 categories: project
 featured: true
 ---

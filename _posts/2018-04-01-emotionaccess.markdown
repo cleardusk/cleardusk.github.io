@@ -3,6 +3,8 @@ layout: post
 title:  <a href="/assets/pdfs/emotion_access_gjz.pdf">Dominant and Complementary Emotion Recognition From Still Images of Faces</a>
 date:   2018-04-01 22:21:59 +00:00
 image: /assets/imgs/emotion_fg_pipline.png
+image_width: 1319
+image_height: 609
 categories: research
 author: "Jianzhu Guo"
 authors: <a href="https://scholar.google.com/citations?user=W8_JzNcAAAAJ"><strong><u>Jianzhu Guo</u></strong></a>, <a href="https://scholar.google.com/citations?user=cuJ3QG8AAAAJ">Zhen Lei</a>, <a href="https://scholar.google.com/citations?user=bSbc7FQAAAAJ">Jun Wan</a>, et al.
