@@ -38,9 +38,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="preload" href="assets/gifs/avatars/bio_JianzhuGuo400x400.gif" as="image"> -->
   <!-- 在这里加载你的主CSS -->
+  <link rel="icon" type="image/png" href="{{ '/assets/me_v22.png' | relative_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" type="text/css" href="{{ '/style.css' | relative_url }}" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&display=swap" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -289,7 +292,7 @@
         <br/><hr class="style-two"><br/>
 
         <!-- 联系方式 -->
-        <table style="width:60%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table class="contact-table" style="border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td class="section-title-cell section-title-center" style="width:100%;vertical-align:middle">
               <h2><b>Contact (WeChat QR Code)</b></h2>
@@ -317,7 +320,18 @@
             <td style="padding:0px">
               <br/>
               <p style="text-align:center;font-size:small;">
-                <script type="text/javascript" id="clstr_globe" src="//cdn.clustrmaps.com/globe.js?d=5u0TrTNx9FyZH6ZczDdsayYbk078rojb25piIC7y7KI"></script>
+                <script>
+                  (function(container) {
+                    window.addEventListener('load', function() {
+                      if (!container) return;
+                      var script = document.createElement('script');
+                      script.id = 'clstr_globe';
+                      script.async = true;
+                      script.src = 'https://cdn.clustrmaps.com/globe.js?d=5u0TrTNx9FyZH6ZczDdsayYbk078rojb25piIC7y7KI';
+                      container.appendChild(script);
+                    });
+                  })(document.currentScript && document.currentScript.parentNode);
+                </script>
               </p>
             </td>
           </tr>

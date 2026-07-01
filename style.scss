@@ -50,6 +50,10 @@ img {
   margin: 0 auto;
 }
 
+.contact-table {
+  width: 60%;
+}
+
 .shadowImage {
   -webkit-filter: drop-shadow(2px 8px 6px #ccc);
   filter: drop-shadow(2px 8px 6px #ccc);
@@ -907,6 +911,14 @@ hr.style-seven:before {
   #profile-photo {
     width: min(52vw, 180px) !important;
     max-width: 180px !important;
+  }
+
+  .contact-table {
+    width: 100%;
+  }
+
+  .contact-qr-code {
+    width: min(72vw, 320px);
   }
 
   ul.news {
