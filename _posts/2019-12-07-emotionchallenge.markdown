@@ -9,4 +9,4 @@ categories: project
 ---
 <a href="https://github.com/cleardusk/EmotionChallenge">Source code for 1st winner of face micro-emotion competition held on FG 2017</a>
 <br>
-<img src="https://img.shields.io/github/stars/cleardusk/EmotionChallenge.svg" alt="GitHub stars" title="">
+<img src="https://img.shields.io/github/stars/cleardusk/EmotionChallenge?style=social" alt="GitHub stars" title="">

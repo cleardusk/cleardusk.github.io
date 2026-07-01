@@ -46,7 +46,7 @@
 
         {% if page.github_repo or page.github_stars_badge or page.huggingface_likes_badge %}
         <p>
-          {% if page.github_stars_badge %}<img style="border: 0px; padding: 1px; border-radius: 5px; vertical-align: middle; height: 20px; width: auto;" src="{{ page.github_stars_badge | xml_escape }}" alt="GitHub stars" title="">{% elsif page.github_repo %}<img style="border: 0px; padding: 1px; border-radius: 5px; vertical-align: middle; height: 20px; width: auto;" src="https://img.shields.io/github/stars/{{ page.github_repo }}.svg?style=social" alt="GitHub stars" title="">{% endif %}
+          {% if page.github_stars_badge %}<img style="border: 0px; padding: 1px; border-radius: 5px; vertical-align: middle; height: 20px; width: auto;" src="{{ page.github_stars_badge | xml_escape }}" alt="GitHub stars" title="">{% elsif page.github_repo %}<img style="border: 0px; padding: 1px; border-radius: 5px; vertical-align: middle; height: 20px; width: auto;" src="https://img.shields.io/github/stars/{{ page.github_repo }}?style=social" alt="GitHub stars" title="">{% endif %}
           {% if page.huggingface_likes_badge %}<img style="border: 0px; padding: 1px; border-radius: 5px; vertical-align: middle; height: 20px; width: auto;" src="{{ page.huggingface_likes_badge | xml_escape }}" alt="{{ page.huggingface_likes_alt | default: 'Hugging Face likes' }}" title="">{% endif %}
         </p>
         {% endif %}

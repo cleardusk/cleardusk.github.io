@@ -9,4 +9,4 @@ categories: project
 ---
 <a href="https://github.com/cleardusk/UCAS">UCAS utils to ease your campus life!</a>
 <br>
-<img src="https://img.shields.io/github/stars/cleardusk/UCAS.svg" alt="GitHub stars" title="">
+<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2Fcleardusk%2FUCAS&query=stargazers_count&label=Stars&logo=github&style=social" alt="GitHub stars" title="">
