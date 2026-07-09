@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Project"
+title:  "MeGlass: An Eyeglass Face Dataset"
 date:   2019-12-05 20:22:59 +00:00
 image: /assets/imgs/meglass.jpg
 image_width: 3657
@@ -9,4 +9,4 @@ categories: project
 ---
 <a href="https://github.com/cleardusk/MeGlass">MeGlass: An eyeglass face dataset collected and cleaned for face recognition evaluation</a>
 <br>
-<img src="https://img.shields.io/github/stars/cleardusk/MeGlass?style=social" alt="GitHub stars" title=""> <img src="https://img.shields.io/github/forks/cleardusk/MeGlass?style=social" alt="GitHub forks" title="">
+<img loading="lazy" decoding="async" src="https://img.shields.io/github/stars/cleardusk/MeGlass?style=social" alt="GitHub stars" title=""> <img loading="lazy" decoding="async" src="https://img.shields.io/github/forks/cleardusk/MeGlass?style=social" alt="GitHub forks" title="">

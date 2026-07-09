@@ -4,10 +4,24 @@
 <html lang="en">
 
 <head>
-  <title>{{ page.title | strip_html }} - {{ site.name }}</title>
+  {% assign meta_title = page.title | strip_html | strip_newlines | replace: '&#58;', ':' | replace: '&#58', ':' %}
+  {% assign meta_description = page.excerpt | default: site.description | default: site.name | strip_html | strip_newlines | truncate: 160 %}
+  {% assign meta_image = page.reduced_motion_image | default: page.image %}
+  <title>{{ meta_title }} - {{ site.name }}</title>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
   <meta name="author" content="{{ site.name }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ meta_description | escape }}">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="{{ site.name | escape }}">
+  <meta property="og:title" content="{{ meta_title | escape }}">
+  <meta property="og:description" content="{{ meta_description | escape }}">
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}">
+  {% if meta_image %}<meta property="og:image" content="{{ meta_image | absolute_url }}">{% endif %}
+  <meta name="twitter:card" content="{% if meta_image %}summary_large_image{% else %}summary{% endif %}">
+  <meta name="twitter:title" content="{{ meta_title | escape }}">
+  <meta name="twitter:description" content="{{ meta_description | escape }}">
+  {% if meta_image %}<meta name="twitter:image" content="{{ meta_image | absolute_url }}">{% endif %}
   <link rel="icon" type="image/png" href="{{ '/assets/me_v22.png' | relative_url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +31,9 @@
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <main id="main-content" tabindex="-1">
+  <table role="presentation" style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tr style="padding:0px">
       <td style="padding:2.5%">
         <p><a href="{{ '/' | relative_url }}">Home</a></p>
@@ -25,7 +41,9 @@
 
         {% if page.image %}
         <p style="text-align:center">
+          {% if page.reduced_motion_image %}<picture><source media="(prefers-reduced-motion: reduce)" srcset="{{ page.reduced_motion_image | relative_url }}">{% endif %}
           <img class="roundBorder" src="{{ page.image | relative_url }}" alt="{{ page.title | strip_html }}" {% if page.image_width and page.image_height %}width="{{ page.image_width }}" height="{{ page.image_height }}"{% endif %} decoding="async" style="width:auto; height:auto; max-width:100%;" />
+          {% if page.reduced_motion_image %}</picture>{% endif %}
         </p>
         {% endif %}
 
@@ -49,8 +67,8 @@
 
         {% if page.github_repo or page.github_stars_badge or page.huggingface_likes_badge %}
         <p>
-          {% if page.github_stars_badge %}<img style="border: 0px; padding: 1px; border-radius: 5px; vertical-align: middle; height: 20px; width: auto;" src="{{ page.github_stars_badge | xml_escape }}" alt="GitHub stars" title="">{% elsif page.github_repo %}<img style="border: 0px; padding: 1px; border-radius: 5px; vertical-align: middle; height: 20px; width: auto;" src="https://img.shields.io/github/stars/{{ page.github_repo }}?style=social" alt="GitHub stars" title="">{% endif %}
-          {% if page.huggingface_likes_badge %}<img style="border: 0px; padding: 1px; border-radius: 5px; vertical-align: middle; height: 20px; width: auto;" src="{{ page.huggingface_likes_badge | xml_escape }}" alt="{{ page.huggingface_likes_alt | default: 'Hugging Face likes' }}" title="">{% endif %}
+          {% if page.github_stars_badge %}<img style="border: 0px; padding: 1px; border-radius: 5px; vertical-align: middle; height: 20px; width: auto;" src="{{ page.github_stars_badge | xml_escape }}" alt="GitHub stars" title="" loading="lazy" decoding="async">{% elsif page.github_repo %}<img style="border: 0px; padding: 1px; border-radius: 5px; vertical-align: middle; height: 20px; width: auto;" src="https://img.shields.io/github/stars/{{ page.github_repo }}?style=social" alt="GitHub stars" title="" loading="lazy" decoding="async">{% endif %}
+          {% if page.huggingface_likes_badge %}<img style="border: 0px; padding: 1px; border-radius: 5px; vertical-align: middle; height: 20px; width: auto;" src="{{ page.huggingface_likes_badge | xml_escape }}" alt="{{ page.huggingface_likes_alt | default: 'Hugging Face likes' }}" title="" loading="lazy" decoding="async">{% endif %}
         </p>
         {% endif %}
 
@@ -58,6 +76,7 @@
       </td>
     </tr>
   </table>
+  </main>
 </body>
 
 </html>

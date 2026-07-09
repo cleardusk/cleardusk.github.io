@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Project"
+title:  "UCAS: Campus Utilities"
 date:   2019-12-01 21:21:59 +00:00
 image: /assets/imgs/github.png
 image_width: 1125
@@ -9,4 +9,4 @@ categories: project
 ---
 <a href="https://github.com/cleardusk/UCAS">UCAS utils to ease your campus life!</a>
 <br>
-<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2Fcleardusk%2FUCAS&query=stargazers_count&label=Stars&logo=github&style=social" alt="GitHub stars" title="">
+<img loading="lazy" decoding="async" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2Fcleardusk%2FUCAS&query=stargazers_count&label=Stars&logo=github&style=social" alt="GitHub stars" title="">

@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Project"
+title:  "3DDFA_V2: Fast, Accurate and Stable 3D Dense Face Alignment"
 date:   2020-09-01 21:21:59 +00:00
 image: /assets/imgs/webcam.gif
+reduced_motion_image: /assets/imgs/webcam-static.jpg
 image_width: 480
 image_height: 270
 categories: project
@@ -10,4 +11,4 @@ featured: true
 ---
 <a href="https://github.com/cleardusk/3DDFA_V2">3DDFA_V2: Fast, accurate and stable 3D dense face alignment</a> &nbsp; [<a href="https://star-history.t9t.io/#cleardusk/3DDFA_V2">Star history</a>]
 <br>
-<img src="https://img.shields.io/github/stars/cleardusk/3DDFA_V2?style=social" alt="GitHub stars" title="">  <img src="https://img.shields.io/github/forks/cleardusk/3DDFA_V2?style=social" alt="GitHub forks" title=""> <img src="https://img.shields.io/github/issues-closed/cleardusk/3DDFA_V2" alt="Closed Issues" title=""> <img src="https://img.shields.io/github/issues/cleardusk/3DDFA_V2" alt="Open Issues" title="">
+<img loading="lazy" decoding="async" src="https://img.shields.io/github/stars/cleardusk/3DDFA_V2?style=social" alt="GitHub stars" title="">  <img loading="lazy" decoding="async" src="https://img.shields.io/github/forks/cleardusk/3DDFA_V2?style=social" alt="GitHub forks" title=""> <img loading="lazy" decoding="async" src="https://img.shields.io/github/issues-closed/cleardusk/3DDFA_V2" alt="Closed Issues" title=""> <img loading="lazy" decoding="async" src="https://img.shields.io/github/issues/cleardusk/3DDFA_V2" alt="Open Issues" title="">

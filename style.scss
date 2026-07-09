@@ -12,6 +12,20 @@
 /* BASE RULES */
 /**************/
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  overflow-wrap: anywhere;
+}
+
 hr.style-two {
   border: 0;
   height: 0.666px;
@@ -94,8 +108,32 @@ a {
 
 a:focus,
 a:hover {
-  color: #f09228;
+  color: #b45309;
   text-decoration: none;
+}
+
+.skip-link {
+  position: fixed;
+  top: 8px;
+  left: 50%;
+  z-index: 1000;
+  padding: 10px 14px;
+  border: 2px solid #1772d0;
+  border-radius: 6px;
+  background: #fff;
+  color: #111;
+  font-weight: 700;
+  white-space: nowrap;
+  transform: translate(-50%, calc(-100% - 16px));
+}
+
+.skip-link:focus,
+.skip-link:focus-visible {
+  color: #111;
+  text-decoration: underline;
+  transform: translate(-50%, 0);
+  outline: 3px solid #1772d0;
+  outline-offset: 2px;
 }
 
 ul.news {
@@ -123,6 +161,26 @@ li.margin {
 
 .connect-title {
   color: var(--theme-accent-color, #dc8d04);
+}
+
+.topic-career {
+  color: #c2410c;
+}
+
+.topic-tech {
+  color: #1d4ed8;
+}
+
+.topic-research {
+  color: #7e22ce;
+}
+
+.contact-email {
+  color: #0369a1;
+}
+
+.contact-wechat {
+  color: #047857;
 }
 
 /* 多个主题类定义 */
@@ -321,8 +379,8 @@ h1 {
 }
 
 .profile-name-trigger:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(23, 114, 208, 0.16);
+  outline: 3px solid #1772d0;
+  outline-offset: 3px;
 }
 
 .profile-name-trigger[data-animation-state="running"] {
@@ -641,6 +699,10 @@ span.highlight {
   font-style: italic;
   transform-origin: 180px 108px;
   will-change: transform;
+}
+
+.bottom-horse-runner:not(.is-visible) * {
+  animation-play-state: paused !important;
 }
 
 @media (prefers-reduced-motion: reduce) {
