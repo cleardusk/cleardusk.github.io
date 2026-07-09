@@ -1,15 +1,38 @@
-# updated website
+# Jianzhu Guo's homepage
 
-This repo is built on a fork of **Jekyll Now** from [this repository](https://github.com/barryclark/jekyll-now). **Jekyll** is a static site generator that's perfect for GitHub hosted blogs ([Jekyll Repository](https://github.com/jekyll/jekyll))
+Personal academic homepage built with Jekyll and hosted on GitHub Pages at
+[guojianzhu.com](https://guojianzhu.com).
 
-The website design is just a modification of [Jon Barron's website](https://jonbarron.info/) and is converted for my own use, re-purposing my old markdown posts. **Feel free to use template for your own purposes**, but please respect copyright for all the images/content in my `images`, `pdfs`, `_posts` folders. 
+The design is adapted from [Jon Barron's website](https://jonbarron.info/) and
+the repository started from [Jekyll Now](https://github.com/barryclark/jekyll-now).
+The template may be reused, but the content and media in `assets/` and `_posts/`
+remain the property of their respective owners.
 
+## Local development
 
+Use Ruby 3.3 and Bundler. `Gemfile` pins the GitHub Pages runtime used by this
+repository; `Gemfile.lock` stays local as recommended for branch-based Pages sites.
 
-## issues
-* In general, jekyll will try to build a full page for every post. I skip that by forcing `permalink: /`. This creates multiple entries in sitemap.xml for index.html but is otherwise fine. 
-* If you want multiple paragraphs, consider using `excerpt_separator: <!--more-->` in `_config.yml`, for my own use I didn't need this. 
-* My own posts have lots of extra stuff left over from my old jekyll design ("author", long descriptions, etc.), feel free to ignore them
-* I use thumbnails, so I can upload arbitrary sized images but then only display small ones. The `_make_thumbnails.sh` script generates them and the html template looks in `tn/` for all images. 
-* I have three categories of post with slightly differerent formatting, so changing sizing requires edits in multiple paces. 
-* If you use this, I'd appreciate a link back either to this repo or my personal website so others can find this too. 
+```sh
+bundle install
+bundle exec jekyll serve
+```
+
+Then open <http://127.0.0.1:4000>.
+
+For a production build:
+
+```sh
+bundle exec jekyll build
+```
+
+## Updating content
+
+- Site metadata lives in `_config.yml`.
+- The homepage structure lives in `_layouts/default.html`.
+- Publications, projects, news, and competitions live in `_posts/` and are
+  selected by their `categories` front matter.
+- Images, PDFs, videos, and scripts live under `assets/`.
+
+Each post also receives its own date-based URL. Keep `date` values in UTC; the
+site timezone is fixed in `_config.yml` so local and GitHub Pages builds agree.

@@ -160,6 +160,21 @@
       isRunning = false;
     }
 
+    function syncReducedMotionState() {
+      var shouldReduceMotion = reducedMotion && reducedMotion.matches;
+
+      if (shouldReduceMotion) {
+        if (isRunning) finish();
+        trigger.setAttribute("aria-disabled", "true");
+      } else if (!isRunning) {
+        trigger.removeAttribute("aria-disabled");
+      }
+    }
+
+    function handleViewportChange() {
+      if (isRunning) finish();
+    }
+
     function start() {
       if (isRunning) return;
       if (reducedMotion && reducedMotion.matches) return;
@@ -299,10 +314,17 @@
     }
 
     trigger.addEventListener("click", start);
+    window.addEventListener("resize", handleViewportChange);
+    window.addEventListener("orientationchange", handleViewportChange);
 
-    if (reducedMotion && reducedMotion.matches) {
-      trigger.setAttribute("aria-disabled", "true");
+    if (reducedMotion) {
+      if (typeof reducedMotion.addEventListener === "function") {
+        reducedMotion.addEventListener("change", syncReducedMotionState);
+      } else if (typeof reducedMotion.addListener === "function") {
+        reducedMotion.addListener(syncReducedMotionState);
+      }
     }
+    syncReducedMotionState();
   }
 
   function init() {

@@ -7,16 +7,16 @@
     (function() {
       const themes = ["theme-green", "theme-blue", "theme-pastel", "theme-warm", "theme-cool", "theme-forest", "theme-berry", "theme-lavender", "theme-olive", "theme-gray"];
       const themeAccentColors = {
-        "theme-green": "#20b2aa",
-        "theme-blue": "#3b82f6",
-        "theme-pastel": "#d48ae0",
-        "theme-warm": "#f0a500",
-        "theme-cool": "#00bcd4",
+        "theme-green": "#0f766e",
+        "theme-blue": "#1d4ed8",
+        "theme-pastel": "#9333a3",
+        "theme-warm": "#9a6700",
+        "theme-cool": "#007c91",
         "theme-forest": "#2e7d32",
-        "theme-berry": "#e91e63",
-        "theme-lavender": "#9c27b0",
+        "theme-berry": "#c2185b",
+        "theme-lavender": "#7b1fa2",
         "theme-olive": "#827717",
-        "theme-gray": "#607d8b"
+        "theme-gray": "#455a64"
       };
       const randomTheme = themes[Math.floor(Math.random() * themes.length)];
       window.selectedTheme = randomTheme;
@@ -25,17 +25,23 @@
     })();
   </script>
 
-  <!-- 在CSS加载前隐藏.news，避免闪动 -->
-  <style>
-    .news {
-      visibility: hidden;
-    }
-  </style>
-
+  {% assign meta_description = site.description | default: site.name | strip_html | strip_newlines %}
+  {% assign meta_image = site.avatar %}
   <title>{{ site.name }}</title>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
   <meta name="author" content="{{ site.name }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ meta_description | escape }}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.name | escape }}">
+  <meta property="og:title" content="{{ site.name | escape }}">
+  <meta property="og:description" content="{{ meta_description | escape }}">
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}">
+  {% if meta_image %}<meta property="og:image" content="{{ meta_image | absolute_url }}">{% endif %}
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ site.name | escape }}">
+  <meta name="twitter:description" content="{{ meta_description | escape }}">
+  {% if meta_image %}<meta name="twitter:image" content="{{ meta_image | absolute_url }}">{% endif %}
   <!-- <link rel="preload" href="assets/gifs/avatars/bio_JianzhuGuo400x400.gif" as="image"> -->
   <!-- 在这里加载你的主CSS -->
   <link rel="icon" type="image/png" href="{{ '/assets/me_v22.png' | relative_url }}">
@@ -47,21 +53,12 @@
 </head>
 
 <body>
-  <script>
-    (function() {
-      const newsElement = document.querySelector(".news");
-      if (newsElement && window.selectedTheme) {
-        newsElement.classList.add(window.selectedTheme);
-        // 加上主题后再显示
-        newsElement.style.visibility = "visible";
-      }
-    })();
-  </script>
-
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <main id="main-content" tabindex="-1">
+  <table role="presentation" style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tr style="padding:0px">
       <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table role="presentation" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr class="intro-row" style="padding:0px">
             <td class="intro-copy" style="padding:2.5%;width:66.6%;vertical-align:middle">
               <div class="profile-name-wrap">
@@ -92,11 +89,11 @@
               <div style="text-align:center; font-family: 'Arial', sans-serif; line-height: 1.2; margin: 0;">
                 <p class="connect-title" style="font-size:1em; margin: 5px 0;">🚀 Let's connect! 🚀</p>
                 <p style="font-style:italic; font-weight:bold; font-size:0.95em; color:#333; margin: 5px 0;">
-                  Open to chats on <span style="color:#FF5733;">career</span>, <span style="color:#3498DB;">tech</span>, or <span style="color:#9B59B6;">research</span>.
+                  Open to chats on <span class="topic-career">career</span>, <span class="topic-tech">tech</span>, or <span class="topic-research">research</span>.
                 </p>
                 <p style="font-size:0.95em; margin: 5px 0;">
-                  💌 <a href="mailto:guojianzhu1994@gmail.com" style="text-decoration: none; color: #0f96cf;"><b>Email</b></a> or
-                  <a href="/assets/imgs/qrcode_me_v2024_beauty.png" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: rgb(4, 208, 103);"><b>WeChat</b></a>
+                  💌 <a class="contact-email" href="mailto:guojianzhu1994@gmail.com"><b>Email</b></a> or
+                  <a class="contact-wechat" href="/assets/imgs/qrcode_me_v2024_beauty.png" target="_blank" rel="noopener noreferrer"><b>WeChat</b></a>
                   (with a friendly note)! 😉
                 </p>
               </div>
@@ -131,14 +128,28 @@
                 ];
                 (function() {
                   try {
-                    var list = (window.profileImages || []).filter(function(p){
+                    var allImages = (window.profileImages || []).filter(function(p){
                       // simple guard to include common image extensions
                       return /\.gif$|\.jpg$|\.jpeg$|\.png$|\.webp$/i.test(p);
                     });
-                    if (list.length) {
-                      var chosen = list[Math.floor(Math.random() * list.length)];
-                      var img = document.getElementById('profile-photo');
-                      if (img) img.src = chosen;
+                    var motionPreference = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)");
+                    var img = document.getElementById('profile-photo');
+                    function chooseProfileImage() {
+                      var list = allImages;
+                      if (motionPreference && motionPreference.matches) {
+                        list = allImages.filter(function(p) { return !/\.gif$/i.test(p); });
+                      }
+                      if (img && list.length) {
+                        img.src = list[Math.floor(Math.random() * list.length)];
+                      }
+                    }
+                    chooseProfileImage();
+                    if (motionPreference) {
+                      if (typeof motionPreference.addEventListener === "function") {
+                        motionPreference.addEventListener("change", chooseProfileImage);
+                      } else if (typeof motionPreference.addListener === "function") {
+                        motionPreference.addListener(chooseProfileImage);
+                      }
                     }
                   } catch(e) {
                     // no-op: keep fallback src on error
@@ -149,7 +160,7 @@
           </tr>
         </table>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table role="presentation" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td class="section-title-cell" style="width:100%;vertical-align:middle">
               <h2><b>Highlights</b></h2>
@@ -158,7 +169,7 @@
         </table>
 
         <!-- 如果需要使用ul来渲染news，请参考之前的实现，但这里保持逻辑与原结构一致 -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table role="presentation" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           {% for post in site.posts %}
           {% for cat in post.categories %}
           {% if cat == 'news' %}
@@ -175,20 +186,19 @@
           {% endfor %}
         </table>
 
-        <!-- 立即执行的script，将selectedTheme应用到.news上并显示 -->
+        <!-- 将随机主题应用到 news 列表 -->
         <script>
           (function() {
             const newsElement = document.querySelector(".news");
             if (newsElement && window.selectedTheme) {
               newsElement.classList.add(window.selectedTheme);
-              newsElement.style.visibility = "visible";  // 显示列表
             }
           })();
         </script>
 
         <br/><hr class="style-two"><br/>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table role="presentation" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td class="section-title-cell" style="width:100%;vertical-align:middle">
               <h2><b>Publications</b></h2>
@@ -196,13 +206,15 @@
           </tr>
         </table>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table role="presentation" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           {% for post in site.posts %}
           {% for cat in post.categories %}
           {% if cat == 'research' %}
           <tr class="publication-row{% if post.featured %} featured-work{% endif %}">
             <td class="publication-thumb" style="padding:2%;width:27.5%;vertical-align:middle;min-width:120px">
+              {% if post.reduced_motion_image %}<picture><source media="(prefers-reduced-motion: reduce)" srcset="{{ post.reduced_motion_image | relative_url }}">{% endif %}
               <img class="roundBorder" src="{{ post.image | relative_url }}" alt="{{ post.title | strip_html }}" {% if post.image_width and post.image_height %}width="{{ post.image_width }}" height="{{ post.image_height }}"{% endif %} loading="lazy" decoding="async" style="width:auto; height:auto; max-width:100%;" />
+              {% if post.reduced_motion_image %}</picture>{% endif %}
             </td>
             <td class="publication-body" style="padding:2%;width:72.5%;vertical-align:middle">
               <h3>{{post.title}}</h3>
@@ -223,8 +235,8 @@
               {% if post.code %}<a href="{{post.code}}">code</a> /{% endif %}
               {% if post.github_repo or post.github_stars_badge or post.huggingface_likes_badge %}
               <br>
-              {% if post.github_stars_badge %}<img style="border: 0px; padding: 1px; border-radius: 5px; vertical-align: middle;" src="{{post.github_stars_badge | xml_escape}}" alt="GitHub stars" title="">{% elsif post.github_repo %}<img style="border: 0px; padding: 1px; border-radius: 5px; vertical-align: middle;" src="https://img.shields.io/github/stars/{{post.github_repo}}?style=social" alt="GitHub stars" title="">{% endif %}
-              {% if post.huggingface_likes_badge %}<img style="border: 0px; padding: 1px; border-radius: 5px; vertical-align: middle;" src="{{post.huggingface_likes_badge | xml_escape}}" alt="{{post.huggingface_likes_alt | default: 'Hugging Face likes'}}" title="">{% endif %}
+              {% if post.github_stars_badge %}<img style="border: 0px; padding: 1px; border-radius: 5px; vertical-align: middle;" src="{{post.github_stars_badge | xml_escape}}" alt="GitHub stars" title="" loading="lazy" decoding="async">{% elsif post.github_repo %}<img style="border: 0px; padding: 1px; border-radius: 5px; vertical-align: middle;" src="https://img.shields.io/github/stars/{{post.github_repo}}?style=social" alt="GitHub stars" title="" loading="lazy" decoding="async">{% endif %}
+              {% if post.huggingface_likes_badge %}<img style="border: 0px; padding: 1px; border-radius: 5px; vertical-align: middle;" src="{{post.huggingface_likes_badge | xml_escape}}" alt="{{post.huggingface_likes_alt | default: 'Hugging Face likes'}}" title="" loading="lazy" decoding="async">{% endif %}
               {% endif %}
               <p></p>
               {{ post.excerpt }}
@@ -237,7 +249,7 @@
 
         <br/><hr class="style-two"><br/>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table role="presentation" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td class="section-title-cell" style="width:100%;vertical-align:middle">
               <h2><b>Competitions</b></h2>
@@ -245,7 +257,7 @@
           </tr>
         </table>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table role="presentation" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           {% for post in site.posts %}
           {% for cat in post.categories %}
           {% if cat == 'comp' %}
@@ -264,7 +276,7 @@
 
         <br/><hr class="style-two"><br/>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table role="presentation" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td class="section-title-cell" style="width:100%;vertical-align:middle">
               <h2><b>Projects (Public)</b></h2>
@@ -272,13 +284,15 @@
           </tr>
         </table>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table role="presentation" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           {% for post in site.posts %}
           {% for cat in post.categories %}
           {% if cat == 'project' %}
           <tr class="project-row{% if post.featured %} featured-work{% endif %}">
             <td class="project-thumb" style="padding:2%;width:27.5%;vertical-align:middle;min-width:120px">
+              {% if post.reduced_motion_image %}<picture><source media="(prefers-reduced-motion: reduce)" srcset="{{ post.reduced_motion_image | relative_url }}">{% endif %}
               <img class="shadowRoundImage" src="{{ post.image | relative_url }}" alt="{{ post.title | strip_html }}" {% if post.image_width and post.image_height %}width="{{ post.image_width }}" height="{{ post.image_height }}"{% endif %} loading="lazy" decoding="async" style="width:auto; height:auto; max-width:100%;" />
+              {% if post.reduced_motion_image %}</picture>{% endif %}
             </td>
             <td class="project-body" style="padding:2%;width:72.5%;vertical-align:middle">
               {{ post.excerpt }}
@@ -292,7 +306,7 @@
         <br/><hr class="style-two"><br/>
 
         <!-- 联系方式 -->
-        <table class="contact-table" style="border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table role="presentation" class="contact-table" style="border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td class="section-title-cell section-title-center" style="width:100%;vertical-align:middle">
               <h2><b>Contact (WeChat QR Code)</b></h2>
@@ -313,9 +327,25 @@
         <div class="bottom-horse-runner" aria-hidden="true">
           {% include horse-runner.html %}
         </div>
+        <script>
+          (function() {
+            const runner = document.querySelector(".bottom-horse-runner");
+            if (!runner) return;
+            if (!("IntersectionObserver" in window)) {
+              runner.classList.add("is-visible");
+              return;
+            }
+            const observer = new IntersectionObserver(function(entries) {
+              entries.forEach(function(entry) {
+                runner.classList.toggle("is-visible", entry.isIntersecting);
+              });
+            }, { rootMargin: "200px 0px" });
+            observer.observe(runner);
+          })();
+        </script>
 
         <!-- 访问数据统计 -->
-        <table style="width:40%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table role="presentation" style="width:40%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:0px">
               <br/>
@@ -338,7 +368,7 @@
         </table>
 
         <!-- 来源 -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table role="presentation" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:0px">
               <br>
@@ -351,5 +381,6 @@
       </td>
     </tr>
   </table>
+  </main>
 </body>
 </html>

@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Project"
+title:  "3DDFA: Real-time 3D Face Reconstruction"
 date:   2019-12-06 21:21:59 +00:00
 image: /assets/imgs/obama_three_styles.gif
+reduced_motion_image: /assets/imgs/obama-three-styles-static.jpg
 image_width: 512
 image_height: 288
 categories: project
@@ -10,4 +11,4 @@ featured: true
 ---
 <a href="https://github.com/cleardusk/3DDFA">3DDFA: Real-time 3D face reconstruction</a> &nbsp; [<a href="https://star-history.t9t.io/#cleardusk/3DDFA">Star history</a>]
 <br>
-<img src="https://img.shields.io/github/stars/cleardusk/3DDFA?style=social" alt="GitHub stars" title=""> <img src="https://img.shields.io/github/forks/cleardusk/3DDFA?style=social" alt="GitHub forks" title=""> <img src="https://img.shields.io/github/issues-closed/cleardusk/3DDFA" alt="Closed Issues" title=""> <img src="https://img.shields.io/github/issues/cleardusk/3DDFA" alt="Open Issues" title="">
+<img loading="lazy" decoding="async" src="https://img.shields.io/github/stars/cleardusk/3DDFA?style=social" alt="GitHub stars" title=""> <img loading="lazy" decoding="async" src="https://img.shields.io/github/forks/cleardusk/3DDFA?style=social" alt="GitHub forks" title=""> <img loading="lazy" decoding="async" src="https://img.shields.io/github/issues-closed/cleardusk/3DDFA" alt="Closed Issues" title=""> <img loading="lazy" decoding="async" src="https://img.shields.io/github/issues/cleardusk/3DDFA" alt="Open Issues" title="">

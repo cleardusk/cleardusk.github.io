@@ -3,6 +3,7 @@ layout: post
 title: <a href="https://arxiv.org/pdf/2605.18678">Lance&#58 Unified Multimodal Modeling by Multi-Task Synergy</a>
 date: 2026-05-18 17:18:24 +00:00
 image: /assets/gifs/lance-bear-skateboard.gif
+reduced_motion_image: /assets/imgs/lance-bear-skateboard-static.jpg
 image_width: 288
 image_height: 155
 categories: research

@@ -11,7 +11,7 @@ authors: <a href="https://scholar.google.com/citations?user=W8_JzNcAAAAJ"><stron
 venue: <strong>CVPR 2020</strong> (<strong><font color="red">Oral Presentation</font></strong>, acceptance rate 5%)
 code: https://github.com/cleardusk/MFR
 paper: /assets/pdfs/05997.pdf
-arxiv: https://arxiv.org/abs/1901.00488
+arxiv: https://arxiv.org/abs/2003.07733
 ---
 
 We propose a novel face recognition method via meta-learning named Meta Face Recognition (MFR) to learn a generalized model performing well on unseen domains. Besides, we propose two benchmarks for generalized face recognition evaluation. The proposed benchmarks will be available at <a href="https://github.com/cleardusk/MFR">https://github.com/cleardusk/MFR</a>.

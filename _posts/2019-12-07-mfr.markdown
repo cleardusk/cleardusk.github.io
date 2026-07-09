@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Project"
+title:  "MFR: Learning Meta Face Recognition in Unseen Domains"
 date:   2019-12-04 21:10:59 +00:00
 image: /assets/imgs/dg.jpg
 image_width: 2386
@@ -9,4 +9,4 @@ categories: project
 ---
 <a href="https://github.com/cleardusk/MFR">Learning Meta Face Recognition in Unseen Domains</a>
 <br>
-<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2Fcleardusk%2FMFR&query=stargazers_count&label=Stars&logo=github&style=social" alt="GitHub stars" title=""> <img src="https://img.shields.io/github/forks/cleardusk/MFR?style=social" alt="GitHub forks" title="">
+<img loading="lazy" decoding="async" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2Fcleardusk%2FMFR&query=stargazers_count&label=Stars&logo=github&style=social" alt="GitHub stars" title=""> <img loading="lazy" decoding="async" src="https://img.shields.io/github/forks/cleardusk/MFR?style=social" alt="GitHub forks" title="">
