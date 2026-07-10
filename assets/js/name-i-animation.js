@@ -2,17 +2,20 @@
   "use strict";
 
   var JUMPER_INDEX = 1;
-  var STEP_DURATION_MS = 240;
-  var STRETCH_DURATION_MS = 520;
-  var RETURN_HOLD_MS = 56;
+  var STEP_DURATION_MS = 225;
+  var STRETCH_DURATION_MS = 450;
+  var RETURN_HOLD_MS = 44;
   var RIGHT_OF_O_GAP_PX = 8;
   var LETTER_LANDING_OVERLAP_PX = 3;
   var MOBILE_LETTER_LANDING_OVERLAP_PX = 9;
   var MOBILE_BREAKPOINT_PX = 640;
+  var MOBILE_TOP_SAFE_MARGIN_PX = 10;
   var STRETCH_SQUAT_PX = 3.5;
   var STRETCH_SCALE_Y_PEAK = 1.16;
   var STRETCH_COMPRESS_SCALE_Y = 0.91;
   var STRETCH_SWAY_DEG = 3;
+  var LETTER_REACTION_DURATION_MS = 360;
+  var LETTER_REACTION_PEAK_MS = 190;
 
   var PATH = [
     { kind: "rightOfLetter", letterIndex: 10 },
@@ -103,7 +106,7 @@
     };
   }
 
-  function buildSegment(from, to, isFirstHop) {
+  function buildSegment(from, to, isFirstHop, minimumCrestY) {
     var dx = to.x - from.x;
     var dy = to.y - from.y;
     var travelX = Math.abs(dx);
@@ -114,6 +117,10 @@
       isFirstHop ? 84 : 52
     );
     var crestY = Math.min(from.y, to.y) - arc;
+
+    if (typeof minimumCrestY === "number") {
+      crestY = Math.min(Math.max(crestY, minimumCrestY), Math.min(from.y, to.y));
+    }
 
     return {
       from: from,
@@ -131,7 +138,6 @@
 
   function setupNameAnimation(root) {
     if (root.getAttribute("data-name-i-animation-ready") === "true") return;
-    root.setAttribute("data-name-i-animation-ready", "true");
 
     var reducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)");
     var trigger = root.closest ? root.closest(".profile-name-trigger") : root.parentElement;
@@ -139,12 +145,18 @@
     var letters = Array.prototype.slice.call(root.querySelectorAll(".hero-letter"));
     var animationFrame = null;
     var isRunning = false;
+    var initialAriaLabel = trigger ? trigger.getAttribute("aria-label") : null;
+    var hasValidPath = PATH.every(function (point) {
+      return Boolean(letters[point.letterIndex]);
+    });
 
-    if (!trigger || !jumper || !letters[JUMPER_INDEX]) return;
+    if (!trigger || !jumper || !letters[JUMPER_INDEX] || !hasValidPath) return;
+    root.setAttribute("data-name-i-animation-ready", "true");
+    root.style.setProperty("--name-letter-reaction-duration", LETTER_REACTION_DURATION_MS + "ms");
     jumper.textContent = letters[JUMPER_INDEX].textContent || "";
 
     function isMobileViewport() {
-      return window.matchMedia && window.matchMedia("(max-width: " + (MOBILE_BREAKPOINT_PX - 1) + "px)").matches;
+      return window.matchMedia && window.matchMedia("(max-width: " + MOBILE_BREAKPOINT_PX + "px)").matches;
     }
 
     function finish() {
@@ -156,32 +168,47 @@
       jumper.style.visibility = "hidden";
       jumper.style.transform = "";
       trigger.removeAttribute("data-animation-state");
-      trigger.removeAttribute("aria-disabled");
+      if (initialAriaLabel === null) {
+        trigger.removeAttribute("aria-label");
+      } else {
+        trigger.setAttribute("aria-label", initialAriaLabel);
+      }
       isRunning = false;
     }
 
     function syncReducedMotionState() {
       var shouldReduceMotion = reducedMotion && reducedMotion.matches;
 
-      if (shouldReduceMotion) {
-        if (isRunning) finish();
-        trigger.setAttribute("aria-disabled", "true");
-      } else if (!isRunning) {
-        trigger.removeAttribute("aria-disabled");
-      }
+      if (shouldReduceMotion && isRunning) finish();
+      trigger.disabled = Boolean(shouldReduceMotion);
     }
 
     function handleViewportChange() {
       if (isRunning) finish();
     }
 
+    function handleKeydown(event) {
+      if (event.key !== "Escape" || !isRunning) return;
+      event.preventDefault();
+      finish();
+    }
+
     function start() {
-      if (isRunning) return;
+      if (isRunning) {
+        finish();
+        return;
+      }
       if (reducedMotion && reducedMotion.matches) return;
 
       var containerRect = root.getBoundingClientRect();
       var iEl = letters[JUMPER_INDEX];
+      var inlineTransition = iEl.style.transition;
+      var inlineTransform = iEl.style.transform;
+      iEl.style.transition = "none";
+      iEl.style.transform = "none";
       var iRect = iEl.getBoundingClientRect();
+      iEl.style.transform = inlineTransform;
+      iEl.style.transition = inlineTransition;
       var jumperRect = jumper.getBoundingClientRect();
       var jumperWidth = jumperRect.width;
       var jumperHeight = jumperRect.height;
@@ -237,9 +264,10 @@
         };
       });
 
+      var minimumCrestY = isMobile ? MOBILE_TOP_SAFE_MARGIN_PX - containerRect.top : null;
       var segments = waypoints.map(function (to, index) {
         var from = index === 0 ? origin : waypoints[index - 1];
-        return buildSegment(from, to, index === 0);
+        return buildSegment(from, to, index === 0, minimumCrestY);
       });
 
       var timings = PATH.map(function (point, index) {
@@ -253,11 +281,38 @@
       var jumpDurationMs = timings.reduce(function (total, timing) {
         return total + timing.totalDurationMs;
       }, 0);
+      var reactionElapsedMs = STRETCH_DURATION_MS;
+      var reactedLetterIndices = {};
+
+      timings.forEach(function (timing, index) {
+        var point = PATH[index];
+        reactionElapsedMs += timing.moveDurationMs;
+
+        if (point.kind === "letter" && point.letterIndex !== JUMPER_INDEX && !reactedLetterIndices[point.letterIndex]) {
+          var reactingLetter = letters[point.letterIndex];
+          reactingLetter.classList.add("hero-letter-reactor");
+          reactingLetter.style.setProperty(
+            "--name-letter-delay",
+            Math.max(0, reactionElapsedMs - LETTER_REACTION_PEAK_MS) + "ms"
+          );
+          reactedLetterIndices[point.letterIndex] = true;
+        }
+
+        reactionElapsedMs += timing.holdDurationMs;
+      });
+
+      if (letters[0]) {
+        letters[0].classList.add("hero-letter-reactor");
+        letters[0].style.setProperty(
+          "--name-letter-delay",
+          Math.max(0, STRETCH_DURATION_MS + jumpDurationMs - LETTER_REACTION_DURATION_MS) + "ms"
+        );
+      }
       var startTs = null;
 
       isRunning = true;
       trigger.setAttribute("data-animation-state", "running");
-      trigger.setAttribute("aria-disabled", "true");
+      trigger.setAttribute("aria-label", "Stop Jianzhu Guo name animation");
       iEl.style.visibility = "hidden";
       jumper.style.visibility = "visible";
       jumper.style.transform = translate3d(origin.x, origin.y);
@@ -314,6 +369,7 @@
     }
 
     trigger.addEventListener("click", start);
+    document.addEventListener("keydown", handleKeydown);
     window.addEventListener("resize", handleViewportChange);
     window.addEventListener("orientationchange", handleViewportChange);
 
@@ -331,8 +387,16 @@
     Array.prototype.forEach.call(document.querySelectorAll(".name-i-animation"), setupNameAnimation);
   }
 
-  init();
+  function initAfterFontsReady() {
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(init);
+    } else {
+      init();
+    }
+  }
+
+  initAfterFontsReady();
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init, { once: true });
+    document.addEventListener("DOMContentLoaded", initAfterFontsReady, { once: true });
   }
 })();
