@@ -16,6 +16,10 @@
   var STRETCH_SWAY_DEG = 3;
   var LETTER_REACTION_DURATION_MS = 360;
   var LETTER_REACTION_PEAK_MS = 190;
+  var FIREWORK_DURATION_MS = 650;
+  var FIREWORK_PARTICLE_COUNT = 12;
+  var FIREWORK_COLORS = ["#1772d0", "#f2b84b", "#ef6f61", "#74b9e6"];
+  var FIREWORK_ANGLE_OFFSETS_DEG = [0, -4, 3, -2, 5, -3, 2, -5, 4, -2, 3, -4];
 
   var PATH = [
     { kind: "rightOfLetter", letterIndex: 10 },
@@ -144,6 +148,7 @@
     var jumper = root.querySelector(".hero-letter-jumper");
     var letters = Array.prototype.slice.call(root.querySelectorAll(".hero-letter"));
     var animationFrame = null;
+    var fireworkTimer = null;
     var isRunning = false;
     var initialAriaLabel = trigger ? trigger.getAttribute("aria-label") : null;
     var hasValidPath = PATH.every(function (point) {
@@ -155,11 +160,59 @@
     root.style.setProperty("--name-letter-reaction-duration", LETTER_REACTION_DURATION_MS + "ms");
     jumper.textContent = letters[JUMPER_INDEX].textContent || "";
 
+    var firework = document.createElement("span");
+    firework.className = "name-firework";
+    firework.setAttribute("aria-hidden", "true");
+    for (var particleIndex = 0; particleIndex < FIREWORK_PARTICLE_COUNT; particleIndex += 1) {
+      var spark = document.createElement("span");
+      spark.className = "name-firework__spark";
+      firework.appendChild(spark);
+    }
+    root.appendChild(firework);
+
     function isMobileViewport() {
       return window.matchMedia && window.matchMedia("(max-width: " + MOBILE_BREAKPOINT_PX + "px)").matches;
     }
 
-    function finish() {
+    function stopFirework() {
+      if (fireworkTimer !== null) {
+        window.clearTimeout(fireworkTimer);
+        fireworkTimer = null;
+      }
+      firework.classList.remove("is-active");
+    }
+
+    function playFirework() {
+      if (reducedMotion && reducedMotion.matches) return;
+
+      var iEl = letters[JUMPER_INDEX];
+      var iRect = iEl.getBoundingClientRect();
+      var containerRect = root.getBoundingClientRect();
+      var fontSize = parseFloat(window.getComputedStyle(iEl).fontSize) || 16;
+      var radiusScale = isMobileViewport() ? 0.82 : 1;
+      var sparks = firework.querySelectorAll(".name-firework__spark");
+
+      firework.style.left = (iRect.left + iRect.width / 2 - containerRect.left) + "px";
+      firework.style.top = (iRect.top + fontSize * 0.18 - containerRect.top) + "px";
+
+      Array.prototype.forEach.call(sparks, function (spark, index) {
+        var baseAngle = -Math.PI / 2 + index * (Math.PI * 2 / FIREWORK_PARTICLE_COUNT);
+        var angle = baseAngle + FIREWORK_ANGLE_OFFSETS_DEG[index] * Math.PI / 180;
+        var distance = (index % 2 === 0 ? 38 : 30) * radiusScale;
+        spark.style.setProperty("--name-firework-x", (Math.cos(angle) * distance).toFixed(2) + "px");
+        spark.style.setProperty("--name-firework-y", (Math.sin(angle) * distance).toFixed(2) + "px");
+        spark.style.setProperty("--name-firework-angle", (angle * 180 / Math.PI + 90).toFixed(1) + "deg");
+        spark.style.setProperty("--name-firework-color", FIREWORK_COLORS[index % FIREWORK_COLORS.length]);
+        spark.style.setProperty("--name-firework-delay", (index * 17 % 29) + "ms");
+      });
+
+      stopFirework();
+      void firework.offsetWidth;
+      firework.classList.add("is-active");
+      fireworkTimer = window.setTimeout(stopFirework, FIREWORK_DURATION_MS + 80);
+    }
+
+    function finish(shouldCelebrate) {
       if (animationFrame !== null) {
         window.cancelAnimationFrame(animationFrame);
         animationFrame = null;
@@ -174,17 +227,24 @@
         trigger.setAttribute("aria-label", initialAriaLabel);
       }
       isRunning = false;
+      if (shouldCelebrate) {
+        playFirework();
+      } else {
+        stopFirework();
+      }
     }
 
     function syncReducedMotionState() {
       var shouldReduceMotion = reducedMotion && reducedMotion.matches;
 
       if (shouldReduceMotion && isRunning) finish();
+      if (shouldReduceMotion) stopFirework();
       trigger.disabled = Boolean(shouldReduceMotion);
     }
 
     function handleViewportChange() {
       if (isRunning) finish();
+      stopFirework();
     }
 
     function handleKeydown(event) {
@@ -199,6 +259,7 @@
         return;
       }
       if (reducedMotion && reducedMotion.matches) return;
+      stopFirework();
 
       var containerRect = root.getBoundingClientRect();
       var iEl = letters[JUMPER_INDEX];
@@ -361,7 +422,7 @@
         if (jumpElapsedMs < jumpDurationMs) {
           animationFrame = window.requestAnimationFrame(tick);
         } else {
-          finish();
+          finish(true);
         }
       }
 
