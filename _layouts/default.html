@@ -134,14 +134,23 @@
                     });
                     var motionPreference = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)");
                     var img = document.getElementById('profile-photo');
+                    var remainingImages = [];
+                    function tryNextProfileImage() {
+                      if (img && remainingImages.length) {
+                        var index = Math.floor(Math.random() * remainingImages.length);
+                        img.src = remainingImages.splice(index, 1)[0];
+                      }
+                    }
                     function chooseProfileImage() {
                       var list = allImages;
                       if (motionPreference && motionPreference.matches) {
                         list = allImages.filter(function(p) { return !/\.gif$/i.test(p); });
                       }
-                      if (img && list.length) {
-                        img.src = list[Math.floor(Math.random() * list.length)];
-                      }
+                      remainingImages = list.slice();
+                      tryNextProfileImage();
+                    }
+                    if (img) {
+                      img.addEventListener("error", tryNextProfileImage);
                     }
                     chooseProfileImage();
                     if (motionPreference) {
